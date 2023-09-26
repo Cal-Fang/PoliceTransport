@@ -1,6 +1,6 @@
 ## ---------------------------
 ##
-## Script name: read.R
+## Script name: 00_read.R
 ##
 ## Purpose of script: To read in 2018-2023 records from GVA website.
 ##
