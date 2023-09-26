@@ -19,6 +19,7 @@ We would need to download historical records prior to 2023-01-01 from the [Past 
   - [OFFICER INVOLVED OFFICER INJURED IN 2019](https://www.gunviolencearchive.org/reports/officer-shot?year=2019)
 - 2018
   - [OFFICER SHOT OR KILLED](https://www.gunviolencearchive.org/reports/officer-shot-killed?year=2018)
-One thing to be noted for later cleaning is, GVA data is stored in another format for all records prior to 2019-01-01. So for our analysis, we would later need to do some extra cleaning and proofreading for ***2018 records*** since the GVA file also includes cases where police were engaged but not shot or killed.
+ 
+One thing to be noted for later cleaning is, GVA data is stored in another format for all records prior to 2019-01-01. So for our analysis, we would need to do some extra cleaning and proofreading for ***2018 records*** since the GVA file also includes cases where police were engaged but no officer was shot or killed.
 
 # STEP 2 Combine and clean raw data files
