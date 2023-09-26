@@ -1,6 +1,6 @@
 # homeboydropoff
 
-# STEP 1 Retrieve needed data from GVA
+# STEP 0 Retrieve needed data from GVA
 We would need to download historical records prior to 2023-01-01 from the [Past Summary Ledgers](https://www.gunviolencearchive.org/past-tolls) page and up-to-date records since 2023-01-01 from the [homepage](https://www.gunviolencearchive.org/). For our analysis, we downloaded the following files:
 - 2023
   - [OFFICER INVOLVED OFFICER KILLED IN 2023](https://www.gunviolencearchive.org/reports/officer-killed?year=2023)
@@ -19,9 +19,10 @@ We would need to download historical records prior to 2023-01-01 from the [Past 
   - [OFFICER INVOLVED OFFICER INJURED IN 2019](https://www.gunviolencearchive.org/reports/officer-shot?year=2019)
 - 2018
   - [OFFICER SHOT OR KILLED](https://www.gunviolencearchive.org/reports/officer-shot-killed?year=2018)
- 
 
-# STEP 2 Combine and clean raw data files
+The script used for this step is named as **00_clean.R**.
+
+# STEP 1 Combine and clean raw data files
 Time-wise:  
 Since we have decided the time window should be from 2018-04-30 to 2023-04-30 for this project, we would need to drop all records prior to this period for the 2018 file and all records post to this period for the 2023 files.
 
