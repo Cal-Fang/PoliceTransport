@@ -1,0 +1,90 @@
+## ---------------------------
+##
+## Script name: 2018clean
+##
+## Purpose of script: Data cleaning on the 2018 GVA data for the homeboy dropoff project with Dr. Prachi Sanghavi
+##
+## Author: Cal Chengqi Fang
+##
+## Date Created: 2023-07-05
+##
+## Copyright (c) Cal Chengqi Fang, 2023
+## Email: cal.cf@uchicago.edu
+##
+## ---------------------------
+##
+## Notes:
+##   This is mainly because GVA data is stored in another format for all records prior to 2019-01-01.
+##
+## ---------------------------
+
+## set working directory for Mac and PC
+setwd("/Users/atchoo/Desktop/Homeboy")  # Cal's working directory (mac)
+# setwd("C:/Users/Cal/Google Drive/")     # Cal's working directory (PC)
+
+## ---------------------------
+
+rm(list = ls())
+options(scipen = 6, digits = 4)         # I prefer to view outputs in non-scientific notation
+memory.limit(30000000)                  # this is needed on some PCs to increase memory allowance, but has no impact on macs.
+
+## ---------------------------
+
+## load up the packages we will need:  (uncomment as required)
+
+require(tidyverse)
+require(data.table)
+# source("functions/packages.R")        # loads up all the packages we need
+
+## ---------------------------
+
+
+# STEP 1 Drop observations before 2018-04-30
+## Read in
+## raw2018 <- read_csv("data/OFFICER INVOLVED IN 2018.csv", col_select = c(1:7), col_types = "cccccdd")
+raw_2018 <- read.csv("data/OFFICER INVOLVED IN 2018.csv",
+                    colClasses = c("character", "character", "character", "character", "character", 
+                                   "integer", "integer", "NULL", "NULL", "NULL", "NULL"))
+raw_2018$Incident.Date <- as.Date(raw_2018$Incident.Date, "%d-%b-%y")
+
+temp <- raw_2018 %>% 
+  filter(Incident.Date >= "2018-04-30")
+
+
+# STEP 2 Flag out rows including non-police data
+flag <- temp %>% 
+  filter(X..Victims.Killed > 1 | X..Victims.Injured > 1)
+
+## Clean outside R
+flag$WebAddress <- paste0("https://www.gunviolencearchive.org/incident/", flag$Incident.ID)
+write_csv(flag, "data/flag.csv")
+
+## Read back in the file cleaned and proofread in google sheet
+flag <- read_csv("data/Homeboy Dropoff - flag.csv") %>% 
+  as.tibble()
+flag$Incident.Date <- as.Date(flag$Incident.Date, "%m/%d/%y")
+
+
+# STEP 3 Long2wide for the rest
+safe <- temp %>% 
+  filter(X..Victims.Killed <= 1 & X..Victims.Injured <= 1)
+## Make change to one special row
+safe[safe$Incident.ID=="1185588", "X..Victims.Killed"] <- 0
+
+safe <- safe %>% 
+  rename(Killed = X..Victims.Killed,
+         Injured = X..Victims.Injured) %>% 
+  pivot_longer(cols=c("Killed", "Injured"),
+               names_to='Outcome',
+               values_to='Num') %>% 
+  filter(Num != 0) %>% 
+  select(-c(Incident.ID, Num)) 
+
+
+# STEP 4 Stack back to get the ultimate set for 2018
+clean_2018 <- safe %>% 
+  mutate(Participant.Name = NA,
+         Participant.Gender = NA) %>% 
+  rbind(flag)
+write_csv(clean_2018, "data/clean_2018.csv")
+
