@@ -1,0 +1,44 @@
+Incident.ID,Incident.Date,State,City.Or.County,Address,Victims.Killed,Victims.Injured,Suspects.Killed,Suspects.Injured,Suspects.Arrested,Operations,WebAddress
+1283099,2018-12-23,Georgia,Decatur,3900 Block of Fireoak Dr,0,2,0,0,1,N/A,https://www.gunviolencearchive.org/incident/1283099
+1274558,2018-12-11,Texas,Houston,5013 Hartwick Rd,0,3,1,0,0,N/A,https://www.gunviolencearchive.org/incident/1274558
+1260824,2018-11-22,South Carolina,Ridgeland,1800 block of Bees Creek Rd,0,2,1,0,0,N/A,https://www.gunviolencearchive.org/incident/1260824
+1260299,2018-11-21,Alabama,Talladega,214 Haynes St,1,2,1,0,0,N/A,https://www.gunviolencearchive.org/incident/1260299
+1258482,2018-11-19,Illinois,Chicago,2525 S Michigan Ave,3,0,1,0,0,N/A,https://www.gunviolencearchive.org/incident/1258482
+1249561,2018-11-07,California,Thousand Oaks,99 Rolling Oaks Dr,12,2,1,0,0,N/A,https://www.gunviolencearchive.org/incident/1249561
+1246998,2018-11-03,Ohio,Cleveland,2600 block of E 121st St,0,2,0,0,1,N/A,https://www.gunviolencearchive.org/incident/1246998
+1243829,2018-10-29,Arizona,Tempe,Mill Avenue and Baseline Road,0,2,1,0,0,N/A,https://www.gunviolencearchive.org/incident/1243829
+1243051,2018-10-28,Colorado,Denver,4800 block of W 10th Ave,0,2,0,0,1,N/A,https://www.gunviolencearchive.org/incident/1243051
+1241819,2018-10-27,Pennsylvania,Pittsburgh,5898 Wilkins Ave,11,6,0,1,1,N/A,https://www.gunviolencearchive.org/incident/1241819
+1234641,2018-10-16,Illinois,Joliet,200 block of Richard St,0,2,0,0,2,N/A,https://www.gunviolencearchive.org/incident/1234641
+1223865,2018-10-03,South Carolina,Florence,932 Ashton Dr,2,6,0,0,1,N/A,https://www.gunviolencearchive.org/incident/1223865
+1220401,2018-09-29,Mississippi,Brookhaven,630 North 6th St,2,0,0,1,1,N/A,https://www.gunviolencearchive.org/incident/1220401
+1213936,2018-09-19,Maryland,District Heights (Forestville),2700 block of Lorring Dr,0,2,0,0,0,N/A,https://www.gunviolencearchive.org/incident/1213936
+1213293,2018-09-19,Pennsylvania,Masontown,1 E Church St,0,4,1,0,0,N/A,https://www.gunviolencearchive.org/incident/1213293
+1213793,2018-09-19,California,Los Angeles (East Los Angeles),3864 Whittier Boulevard,0,2,1,1,1,N/A,https://www.gunviolencearchive.org/incident/1213793
+1211978,2018-09-17,California,Rancho Cordova,10899 Folsolm Blvd,1,2,0,1,1,N/A,https://www.gunviolencearchive.org/incident/1211978
+1208099,2018-09-11,Texas,Tomball,26100 block of La Fouche Dr,0,2,0,0,0,N/A,https://www.gunviolencearchive.org/incident/1208099
+1206657,2018-09-08,Virginia,Charlottesville,800 block of Hardy Drive,0,2,0,1,0,N/A,https://www.gunviolencearchive.org/incident/1206657
+1200904,2018-08-31,Colorado,Aurora,1900 block of Peoria St,2,2,0,1,1,N/A,https://www.gunviolencearchive.org/incident/1200904
+1197914,2018-08-28,Kansas,Mankato,307 N Commercial St,0,2,1,0,0,N/A,https://www.gunviolencearchive.org/incident/1197914
+1182083,2018-08-07,New Jersey,Camden,Broadway and Mount Vernon St,0,2,0,0,3,N/A,https://www.gunviolencearchive.org/incident/1182083
+1180759,2018-08-06,Pennsylvania,Philadelphia,4800 block of Knox St,1,2,0,0,0,N/A,https://www.gunviolencearchive.org/incident/1180759
+1173313,2018-07-27,Massachusetts,Falmouth,Ashley Dr,0,2,0,1,1,N/A,https://www.gunviolencearchive.org/incident/1173313
+1169605,2018-07-22,Colorado,Colorado Springs,S Peyton Hwy and Loop Rd,1,2,1,0,2,N/A,https://www.gunviolencearchive.org/incident/1169605
+1169627,2018-07-22,New York,Buffalo,1210 Broadway,0,2,0,0,2,N/A,https://www.gunviolencearchive.org/incident/1169627
+1168330,2018-07-20,Hawaii,Naalehu,S Point Rd and Kamaoa Rd,0,2,1,0,0,N/A,https://www.gunviolencearchive.org/incident/1168330
+1167496,2018-07-19,Missouri,Poplar Bluff,N/A,0,2,0,0,1,N/A,https://www.gunviolencearchive.org/incident/1167496
+1167391,2018-07-19,Minnesota,South Saint Paul,500 block of 12th Ave N,0,2,0,0,1,N/A,https://www.gunviolencearchive.org/incident/1167391
+1163876,2018-07-15,Missouri,Kansas City,8300 E US Hwy 40,0,3,1,0,0,N/A,https://www.gunviolencearchive.org/incident/1163876
+1163897,2018-07-15,Massachusetts,Weymouth,Burton Terrace,2,0,0,1,1,N/A,https://www.gunviolencearchive.org/incident/1163897
+1159286,2018-07-07,California,Los Molinos,Hooker Creek Rd,0,2,1,0,0,N/A,https://www.gunviolencearchive.org/incident/1159286
+1155802,2018-07-03,Illinois,South Elgin,300 block of Woodridge Cir,0,3,1,0,0,N/A,https://www.gunviolencearchive.org/incident/1155802
+1148422,2018-06-23,California,San Diego,4860 Rolando Ct,0,2,1,0,0,N/A,https://www.gunviolencearchive.org/incident/1148422
+1141698,2018-06-15,Kansas,Kansas City,800 N 7th St,2,0,0,1,1,N/A,https://www.gunviolencearchive.org/incident/1141698
+1140962,2018-06-13,Colorado,Denver,551 E Colfax Ave,0,3,1,0,0,N/A,https://www.gunviolencearchive.org/incident/1140962
+1142721,2018-06-13,Virginia,Bluemont,19844 Blue Ridge Mountain Rd,0,2,0,0,0,N/A,https://www.gunviolencearchive.org/incident/1142721
+1138324,2018-06-11,Florida,Orlando,4932 Eaglesmere Dr,5,0,1,0,0,N/A,https://www.gunviolencearchive.org/incident/1138324
+1121196,2018-05-19,Indiana,Highland,2816 Highway Ave,0,2,0,0,1,N/A,https://www.gunviolencearchive.org/incident/1121196
+1118785,2018-05-18,Texas,Santa Fe,16000 Hwy 6,10,13,0,0,1,N/A,https://www.gunviolencearchive.org/incident/1118785
+1112948,2018-05-11,Oklahoma,Talihina,2nd St and Dallas St,0,4,1,0,0,N/A,https://www.gunviolencearchive.org/incident/1112948
+1110583,2018-05-07,Arkansas,Hackett,1100 block of Sunny Hill Pl,0,3,1,0,0,N/A,https://www.gunviolencearchive.org/incident/1110583
+1107904,2018-05-04,Indiana,Terre Haute,65 S 18th St,2,0,1,0,1,N/A,https://www.gunviolencearchive.org/incident/1107904

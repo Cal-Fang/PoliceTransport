@@ -1,0 +1,79 @@
+Incident.Date,State,City.Or.County,Address,Participant.Name,Outcome,Participant.Gender
+12/23/18,Georgia,Decatur,3900 Block of Fireoak Dr,Officer,Injured,male
+12/11/18,Texas,Houston,5013 Hartwick Rd,Captain Wes Hensley,Injured,male
+12/11/18,Texas,Houston,5013 Hartwick Rd,Sergeant Mark Rychen,Injured,male
+12/11/18,Texas,Houston,5013 Hartwick Rd,Sergeant James Smejkal,Injured,male
+11/22/18,South Carolina,Ridgeland,1800 block of Bees Creek Rd,Deputy Heather Betz,Injured,female
+11/21/18,Alabama,Talladega,214 Haynes St,Officer,Injured,male
+11/19/18,Illinois,Chicago,2525 S Michigan Ave,Officer Samuel Jimenez,Killed,male
+11/7/18,California,Thousand Oaks,99 Rolling Oaks Dr,Deputy Sergeant Ron Helus,Killed,male
+11/3/18,Ohio,Cleveland,2600 block of E 121st St,Officer Shane McNae,Injured,male
+10/29/18,Arizona,Tempe,Mill Avenue and Baseline Road,Officer,Injured,female
+10/29/18,Arizona,Tempe,Mill Avenue and Baseline Road,Officer,Injured,female
+10/28/18,Colorado,Denver,4800 block of W 10th Ave,Officer,Injured,male
+10/27/18,Pennsylvania,Pittsburgh,5898 Wilkins Ave,Officer Daniel Mead,Injured,male
+10/27/18,Pennsylvania,Pittsburgh,5898 Wilkins Ave,Officer Anthony Burke,Injured,male
+10/27/18,Pennsylvania,Pittsburgh,5898 Wilkins Ave,Officer Timothy Matson,Injured,male
+10/27/18,Pennsylvania,Pittsburgh,5898 Wilkins Ave,Officer Michael Smigda,Injured,male
+10/16/18,Illinois,Joliet,200 block of Richard St,Officer,Injured,N/A
+10/16/18,Illinois,Joliet,200 block of Richard St,Officer,Injured,N/A
+10/3/18,South Carolina,Florence,932 Ashton Dr,Deputy Arie Davis,Injured,female
+10/3/18,South Carolina,Florence,932 Ashton Dr,Investigator Sarah Miller,Injured,female
+10/3/18,South Carolina,Florence,932 Ashton Dr,Investigator Farrah Turner,Killed,female
+10/3/18,South Carolina,Florence,932 Ashton Dr,Officer Terrence Carraway,Killed,male
+10/3/18,South Carolina,Florence,932 Ashton Dr,Officer Brian Hart,Injured,male
+10/3/18,South Carolina,Florence,932 Ashton Dr,Officer Scott Williamson,Injured,male
+10/3/18,South Carolina,Florence,932 Ashton Dr,Officer Travis Scott,Injured,male
+9/29/18,Mississippi,Brookhaven,630 North 6th St,Officer James White,Killed,male
+9/29/18,Mississippi,Brookhaven,630 North 6th St,Officer Zack Moak,Killed,male
+9/19/18,Maryland,District Heights (Forestville),2700 block of Lorring Dr,Officer,Injured,N/A
+9/19/18,Maryland,District Heights (Forestville),2700 block of Lorring Dr,Officer,Injured,N/A
+9/19/18,Pennsylvania,Masontown,1 E Church St,Sgt. R. Scott Miller,Injured,male
+9/19/18,California,Los Angeles (East Los Angeles),3864 Whittier Boulevard,Deputy,Injured,N/A
+9/19/18,California,Los Angeles (East Los Angeles),3864 Whittier Boulevard,Deputy,Injured,N/A
+9/17/18,California,Rancho Cordova,10899 Folsolm Blvd,Deputy Mark Stasyuk,Killed,male
+9/17/18,California,Rancho Cordova,10899 Folsolm Blvd,Deputy Julie Robertson,Injured,female
+9/11/18,Texas,Tomball,26100 block of La Fouche Dr,Deputy,Injured,male
+9/8/18,Virginia,Charlottesville,800 block of Hardy Drive,Officer,Injured,N/A
+9/8/18,Virginia,Charlottesville,800 block of Hardy Drive,Officer,Injured,N/A
+8/31/18,Colorado,Aurora,1900 block of Peoria St,Officer,Injured,male
+8/28/18,Kansas,Mankato,307 N Commercial St,Deputy,Injured,N/A
+8/28/18,Kansas,Mankato,307 N Commercial St,Deputy,Injured,N/A
+8/7/18,New Jersey,Camden,Broadway and Mount Vernon St,Detective,Injured,male
+8/7/18,New Jersey,Camden,Broadway and Mount Vernon St,Detective,Injured,female
+8/6/18,Pennsylvania,Philadelphia,4800 block of Knox St,Officer Jaison Potts,Injured,male
+7/27/18,Massachusetts,Falmouth,Ashley Dr,Officer Donald DeMiranda,Injured,male
+7/27/18,Massachusetts,Falmouth,Ashley Dr,Officer Ryan Moore,Injured,male
+7/22/18,Colorado,Colorado Springs,S Peyton Hwy and Loop Rd,Deputy Jeremy Juhl,Injured,male
+7/22/18,New York,Buffalo,1210 Broadway,Officer Christopher Bridgett,Injured,male
+7/20/18,Hawaii,Naalehu,S Point Rd and Kamaoa Rd,Sgt. Bryan Tina,Injured,male
+7/19/18,Missouri,Poplar Bluff,N/A,Detective Corey Mitchell,Injured,male
+7/19/18,Minnesota,South Saint Paul,500 block of 12th Ave N,Officer Todd Waters,Injured,male
+7/19/18,Minnesota,South Saint Paul,500 block of 12th Ave N,Officer Derek Kruse,Injured,male
+7/15/18,Missouri,Kansas City,8300 E US Hwy 40,Officer,Injured,N/A
+7/15/18,Missouri,Kansas City,8300 E US Hwy 40,Officer,Injured,N/A
+7/15/18,Missouri,Kansas City,8300 E US Hwy 40,Officer,Injured,N/A
+7/15/18,Massachusetts,Weymouth,Burton Terrace,Officer Michael Chesna,Killed,male
+7/7/18,California,Los Molinos,Hooker Creek Rd,Deputy,Injured,male
+7/3/18,Illinois,South Elgin,300 block of Woodridge Cir,Officer,Injured,N/A
+7/3/18,Illinois,South Elgin,300 block of Woodridge Cir,Officer,Injured,N/A
+7/3/18,Illinois,South Elgin,300 block of Woodridge Cir,Officer,Injured,N/A
+6/23/18,California,San Diego,4860 Rolando Ct,Officer,Injured,male
+6/23/18,California,San Diego,4860 Rolando Ct,Officer,Injured,male
+6/15/18,Kansas,Kansas City,800 N 7th St,Deputy Patrick Rohrer,Killed,male
+6/15/18,Kansas,Kansas City,800 N 7th St,Deputy Theresa King,Killed,female
+6/13/18,Colorado,Denver,551 E Colfax Ave,Officer Travis Lloyd,Injured,male
+6/13/18,Virginia,Bluemont,19844 Blue Ridge Mountain Rd,Officer Chris Campbell,Injured,male
+6/13/18,Virginia,Bluemont,19844 Blue Ridge Mountain Rd,Officer Matthew Eggers,Injured,male
+6/11/18,Florida,Orlando,4932 Eaglesmere Dr,Officer Kevin Valencia,Killed,male
+5/19/18,Indiana,Highland,2816 Highway Ave,Officer Dwayne Brown,Injured,male
+5/19/18,Indiana,Highland,2816 Highway Ave,Officer David Aguilera,Injured,male
+5/18/18,Texas,Santa Fe,16000 Hwy 6,Officer,Injured,male
+5/11/18,Oklahoma,Talihina,2nd St and Dallas St,Trooper Chris Bunch,Injured,male
+5/11/18,Oklahoma,Talihina,2nd St and Dallas St,Trooper Sammy Lee,Injured,male
+5/11/18,Oklahoma,Talihina,2nd St and Dallas St,Trooper Brandon Seward,Injured,male
+5/11/18,Oklahoma,Talihina,2nd St and Dallas St,Trooper Brett Stephens,Injured,male
+5/7/18,Arkansas,Hackett,1100 block of Sunny Hill Pl,Deputy Rusty Wilson,Injured,male
+5/7/18,Arkansas,Hackett,1100 block of Sunny Hill Pl,Cpl Sean Wallace,Injured,male
+5/7/18,Arkansas,Hackett,1100 block of Sunny Hill Pl,Cpl Ron Decker,Injured,male
+5/4/18,Indiana,Terre Haute,65 S 18th St,Officer Rob Pitts,Killed,male
