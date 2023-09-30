@@ -23,7 +23,7 @@ We would need to download historical records from the [Gun Violence Archive](htt
 The script used for this step is named **00_read.R**.
 
 ## STEP 1 Clean and combine raw data files
-I at first dropped the "Operations" and "Participant.Age.Group" columns from records of 2019-2023. And then I did some time-wise cleaning and case-wise cleaning.
+I first dropped the "Operations" and "Participant.Age.Group" columns from records of 2019-2023. And then I did some time-wise cleaning and case-wise cleaning.
 ### Time-wise cleaning  
 Since we have decided the time window should be from 2018-04-30 to 2023-04-30 for this project, we would need to drop all records prior to this period for the 2018 file and all records post to this period for the 2023 files.
 
@@ -83,28 +83,28 @@ Based on this storing logic, I cleaned the 2018 file into the same format as the
 3. Combine the two data.table and obtain a reformated cleaned 2018 record file.
 
 ### Combining 
-After clean the 2018 files, all years' records were row-binded together to create the general file. . 
+After cleaning the 2018 files, all years' records were row-bound together to create the general file. 
 
 ### Case-specific cleaning
-There are several changes needed to be made on specific cases. Although in my actual analysis, these were found in later step, to ensure the accuracy of sorting and filtering, it makes more senses for anyone trying to reproduce the result to change these first;:
+There are several changes needed to be made in specific cases. Although in my actual analysis, these were found in a later step, to ensure the accuracy of sorting and filtering, it makes more sense for anyone trying to reproduce the result to change these first;:
 1. GVA recorded [a police shot and injured](https://www.gunviolencearchive.org/incident/2342312) in New Orleans, LA because the suspect was arrested in New Orleans. However, the injured police was shot in Erin, TN, and is a part of the Erin police department;
 2. GVA recorded [three police shot and injured](https://www.gunviolencearchive.org/incident/2094830) for the 2021-08-19 Albuquerque NM case. However, there were actually four police shot and injured. One extra row for Officer Harry Gunderson needs to be added;
-3. GVA recorded [one police shot and injured](https://www.gunviolencearchive.org/incident/2170769) in Atlanta GA at 2021-11-19. This police was actually shot and injured at Sandy Springs. He also works for Sandy Springs Police Department. This case should be altered;
-4. GVA recorded [three marshals shot and injured](https://www.gunviolencearchive.org/incident/1868904) in Bronx NYC at 2020-12-04. This was early misinformation. There were only two marshals injured according to later news;
+3. GVA recorded [one police shot and injured](https://www.gunviolencearchive.org/incident/2170769) in Atlanta GA on 2021-11-19. This police was actually shot and injured at Sandy Springs. He also works for the Sandy Springs Police Department. This case should be altered;
+4. GVA recorded [three marshals shot and injured](https://www.gunviolencearchive.org/incident/1868904) in Bronx NYC on 2020-12-04. This was early misinformation. There were only two marshals injured according to later news;
 5. GVA did not record any case for 2021-03-15 in Chicago, but there actually was [an off-duty police shot and injured](https://abc7chicago.com/chicago-shooting-police-office-shot-injured-cpd-cop/10419984/) that day in South Chicago;
 6. GVA did not record any case for 2021-12-16 in Corona (Queens) NYC, but there actually was [an off-duty police shot and injured](https://sunnysidepost.com/off-duty-cop-shot-robbery-suspect-killed-in-wild-shootout-outside-woodside-nightclub) that day at 56-15 Northern Blvd;
-7. GVA recorded [two officers shot and injured](https://www.gunviolencearchive.org/incident/1314289) in Houston at 2019-01-28. There were actually [five officers shot and injured](https://www.fox26houston.com/news/sergeant-who-sustained-knee-injury-during-shooting-released-from-hospital);
+7. GVA recorded [two officers shot and injured](https://www.gunviolencearchive.org/incident/1314289) in Houston on 2019-01-28. There were actually [five officers shot and injured](https://www.fox26houston.com/news/sergeant-who-sustained-knee-injury-during-shooting-released-from-hospital);
 8. GVA recorded [two officers shot and injured](https://www.gunviolencearchive.org/incident/1723067) in Kansas City, MI at 2020-07-02. There was actually only [one male officer shot and injured](https://fox4kc.com/news/missouri-highway-patrol-responding-to-kansas-city-officer-involved-shooting/). The other injured person is a Kansas City Bus driver and should not be included here;
 9. GVA did not record any case for 2022-08-11 in Las Vegas NV but there actually was [three officer injured](https://www.youtube.com/watch?v=c075Xx138Uc&ab_channel=LasVegasMetropolitanPolice) in a shoutout that day;
-10. GVA recorded [two officers shot and injured](https://www.gunviolencearchive.org/incident/2077587) in Pittsburgh at 2021-07-29. One of them suffered from a minor injury [not related to gunfire](https://www.pennlive.com/news/2021/07/pa-man-killed-parents-shot-at-police-died-in-crash-reports.html)
+10. GVA recorded [two officers shot and injured](https://www.gunviolencearchive.org/incident/2077587) in Pittsburgh on 2021-07-29. One of them suffered from a minor injury [not related to gunfire](https://www.pennlive.com/news/2021/07/pa-man-killed-parents-shot-at-police-died-in-crash-reports.html)
 
-It is possible these mistakes could be corrected from GVA's end. So anyone trying to reproduce the result should examine whether these mistakes still persists before running this part of codes.
+It is possible these mistakes could be corrected from GVA's end. So anyone trying to reproduce the result should examine whether these mistakes still persist before running this part of code.
 
-The script used for this step is named as **01_clean.R**. The result is saved as *All_2018_2023.csv*
+The script used for this step is named **01_clean.R**. The result is saved as *All_2018_2023.csv*
 
 
 ## STEP 2 Sort and identify the analysis subject cities
-After making these changes accordingly, I created the set for transport mode information collection in following steps:
+After making these changes accordingly, I created the set for transport mode information collection in the following steps:
 1. Group the data by State and City.Or.County and summarize the total case number for each State-City.Or.County pair;
 2. Filter the *All_2018_2023.csv* and only keep the State-City.Or.County pairs that had more than 10 police injured or killed during this period of time;
 3. One of the five boroughs of NYC, Staten Island, was dropped. But it does not make sense to exclude it so I manually added it back.
@@ -140,7 +140,7 @@ After making these changes accordingly, I created the set for transport mode inf
 |Texas               | San Antonio         |        10        |
 |Wisconsin           | Milwaukee           |        16        |
 
-The script used for this step is named as **02_sort.R**. The result is saved as *Above10_2018_2023.csv*.
+The script used for this step is named **02_sort.R**. The result is saved as *Above10_2018_2023.csv*.
 
 
 
