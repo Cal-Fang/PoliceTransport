@@ -1,7 +1,7 @@
 # homeboydropoff
 
 ## STEP 0 Retrieve needed data from GVA
-We would need to download historical records prior to 2023-01-01 from the [Past Summary Ledgers](https://www.gunviolencearchive.org/past-tolls) page and up-to-date records since 2023-01-01 from the [homepage](https://www.gunviolencearchive.org/). For our analysis, we downloaded the following files:
+We would need to download historical records from the [Gun Violence Archive](https://www.gunviolencearchive.org/). For our analysis, we downloaded the following files:
 - 2023
   - [OFFICER INVOLVED OFFICER KILLED IN 2023](https://www.gunviolencearchive.org/reports/officer-killed?year=2023)
   - [OFFICER INVOLVED OFFICER INJURED IN 2023](https://www.gunviolencearchive.org/reports/officer-shot?year=2023)
@@ -20,7 +20,7 @@ We would need to download historical records prior to 2023-01-01 from the [Past 
 - 2018
   - [OFFICER SHOT OR KILLED](https://www.gunviolencearchive.org/reports/officer-shot-killed?year=2018)
 
-The script used for this step is named as **00_read.R**.
+The script used for this step is named **00_read.R**.
 
 ## STEP 1 Clean and combine raw data files
 I at first dropped the "Operations" and "Participant.Age.Group" columns from records of 2019-2023. And then I did some time-wise cleaning and case-wise cleaning.
@@ -69,10 +69,10 @@ The table below gives some examples:
   </tr>
 </table>
 
-Based on this storing logic, I cleaned the 2018 file into the same format as the other years' records in following steps:
+Based on this storing logic, I cleaned the 2018 file into the same format as the other years' records in the following steps:
 1. Among rows where either Victims.Killed or Victims.Injured is larger than 1,
    1. Export these rows as a new file with a new column of the address of the incident report webpage;
-   2. Open this new file outside R and break each rows into multiple rows so that each row would represent one police injured or one police killed with reference to the webpage incident report;
+   2. Open this new file outside R and break each row into multiple rows so that each row would represent one police injured or one police killed with reference to the webpage incident report;
    3. Add more information from the webpage incident report so the result file has 7 columns including "Incident.Date", "State", "City.Or.County", "Address", "Participant.Name", "Outcome", and "Participant.Gender".
 2. Among the rest rows where either Victims.Killed or Victims.Injured is 1, 
    1. Keep the 148 rows where only one of these two columns is 1, as each of these rows marked exactly one police injured or killed;
@@ -80,7 +80,7 @@ Based on this storing logic, I cleaned the 2018 file into the same format as the
    3. Assign 0 to Victims.Killed to the row of [incident 1185588](https://www.gunviolencearchive.org/incident/1185588) since the killed victim is not police;
    4. Transform this file from wide to long and drop unuseful columns so that it would have 5 columns including "Incident.Date", "State", "City.Or.County", "Address", and "Outcome";
    5. Add two NA columns "Participant.Name" and "Participant.Gender".
-3. Combine the two data.table and obtain reformated cleaned 2018 record file.
+3. Combine the two data.table and obtain a reformated cleaned 2018 record file.
 
 ### Combining 
 After clean the 2018 files, all years' records were row-binded together to create the general file. . 
@@ -106,7 +106,7 @@ The script used for this step is named as **01_clean.R**. The result is saved as
 ## STEP 2 Sort and identify the analysis subject cities
 After making these changes accordingly, I created the set for transport mode information collection in following steps:
 1. Group the data by State and City.Or.County and summarize the total case number for each State-City.Or.County pair;
-2. Filter the *All_2018_2023.csv* and only kept the State-City.Or.County pairs that had more than 10 police injured or killed during this period of time;
+2. Filter the *All_2018_2023.csv* and only keep the State-City.Or.County pairs that had more than 10 police injured or killed during this period of time;
 3. One of the five boroughs of NYC, Staten Island, was dropped. But it does not make sense to exclude it so I manually added it back.
 
 |State               | City.Or.County      | Injury.And.Death |
