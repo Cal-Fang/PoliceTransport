@@ -382,7 +382,7 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2022-06-29,Alabama,Brierfield,AL-25 and Bulldog Bend Rd,male,Deputy Chris Poole,Injured
 2022-06-28,North Carolina,Charlotte,453 E 36th St,N/A,Officer,Injured
 2022-06-27,Tennessee,Hendersonville,Vietnam Veterans Blvd and US-31E BYP,male,Officer Cameron Ferrell,Injured
-2022-06-27,Louisiana,New Orleans,1400 block of Iberville St,N/A,N/A,Injured
+2022-06-27,Tennessee,Erin,300 block of Highway 149,N/A,N/A,Injured
 2022-06-26,Ohio,Columbus,300 block of S Harris Ave,male,N/A,Injured
 2022-06-26,Washington,Spokane,3000 block of N Martin St,male,Officer Kris Honaker,Injured
 2022-06-26,Arkansas,North Little Rock,3100 block of Donaghey Dr,male,Officer Nicholas Stewart,Injured
@@ -672,7 +672,7 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2021-11-22,Oregon,Happy Valley,SE Causey Ave and SE Monterey Ave,male,Sergeant Travis Hill,Injured
 2021-11-19,Virginia,Warsaw,3908 Richmond Rd,male,NNRJ Officer,Injured
 2021-11-19,Kentucky,Louisville,I-264 and Dixie Hwy,male,Sgt. James Chris Lane,Injured
-2021-11-19,Georgia,Atlanta,Cameron Glen Dr NW,N/A,N/A,Injured
+2021-11-19,Georgia,Sandy Springs,Cameron Glen Dr NW,N/A,N/A,Injured
 2021-11-18,New Jersey,Cedar Grove,250 Grove St,female,N/A,Injured
 2021-11-18,West Virginia,Moorefield,Clay St,male,Corporal Tyler Robinette,Injured
 2021-11-17,Massachusetts,Harwich,200 block of Depot Rd,male,Officer,Injured
@@ -803,7 +803,6 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2021-08-01,Texas,Uvalde,431 Apolonio St,male,Officer Justin Mendoza,Injured
 2021-07-30,New York,Bronx,E 169th St and Lyman Pl,male,NYPD Lt,Injured
 2021-07-29,Pennsylvania,Pittsburgh,239 Gilkeson Rd,male,Officer,Injured
-2021-07-29,Pennsylvania,Pittsburgh,239 Gilkeson Rd,male,Officer Rob Barnes,Injured
 2021-07-28,Florida,Boynton Beach,Jog Rd and Woolbright Rd,N/A,Deputy,Injured
 2021-07-27,Ohio,Nelsonville,3rd St,male,Officer KJ Tracy,Injured
 2021-07-26,Washington,Yakima,1st Ave and F St,N/A,Officer,Injured
@@ -1087,7 +1086,6 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2020-12-04,Alabama,Pine Hill,1234 County Road 11 S,male,Officer Ricky Anthony Pugh,Injured
 2020-12-04,New York,Bronx,4085 Ely Ave,N/A,N/A,Injured
 2020-12-04,New York,Bronx,4085 Ely Ave,N/A,N/A,Injured
-2020-12-04,New York,Bronx,4085 Ely Ave,N/A,N/A,Injured
 2020-12-03,Ohio,Mansfield,1116 Lexwood Rd,male,Deputy Michael Pawlikowski,Injured
 2020-12-03,Missouri,Saint Louis,1600 block of N Broadway,male,N/A,Injured
 2020-12-02,Florida,Saint Petersburg,1400 18th Ave S,male,Detective,Injured
@@ -1238,8 +1236,7 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2020-07-06,Florida,Port Saint Lucie,2500 block of Southeast Morningside Blvd,male,Officer Trevor Horten,Injured
 2020-07-03,Oregon,Welches,65000 E US-26,male,CCSO Sergeant Sean Collinson,Injured
 2020-07-02,Missouri,Kansas City,3051 Van Brunt Blvd,male,Officer,Injured
-2020-07-02,Missouri,Kansas City,Independence Ave and Hardesty Ave,N/A,N/A,Injured
-2020-07-02,Missouri,Kansas City,Independence Ave and Hardesty Ave,female,Officer,Injured
+2020-07-02,Missouri,Kansas City,Independence Ave and Hardesty Ave,male,N/A,Injured
 2020-06-29,Oklahoma,Tulsa,8900 E 21st St,male,Officer Aurash Zarkeshan,Injured
 2020-06-27,Tennessee,Crossville,8000 block of Chestnut Hill Rd,male,Deputy Tim Tutor,Injured
 2020-06-27,Ohio,Columbus,Aviator Ave,N/A,Officer,Injured
@@ -1995,3 +1992,12 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2018-05-07,Arkansas,Hackett,1100 block of Sunny Hill Pl,male,Cpl Sean Wallace,Injured
 2018-05-07,Arkansas,Hackett,1100 block of Sunny Hill Pl,male,Cpl Ron Decker,Injured
 2018-05-04,Indiana,Terre Haute,65 S 18th St,male,Officer Rob Pitts,Killed
+2021-08-19,New Mexico,Albuquerque,1105 Juan Tabo Blvd NE,male,Officer Harry Gunderson,Injured
+2021-03-15,Illinois,Chicago,8900 block of S Stony Island Avenue,male,Officer,Injured
+2021-12-16,New York,Corona (Queens),56-15 Northern Blvd,male,Lieutenant,Injured
+2019-01-28,Texas,Houston,7815 Harding St,N/A,Officer,Injured
+2019-01-28,Texas,Houston,7815 Harding St,male,Officer Gerald Goines,Injured
+2019-01-28,Texas,Houston,7815 Harding St,male,Officer Steven Bryant,Injured
+2022-08-11,Nevada,Las Vegas,,,K9 Officer,Injured
+2022-08-11,Nevada,Las Vegas,,,Officer,Injured
+2022-08-11,Nevada,Las Vegas,,,Officer,Injured

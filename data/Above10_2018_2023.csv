@@ -14,9 +14,6 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2023-04-10,Kentucky,Louisville,333 E Main St,male,"Officer Cory """"""""CJ"""""""" Galloway",Injured
 2023-04-10,Kentucky,Louisville,333 E Main St,N/A,Officer,Injured
 2023-04-05,New York,Corona (Queens),90-23 161st St,N/A,Ofc. Brett Boller,Injured
-2023-04-05,Kansas,Kansas City,N 18th Street and Wood Ave,N/A,Officer,Injured
-2023-04-05,Kansas,Kansas City,N 18th Street and Wood Ave,N/A,Officer,Injured
-2023-04-05,Kansas,Kansas City,N 18th Street and Wood Ave,N/A,Officer,Injured
 2023-03-30,Tennessee,Memphis,1200 block of E Raines Rd,N/A,Officer,Injured
 2023-03-30,Tennessee,Memphis,1200 block of E Raines Rd,N/A,Officer,Injured
 2023-03-24,Arizona,Phoenix,7th Ave and Broadway Rd,female,N/A,Injured
@@ -71,7 +68,6 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2022-09-18,Michigan,Detroit,14900 block of  Prevost St,male,Officer,Injured
 2022-09-10,Nevada,Las Vegas,Flamingo Rd and University Center Dr,female,Officer Tierney Tomburo,Injured
 2022-09-10,Wisconsin,Milwaukee,N 59th St and W Center St,N/A,Officer,Injured
-2022-09-07,Georgia,Columbus,4200 block of Earline Ave,male,N/A,Injured
 2022-08-31,Tennessee,Memphis,W Van Huesen Dr and Deneen Dr,male,Officer Jesse Acosta,Injured
 2022-08-29,Pennsylvania,Philadelphia,600 Arch St,N/A,Special Agent,Injured
 2022-08-28,Arizona,Phoenix,21636 N 26th Ave,N/A,Officer,Injured
@@ -108,7 +104,6 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2022-03-13,Arizona,Phoenix,27th Ave and Maryland Ave,male,N/A,Injured
 2022-03-11,Illinois,Chicago,5700 block of S Loomis Blvd,N/A,N/A,Injured
 2022-03-11,Illinois,Chicago,5700 block of S Loomis Blvd,N/A,N/A,Injured
-2022-03-05,Georgia,Columbus,Andrews Rd and E Central St,male,Sergeant Jeremy Hattaway,Injured
 2022-03-04,Illinois,Chicago,3801 W Harrison St,N/A,N/A,Injured
 2022-03-04,Illinois,Chicago,3801 W Harrison St,N/A,N/A,Injured
 2022-03-02,Georgia,Atlanta,5390 Riverdale Rd,male,Officer Ryan Richey,Injured
@@ -163,7 +158,6 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2021-11-24,New York,Bronx,E 187th St and Beaumont Ave,male,Officer Robert Holmes,Injured
 2021-11-24,New York,Bronx,E 187th St and Beaumont Ave,female,Officer Alejandra Jacobs,Injured
 2021-11-19,Kentucky,Louisville,I-264 and Dixie Hwy,male,Sgt. James Chris Lane,Injured
-2021-11-19,Georgia,Atlanta,Cameron Glen Dr NW,N/A,N/A,Injured
 2021-11-13,Alabama,Birmingham,416 24th St S,male,Officer Darius Gamble,Injured
 2021-11-09,Colorado,Denver,W Kentucky Ave and S Knox Ct,male,N/A,Injured
 2021-11-08,Texas,Dallas,9857 Audelia Rd,male,N/A,Injured
@@ -196,8 +190,6 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2021-08-11,Indiana,Indianapolis,7545 Bayview Club Dr,male,Officer,Injured
 2021-08-07,Illinois,Chicago,6300 block of S Bell Ave,male,Officer Carlos Yanez Jr,Injured
 2021-07-30,New York,Bronx,E 169th St and Lyman Pl,male,NYPD Lt,Injured
-2021-07-29,Pennsylvania,Pittsburgh,239 Gilkeson Rd,male,Officer,Injured
-2021-07-29,Pennsylvania,Pittsburgh,239 Gilkeson Rd,male,Officer Rob Barnes,Injured
 2021-07-14,Texas,Houston,1504 Ben Taub Loop,N/A,Deputy,Injured
 2021-07-14,New Mexico,Albuquerque,8616 Northeastern Blvd NE,male,Agent,Injured
 2021-07-13,Maryland,Baltimore,6901 Security Blvd,N/A,Officer,Injured
@@ -262,7 +254,6 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2020-12-11,New Mexico,Albuquerque,2700 block of 12th St NW,male,N/A,Injured
 2020-12-04,New York,Bronx,4085 Ely Ave,N/A,N/A,Injured
 2020-12-04,New York,Bronx,4085 Ely Ave,N/A,N/A,Injured
-2020-12-04,New York,Bronx,4085 Ely Ave,N/A,N/A,Injured
 2020-12-03,Missouri,Saint Louis,1600 block of N Broadway,male,N/A,Injured
 2020-11-27,Tennessee,Memphis,Winchester Rd and Ridgeway Rd,N/A,N/A,Injured
 2020-11-24,New York,Corona (Queens),145-86 179th St,male,Officer Joseph Murphy,Injured
@@ -284,7 +275,6 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2020-08-29,Missouri,Saint Louis,3700 block of Hartford St,male,Officer Arlando Bailey,Injured
 2020-08-05,Illinois,Chicago,1306 S Lawndale Ave,male,N/A,Injured
 2020-08-05,California,Los Angeles,1100 block of N Wilton Place,female,N/A,Injured
-2020-08-04,Kansas,Kansas City,1900 block of N Allis St,N/A,N/A,Injured
 2020-08-02,Missouri,Saint Louis,Convention Plaza and N 10th St,male,Officer,Injured
 2020-07-30,Illinois,Chicago,5555 W Grand Ave,male,Officer Jason Cloherty,Injured
 2020-07-30,Illinois,Chicago,5555 W Grand Ave,male,Officer James Rowe,Injured
@@ -298,11 +288,9 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2020-07-10,Ohio,Columbus,2545 Petzinger Rd,N/A,Sontino Williams,Injured
 2020-07-07,Texas,Houston,13875 Ella Blvd,male,Deputy Christopher Hendrix,Injured
 2020-07-02,Missouri,Kansas City,3051 Van Brunt Blvd,male,Officer,Injured
-2020-07-02,Missouri,Kansas City,Independence Ave and Hardesty Ave,N/A,N/A,Injured
-2020-07-02,Missouri,Kansas City,Independence Ave and Hardesty Ave,female,Officer,Injured
+2020-07-02,Missouri,Kansas City,Independence Ave and Hardesty Ave,male,N/A,Injured
 2020-06-27,Ohio,Columbus,Aviator Ave,N/A,Officer,Injured
 2020-06-25,Georgia,Atlanta,Riverbend Club Drive SE,male,Officer,Injured
-2020-06-18,Pennsylvania,Pittsburgh,5th Ave and Marion St,male,Special Agent,Injured
 2020-06-15,Illinois,Chicago,5000 block of S Martin Luther King Dr,male,N/A,Injured
 2020-06-14,Maryland,Baltimore,2300 block of Winchester St,male,Officer Brian Burke,Injured
 2020-06-08,Illinois,Chicago,500 block of N Leamington Ave,male,N/A,Injured
@@ -337,7 +325,6 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2020-03-13,Kentucky,Louisville,3003 Springfield Dr,male,Sgt. Jonathan Mattingly,Injured
 2020-03-11,Alabama,Birmingham,1200 block of Tuscaloosa Ave,male,Officer Anthony Wheeler,Injured
 2020-03-06,Michigan,Detroit,1301 3rd Ave,female,Officer,Injured
-2020-03-05,Pennsylvania,Pittsburgh,200 block of E Ohio St,N/A,Officer,Injured
 2020-02-16,Missouri,Saint Louis,10741 W Florissant Ave,male,Officer,Injured
 2020-02-13,District of Columbia,Washington,700 block of Varnum St NW,N/A,N/A,Injured
 2020-02-12,Maryland,Baltimore,5900 block of Radecke Ave,N/A,Detective Robert Adams,Injured
@@ -362,7 +349,6 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2019-08-14,New York,Corona (Queens),133-25 Francis Lewis Blvd,male,Ofc. Robert Echeverria,Killed
 2019-07-27,New York,Staten Island,62A Francine Ct,male,Sgt. Terrance McAvoy,Killed
 2019-07-27,California,Los Angeles,Avenue 26 and Humboldt St,male,Officer Juan Jose Diaz,Killed
-2019-07-14,Pennsylvania,Pittsburgh,7300 block of Monticello St,male,Officer Calvin Hall,Killed
 2019-06-23,Missouri,Saint Louis,6250 Page Ave,male,Officer Michael Langsdorf,Killed
 2019-06-14,New York,Staten Island,65 Wilcox St,male,Officer Mike Caddy,Killed
 2019-06-07,Pennsylvania,Philadelphia,100 Broad St,male,Deputy Dante Austin,Killed
@@ -402,7 +388,6 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2019-08-08,Maryland,Baltimore,5600 block of Summerfield Ave,male,Sgt. Isaac Carrington,Injured
 2019-07-26,Kentucky,Louisville,36th St and W Broadway,male,Officer Noah Straman,Injured
 2019-07-24,New York,Bronx,Rodman's Neck Rd,male,N/A,Injured
-2019-07-23,Pennsylvania,Pittsburgh,4717 McKnight Rd,male,Officer,Injured
 2019-07-20,Nevada,Las Vegas,3900 block of S Las Vegas Blvd,male,Officer,Injured
 2019-07-17,Alabama,Birmingham,25th St and 5th Ave N,male,Officer Cullen Stafford,Injured
 2019-07-15,Maryland,Baltimore,2117 Maryland Ave,male,Sgt. Billy Shiflett,Injured
@@ -435,7 +420,6 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2019-01-17,Pennsylvania,Philadelphia,2100 block of N 5th St,male,N/A,Injured
 2019-01-13,Alabama,Birmingham,700 block of 5th Ave N,male,Officer Lucas Allums,Injured
 2019-01-04,Louisiana,New Orleans,2300 block of Orleans Ave,male,Officer,Injured
-2018-12-16,Kansas,Kansas City,400 block of N 18th St,"","",Injured
 2018-12-13,New York,Brooklyn,2860 W 23rd St,"","",Injured
 2018-12-09,New York,Staten Island,30 Bridge Court,"","",Injured
 2018-12-08,New York,Brooklyn,9302 Ave N,"","",Injured
@@ -460,7 +444,6 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2018-07-15,New Mexico,Albuquerque,I-25,"","",Injured
 2018-07-06,New York,Brooklyn,Decatur St and Tompkins Ave,"","",Injured
 2018-06-29,Ohio,Columbus,1543 Cordell Ave,"","",Injured
-2018-06-07,Nebraska,Columbus,3410 16th St,"","",Injured
 2018-06-06,Ohio,Columbus,4215 Clime Rd,"","",Injured
 2018-05-26,Illinois,Chicago,N Noble St and W Chicago Ave,"","",Injured
 2018-05-23,Georgia,Atlanta,180 Southside Industrial Pkwy,"","",Injured
@@ -471,15 +454,17 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2018-12-11,Texas,Houston,5013 Hartwick Rd,male,Sergeant James Smejkal,Injured
 2018-11-19,Illinois,Chicago,2525 S Michigan Ave,male,Officer Samuel Jimenez,Killed
 2018-10-28,Colorado,Denver,4800 block of W 10th Ave,male,Officer,Injured
-2018-10-27,Pennsylvania,Pittsburgh,5898 Wilkins Ave,male,Officer Daniel Mead,Injured
-2018-10-27,Pennsylvania,Pittsburgh,5898 Wilkins Ave,male,Officer Anthony Burke,Injured
-2018-10-27,Pennsylvania,Pittsburgh,5898 Wilkins Ave,male,Officer Timothy Matson,Injured
-2018-10-27,Pennsylvania,Pittsburgh,5898 Wilkins Ave,male,Officer Michael Smigda,Injured
 2018-08-06,Pennsylvania,Philadelphia,4800 block of Knox St,male,Officer Jaison Potts,Injured
 2018-07-15,Missouri,Kansas City,8300 E US Hwy 40,N/A,Officer,Injured
 2018-07-15,Missouri,Kansas City,8300 E US Hwy 40,N/A,Officer,Injured
 2018-07-15,Missouri,Kansas City,8300 E US Hwy 40,N/A,Officer,Injured
-2018-06-15,Kansas,Kansas City,800 N 7th St,male,Deputy Patrick Rohrer,Killed
-2018-06-15,Kansas,Kansas City,800 N 7th St,female,Deputy Theresa King,Killed
 2018-06-13,Colorado,Denver,551 E Colfax Ave,male,Officer Travis Lloyd,Injured
 2021-08-19,New Mexico,Albuquerque,1105 Juan Tabo Blvd NE,male,Officer Harry Gunderson,Injured
+2021-03-15,Illinois,Chicago,8900 block of S Stony Island Avenue,male,Officer,Injured
+2021-12-16,New York,Corona (Queens),56-15 Northern Blvd,male,Lieutenant,Injured
+2019-01-28,Texas,Houston,7815 Harding St,N/A,Officer,Injured
+2019-01-28,Texas,Houston,7815 Harding St,male,Officer Gerald Goines,Injured
+2019-01-28,Texas,Houston,7815 Harding St,male,Officer Steven Bryant,Injured
+2022-08-11,Nevada,Las Vegas,"","",K9 Officer,Injured
+2022-08-11,Nevada,Las Vegas,"","",Officer,Injured
+2022-08-11,Nevada,Las Vegas,"","",Officer,Injured
