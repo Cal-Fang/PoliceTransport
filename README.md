@@ -144,13 +144,13 @@ The script used for this step is named **02_sort.R**. The result is saved as *Ab
 
 ## STEP 3 Collect the transport mode information
 Since GVA does not record what transport mode was used to carry each police to ER/hospitals, I copy-pasted the *Above10_2018_2023.csv* into [this Google Sheets document](https://docs.google.com/spreadsheets/d/1w_BaFUAuatmUQBt3qtRBzhm9tTDV4B9lRjTGTq79bAg/edit?usp=sharing), and then used following resources to manually record such information. 
-- GVA collected some news link for each case on there website which is a good starting point;
-- If the news collected by GVA did not disclose the transport mode, I would google the keyword to look for other (especially later reports);
-- For each police-engaged case, police department usually would have media brief. The videos are usually uploaded online for transparency. Sometimes Chiefs would disclose how injured/killed officers were transported.
+- GVA collected some news links for each case on their website which is a good starting point;
+- If the news collected by GVA did not disclose the transport mode, I would google the keyword to look for others (especially later reports);
+- For each police-engaged case, the police department usually would have a media brief. The videos are usually uploaded online for transparency. Sometimes Chiefs would disclose how injured/killed officers were transported.
 
 All transport mode information was stored in the new Response.Type column. Two extra columns, "Detail" and "News.Source", were also created. 
 - For all cases where the transport mode used was identified, I documented the source in the "News.Source" column. 
-- I also marked all suicide case in the "Detail" column since these cases are fundamentally different in terms of the response mechanism and should be excluded from our analysis.
+- I also marked all suicide cases in the "Detail" column since these cases are fundamentally different in terms of the response mechanism and should be excluded from our analysis.
 
 
 # STEP 4 Analysis
@@ -215,12 +215,4 @@ This left us with 444 cases. I made two pivot tables with these 444 cases:
 | San Antonio, TX  |     0.3333     |             |    0.1111    |          0.5556           |
 | Washington, DC   |     0.2857     |   0.2143    |    0.3571    |          0.1429           |
 
-
-
-
-
-
-
-
-
-
+The script used for this step is named **04_analysis.R**. The results are saved as *pivot1.csv* and *pivot2.csv*.
