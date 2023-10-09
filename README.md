@@ -1,4 +1,4 @@
-# homeboydropoff
+# Homeboy Drop Off
 
 ## STEP 0 Retrieve needed data from GVA
 We would need to download historical records from the [Gun Violence Archive](https://www.gunviolencearchive.org/). For our analysis, we downloaded the following files:
