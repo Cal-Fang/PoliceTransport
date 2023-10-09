@@ -166,4 +166,4 @@ This left us with 382 cases. Using these cases, I made some pivot tables trying 
 2. Is there any trend through time?
 
 
-The script used for this step is named **04_analysis.Rmd**. The results are in this [pdf file](https://github.com/Cal-Fang/homeboydropoff/blob/main/pivottables.pdf).
+The script used for this step is named **04_analysis.Rmd**. The results are in the [pdf file](https://github.com/Cal-Fang/homeboydropoff/blob/main/pivottables.pdf) in this repository named as *pivottables.pdf*.
