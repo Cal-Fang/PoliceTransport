@@ -1,8 +1,11 @@
 ---
-title: "Pivot Tables for cities with more than 10 police shot through 04/20/2018 to 04/20/2023"
+title: "Pivot Tables"
 author: "Cal Chengqi Fang"
 date: "2023-06-29"
-output: html_document
+output: pdf_document
+header-includes:
+  - \setlength{\parindent}{2.5em}
+  - \setlength{\parskip}{0em}
 ---
 
 ```{r setup, include=FALSE}

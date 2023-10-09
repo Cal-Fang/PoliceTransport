@@ -140,6 +140,8 @@ After making these changes accordingly, I created the set for transport mode inf
 | Texas                | San Antonio          |        10        |
 | Wisconsin            | Milwaukee            |        16        |
 
+Here, only State-City.Or.County pairs that had more than 10 police injured or killed were kept for two concerns: 1) when a city had very little police shot in five years, we are not so sure whether the number is truly showing a pattern or just a random number. We arbitrarily used 10 as the threshold for this; 2) More importantly, it consumes a lot of time to do the media search and there were in total around 2000 police shot through these five years. This project has only one analyst and it is simply not realistic to collect transport mode information for all cases.
+
 The script used for this step is named **02_sort.R**. The result is saved as *Above10_2018_2023.csv*.
 
 ## STEP 3 Collect the transport mode information
@@ -154,65 +156,14 @@ All transport mode information was stored in the new Response.Type column. Two e
 
 
 # STEP 4 Analysis
-After adding transport information, I did two more things:
+After adding transport information, I did three more things:
 1. Replaced five NYC boroughs with NYC since we would want to analyze them as a whole;
-2. Dropped suicide case since these cases' emergency response differs from occupation gunshot scenarios.
+2. Dropped suicide case since these cases' emergency response differs from occupation gunshot scenarios;
+3. Dropped cities where there are more than 30% cases for which we cannot identify the transport mode information.
 
-This left us with 444 cases. I made two pivot tables with these 444 cases:
-### Pivot table in count
-|                  | Ambulance | Others | Unknown | Police Self-transfer |
-|------------------|:---------:|:------:|:-------:|:--------------------:|
-| Albuquerque, NM  |     6     |   1    |    3    |                      |
-| Atlanta, GA      |     4     |        |         |          9           |
-| Baltimore, MD    |    10     |        |    2    |          5           |
-| Birmingham, AL   |     3     |        |    1    |          9           |
-| Chicago, IL      |    12     |   1    |    5    |          30          |
-| Columbus, OH     |     8     |        |    2    |          3           |
-| Dallas, TX       |     4     |        |    4    |          2           |
-| Denver, CO       |     5     |        |    2    |          3           |
-| Detroit, MI      |     3     |        |    2    |          6           |
-| Houston, TX      |    22     |   5    |   12    |          1           |
-| Indianapolis, IN |     4     |        |    2    |          4           |
-| Kansas City, MO  |     6     |        |    2    |          6           |
-| Las Vegas, NV    |     4     |   1    |    4    |          6           |
-| Los Angeles, CA  |     9     |   1    |    1    |          6           |
-| Louisville, KY   |     6     |        |    1    |          5           |
-| Memphis, TN      |     9     |        |    3    |          3           |
-| Milwaukee, WI    |     9     |        |    5    |          2           |
-| NYC, NY          |    14     |        |    4    |          25          |
-| New Orleans, LA  |    10     |        |         |          2           |
-| Philadelphia, PA |     1     |        |    4    |          27          |
-| Phoenix, AZ      |    17     |        |    6    |          5           |
-| Saint Louis, MO  |     1     |   1    |   10    |          10          |
-| San Antonio, TX  |     3     |        |    1    |          5           |
-| Washington, DC   |     4     |   3    |    5    |          2           |
+This left us with 382 cases. Using these cases, I made some pivot tables trying to answer two descriptive questions:
+1. How were police transported in these cities?
+2. Is there any trend through time?
 
-### Pivot table in proportion 
-|                  | Ambulance_prop | Others_prop | Unknown_prop | Police Self-transfer_prop |
-|------------------|:--------------:|:-----------:|:------------:|:-------------------------:|
-| Albuquerque, NM  |      0.6       |     0.1     |     0.3      |                           |
-| Atlanta, GA      |     0.3077     |             |              |          0.6923           |
-| Baltimore, MD    |     0.5882     |             |    0.1176    |          0.2941           |
-| Birmingham, AL   |     0.2308     |             |    0.0769    |          0.6923           |
-| Chicago, IL      |      0.25      |   0.0208    |    0.1042    |           0.625           |
-| Columbus, OH     |     0.6154     |             |    0.1538    |          0.2308           |
-| Dallas, TX       |      0.4       |             |     0.4      |            0.2            |
-| Denver, CO       |      0.5       |             |     0.2      |            0.3            |
-| Detroit, MI      |     0.2727     |             |    0.1818    |          0.5455           |
-| Houston, TX      |      0.55      |    0.125    |     0.3      |           0.025           |
-| Indianapolis, IN |      0.4       |             |     0.2      |            0.4            |
-| Kansas City, MO  |     0.4286     |             |    0.1429    |          0.4286           |
-| Las Vegas, NV    |     0.2667     |   0.0667    |    0.2667    |            0.4            |
-| Los Angeles, CA  |     0.5294     |   0.0588    |    0.0588    |          0.3529           |
-| Louisville, KY   |      0.5       |             |    0.0833    |          0.4167           |
-| Memphis, TN      |      0.6       |             |     0.2      |            0.2            |
-| Milwaukee, WI    |     0.5625     |             |    0.3125    |           0.125           |
-| NYC, NY          |     0.3256     |             |    0.093     |          0.5814           |
-| New Orleans, LA  |     0.8333     |             |              |          0.1667           |
-| Philadelphia, PA |     0.0312     |             |    0.125     |          0.8438           |
-| Phoenix, AZ      |     0.6071     |             |    0.2143    |          0.1786           |
-| Saint Louis, MO  |     0.0455     |   0.0455    |    0.4545    |          0.4545           |
-| San Antonio, TX  |     0.3333     |             |    0.1111    |          0.5556           |
-| Washington, DC   |     0.2857     |   0.2143    |    0.3571    |          0.1429           |
 
-The script used for this step is named **04_analysis.R**. The results are saved as *pivot1.csv* and *pivot2.csv*.
+The script used for this step is named **04_analysis.Rmd**. The results are in this [pdf file](https://github.com/Cal-Fang/homeboydropoff/blob/main/04_analysis.pdf).
