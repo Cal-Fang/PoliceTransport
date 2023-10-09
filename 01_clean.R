@@ -125,11 +125,11 @@ A2018 <- A2018_1K1I %>%
 # STEP 5
 # Combine all data.table to obtain a large data.table for online searching
 all_2018_2023 <- rbindlist(list(K2023, I2023,
-                             K2022, I2022,
-                             K2021, I2021,
-                             K2020, I2020,
-                             K2019, I2019,
-                             A2018), use.names=TRUE)
+                                K2022, I2022,
+                                K2021, I2021,
+                                K2020, I2020,
+                                K2019, I2019,
+                                A2018), use.names=TRUE)
 
 
 # STEP 6

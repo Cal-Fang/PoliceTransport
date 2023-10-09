@@ -1,0 +1,109 @@
+---
+title: "Pivot Tables for cities with more than 10 police shot through 04/20/2018 to 04/20/2023"
+author: "Cal Chengqi Fang"
+date: "2023-06-29"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+rm(list = ls())
+
+require(tidyverse)
+require(data.table)
+require(googlesheets4)
+```
+
+```{r data prep, include=FALSE}
+# Read google sheets data into R
+final <- read_sheet('1w_BaFUAuatmUQBt3qtRBzhm9tTDV4B9lRjTGTq79bAg')
+
+# Replace NYC boroughs with NYC
+final$City.Or.County[final$City.Or.County=="Bronx"] <- "NYC"
+final$City.Or.County[final$City.Or.County=="Brooklyn"] <- "NYC"
+final$City.Or.County[final$City.Or.County=="Corona (Queens)"] <- "NYC"
+final$City.Or.County[final$City.Or.County=="New York (Manhattan)"] <- "NYC"
+final$City.Or.County[final$City.Or.County=="Staten Island"] <- "NYC"
+
+# Combine city name and state name
+final$GEO <- str_c(final$City.Or.County, ", ", append(state.abb, "DC")[match(final$State, append(state.name, "District of Columbia"))])
+
+# Drop suicide case
+final <- final %>% 
+  filter(Detail != "Suicide" | is.na(Detail))
+
+# Drop cities with higher than 30% Unknown
+temp <- final %>% 
+  group_by(GEO, Response.Type) %>% 
+  summarise(Count = n()) %>%
+  pivot_wider(names_from = Response.Type, values_from = Count) %>% 
+  mutate(Total = sum(c(Unknown, `Police Self-transfer`, Others, Ambulance), na.rm=TRUE)) %>% 
+  filter(Unknown <= 0.30*Total | is.na(Unknown))
+
+final <- final %>% 
+  filter(GEO %in% temp$GEO) %>% 
+  mutate(Year = format(Incident.Date, "%Y")) %>% 
+  mutate(across(all_of(c("GEO","Response.Type")), as.factor))
+```
+
+# Question 1: What data are we using to create these tables?
+
+After cleaning operations detailed in the [GitHub Page]() of this project, STEP 1 and STEP 2, we were left with 469 police shot in cities with more than 10 police shot from April 20th, 2018 to April 20th, 2023. 
+
+We then obtained the information of how these police were transported to medical facilities through media research using the news, police press articles, and/or videos. After that, as in suicide cases, the EMS team usually were dispatched at the same time and oftentimes the officer were found dead so there is no need to transport the officer, we also dropped all suicide cases. ***This left us with 444 police shot.***        
+
+We then filtered out all cities that have more than 25% cases that we can not find the information of how officers were transported. ***This left us with 382 police shot.*** 
+
+```{r table1, message=FALSE, echo=FALSE}
+final %>% 
+  group_by(GEO, Year) %>% 
+  summarise(Count = n()) %>%
+  pivot_wider(names_from = Year, values_from = Count) %>% 
+  mutate(Total = sum(c(`2018`, `2019`, `2020`, `2021`, `2022`, `2023`), na.rm=TRUE)) %>% 
+  knitr::kable()
+```
+\newpage
+# Question 2: How were police transported in these cities?
+```{r table2, message=FALSE, echo=FALSE}
+final %>% 
+  group_by(GEO, Response.Type) %>% 
+  summarise(Count = n()) %>% 
+  pivot_wider(names_from = Response.Type,
+              values_from = Count) %>% 
+  ungroup() %>% 
+  mutate(Total = rowSums(select_if(., is.numeric), na.rm=TRUE)) %>% 
+  knitr::kable()
+
+final %>% 
+  group_by(GEO, Response.Type) %>% 
+  summarise(Count = n()) %>% 
+  mutate(Prop = round(Count / sum(Count), 2)) %>% 
+  select(-Count) %>% 
+  pivot_wider(names_from = Response.Type,
+              values_from = Prop) %>% 
+  knitr::kable()
+```
+\newpage
+# Question 3: Is there any trend through time?
+```{r table3, message=FALSE, echo=FALSE}
+final %>% 
+  group_by(Year, Response.Type) %>% 
+  summarise(Count = n()) %>% 
+  pivot_wider(names_from = Response.Type,
+              values_from = Count) %>% 
+  ungroup() %>% 
+  mutate(Total = rowSums(select_if(., is.numeric), na.rm=TRUE)) %>% 
+  knitr::kable()
+
+final %>% 
+  group_by(Year, Response.Type) %>% 
+  summarise(Count = n()) %>% 
+  mutate(Prop = round(Count / sum(Count), 2)) %>% 
+  select(-Count) %>% 
+  pivot_wider(names_from = Response.Type,
+              values_from = Prop) %>% 
+  knitr::kable()
+```
+
+
+
