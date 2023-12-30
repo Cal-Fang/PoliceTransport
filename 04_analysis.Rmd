@@ -6,6 +6,9 @@ output: pdf_document
 header-includes:
   - \setlength{\parindent}{2.5em}
   - \setlength{\parskip}{0em}
+knit: >
+  (function(inputFile, encoding){rmarkdown::render(inputFile, encoding=encoding, output_file="pivottables.pdf")}) 
+---
 ---
 
 ```{r setup, include=FALSE}
