@@ -22,6 +22,7 @@ We would need to download historical records from the [Gun Violence Archive](htt
 
 The script used for this step is named **00_read.R**.
 
+
 ## STEP 1 Clean and combine raw data files
 I first dropped the "Operations" and "Participant.Age.Group" columns from records of 2019-2023. And then I did some time-wise cleaning and case-wise cleaning.
 ### Time-wise cleaning  
@@ -165,5 +166,4 @@ This left us with 382 cases. Using these cases, I made some pivot tables trying 
 1. How were police transported in these cities?
 2. Is there any trend through time?
 
-
-The script used for this step is named **04_analysis.Rmd**. The results are in the [pdf file](https://github.com/Cal-Fang/homeboydropoff/blob/main/pivottables.pdf) in this repository named as *pivottables.pdf*.
+The script used for this step is named **04_analysis.Rmd**. It would knit out a .pdf file named [*pivottables.pdf*](https://github.com/Cal-Fang/homeboydropoff/blob/main/pivottables.pdf).
