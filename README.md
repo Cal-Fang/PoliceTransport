@@ -2,6 +2,9 @@
 
 ## STEP 0 Retrieve needed data from GVA
 We would need to download historical records from the [Gun Violence Archive](https://www.gunviolencearchive.org/). For our analysis, we downloaded the following files:
+- 2024
+  - [OFFICER INVOLVED OFFICER KILLED IN 2024](https://www.gunviolencearchive.org/reports/officer-killed?year=2024)
+  - [OFFICER INVOLVED OFFICER INJURED IN 2024](https://www.gunviolencearchive.org/reports/officer-shot?year=2024)
 - 2023
   - [OFFICER INVOLVED OFFICER KILLED IN 2023](https://www.gunviolencearchive.org/reports/officer-killed?year=2023)
   - [OFFICER INVOLVED OFFICER INJURED IN 2023](https://www.gunviolencearchive.org/reports/officer-shot?year=2023)
@@ -20,7 +23,9 @@ We would need to download historical records from the [Gun Violence Archive](htt
 - 2018
   - [OFFICER SHOT OR KILLED](https://www.gunviolencearchive.org/reports/officer-shot-killed?year=2018)
 
-The script used for this step is named **00_read.R**.
+The script used for this step is named **00_read.R**. 
+
+This script used the download link generated from the GVA website to download the data sets mentioned above and stored them as the *recordsRaw.Rdata* file. This script works smoothly as of July 10th, 2024. However, since download links can change, become unavailable, or require different methods of access in the future, if researchers trying to reproduce this research are experiencing difficulties running it, I recommend using the links above and manually downloading and reading the files. As long as the files are named in the same fashion as detailed in **00_read.R**, doing so should not affect the following steps.
 
 
 ## STEP 1 Clean and combine raw data files
