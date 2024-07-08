@@ -4,6 +4,7 @@
 
 # Session Data files
 *.RData
+!recordsRaw.Rdata
 *.RDataTmp
 
 # Raw Data files (stored in .dta and .csv format)
@@ -11,7 +12,6 @@
 *.csv
 *.xlsx
 *.txt
-!cpi2024.csv
 
 # User-specific files
 *.Rproj
