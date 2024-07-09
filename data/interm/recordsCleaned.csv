@@ -1,23 +1,454 @@
 Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,Outcome
-2023-04-15,Minnesota,Cyrus,400 block of N Stromen St,male,Deputy Joshua Owen,Killed
+2024-04-29,North Carolina,Charlotte,5525 Galway Dr,N/A,Marshal Thomas Weeks,Killed
+2024-04-29,North Carolina,Charlotte,5525 Galway Dr,male,Officer Sam Poloche,Killed
+2024-04-29,North Carolina,Charlotte,5525 Galway Dr,male,Officer William Alden Elliott,Killed
+2024-04-29,North Carolina,Charlotte,5525 Galway Dr,male,Officer Joshua Eyer,Killed
+2024-04-23,Louisiana,Opelousas,1100 block of Park Ave,female,Deputy Chanterria Albert,Killed
+2024-04-21,Illinois,Chicago,3100 block of W 56th St,male,Luis M. Huesca,Killed
+2024-04-20,Texas,Corpus Christi,5401 Burnham Dr,male,Officer Kyle Hicks,Killed
+2024-04-20,Idaho,Boise,W Overland Rd and S Raymond St,male,Deputy Tobin Bolter,Killed
+2024-04-17,Louisiana,Lafayette,200 block of W Convent St,male,N/A,Killed
+2024-04-14,New York,Liverpool,4945 Darien Dr,male,Lt Michael Hoosock,Killed
+2024-04-14,New York,Liverpool,4945 Darien Dr,male,Ofc Michael Jensen,Killed
+2024-04-12,Tennessee,Memphis,Horn Lake Rd and Charter Ave,male,Officer Joseph McKinney,Killed
+2024-04-09,Ohio,Orient,11781 State Rte 762,male,Lt. Rodney Osborne,Killed
+2024-03-25,New York,Corona (Queens),19-19 Mott Ave,male,Officer Jonathan Diller,Killed
+2024-03-15,New Mexico,Tucumcari,I-40 and CR AY,male,Officer Justin Hare,Killed
+2024-02-29,Missouri,Independence,1111 N Elsea Smith Rd,male,Officer Cody Allen,Killed
+2024-02-23,Oklahoma,Achille,204 W Main St,male,Officer Rick Milner,Killed
+2024-02-18,Minnesota,Burnsville,12605 33rd Ave,male,Officer Paul Elmstrand,Killed
+2024-02-18,Minnesota,Burnsville,12605 33rd Ave,male,Officer Matthew Ruge,Killed
+2024-02-18,Minnesota,Burnsville,12605 33rd Ave,male,Firefighter Adam Finseth,Killed
+2024-02-15,Alabama,Fultondale,2980 Hawkins Ln,male,Deputy Steven Earl Sims II,Killed
+2024-02-13,Wyoming,Sheridan,5th St and Val Vista St,male,Sgt Nevada Krinkee,Killed
+2024-02-10,Ohio,Grafton,2075  Avon Belden Rd,female,Officer,Killed
+2024-02-08,Tennessee,Maryville,4900 block of Sevierville Rd,male,Deputy Greg McCowan,Killed
+2024-01-31,Florida,Sebring,400 S Eucalyptus St,male,Deputy Paul Robitaille,Killed
+2024-01-31,Kentucky,Louisville,N/A,male,"Deputy Marion """"Scott"""" Fawbush",Killed
+2024-01-23,New Jersey,Clifton,489 Hazel St,male,Sheriff Richard Berdnik,Killed
+2024-01-04,Mississippi,Lucedale,12298 US-98,male,Deputy Jeremy Malone,Killed
+2024-01-02,Arkansas,Mountain View,300 block of Sawmill Rd,male,Deputy Justin Smith,Killed
+2024-04-29,North Carolina,Charlotte,5525 Galway Dr,male,Cpl Casey Hoover,Injured
+2024-04-29,North Carolina,Charlotte,5525 Galway Dr,male,Officer Christopher Tolley,Injured
+2024-04-29,North Carolina,Charlotte,5525 Galway Dr,male,Officer Michael Giglio,Injured
+2024-04-29,North Carolina,Charlotte,5525 Galway Dr,male,Officer Jack Blowers,Injured
+2024-04-28,Louisiana,Kenner,700 block of Farm Ave,N/A,Officer,Injured
+2024-04-28,Louisiana,Kenner,700 block of Farm Ave,N/A,Officer,Injured
+2024-04-28,Louisiana,Kenner,700 block of Farm Ave,N/A,Officer,Injured
+2024-04-27,Utah,Vernal,750 N 400 E,male,Sergeant Chad Watt,Injured
+2024-04-27,South Carolina,Allendale,Raysor Rd and Carroll St,male,Sgt James Hall Jr,Injured
+2024-04-27,Florida,Lakeland,7036 Green Rd,male,Deputy Sheriff Craig Smith,Injured
+2024-04-27,Florida,Lakeland,7036 Green Rd,male,Lt. Chad Anderson,Injured
+2024-04-22,California,West Covina,E Garvey Ave N and Barranca St,male,Deputy Samuel Aispuro,Injured
+2024-04-21,California,Santa Clarita,25000 block of Alicante Dr,male,N/A,Injured
+2024-04-20,North Carolina,Mooresville,113 Northampton Dr,female,Officer,Injured
+2024-04-20,Louisiana,Bossier City,N/A,male,N/A,Injured
+2024-04-18,California,Torrance,4824 Torrance Blvd,male,Officer,Injured
+2024-04-17,Washington,Seattle (Tukwila),16500 Southcenter Pkwy,N/A,Police Officer,Injured
+2024-04-17,New York,Albany,N Main Ave and Western Ave,male,Ofc. Jonathan Damphier,Injured
+2024-04-16,Georgia,Statesboro,1400 Statesboro Pl Cir,male,Advanced Patrol Officer Joey Deloach,Injured
+2024-04-15,New Jersey,Montclair,100 block of Forest St,male,Officer Michael J Medrano,Injured
+2024-04-14,Florida,Tampa,4824 Ridge Point Dr,male,Deputy Kerr Craige,Injured
+2024-04-12,Tennessee,Memphis,Horn Lake Rd and Charter Ave,N/A,Officer,Injured
+2024-04-12,Tennessee,Memphis,Horn Lake Rd and Charter Ave,N/A,Officer,Injured
+2024-04-10,Florida,Homestead,11700 SW 304th St,female,N/A,Injured
+2024-04-10,Minnesota,Minnetonka,13419 E Crestwood Dr,male,Deputy Christopher Heihn,Injured
+2024-04-10,Minnesota,Minnetonka,13419 E Crestwood Dr,N/A,Deputy Keith McNamara,Injured
+2024-04-10,Michigan,Lansing,2009 W Holmes Rd,female,Ofc Caitlin Markey,Injured
+2024-04-10,Michigan,Lansing,2009 W Holmes Rd,male,Ofc Saleba Moshi,Injured
+2024-04-08,Missouri,Kansas City,E 46th St and S Benton Ave,N/A,N/A,Injured
+2024-04-06,Florida,Miami (Doral),3450 NW 83rd Ave,male,Officer Richard Acevedo,Injured
+2024-04-03,Arizona,Scottsdale,10137 E Osborn Rd,N/A,Officer,Injured
+2024-04-03,Arizona,Scottsdale,10137 E Osborn Rd,N/A,Officer,Injured
+2024-04-03,Arizona,Scottsdale,10137 E Osborn Rd,N/A,Officer,Injured
+2024-04-03,Arizona,Scottsdale,10137 E Osborn Rd,N/A,Officer,Injured
+2024-04-02,Louisiana,Saint Martinville (St Martinvlle),1381 Francois Rd,male,Chief Albert LeBlanc,Injured
+2024-04-02,North Carolina,Greenville,600 Glen Dale Dr,male,Officer Jeremiah Lovelace,Injured
+2024-03-31,Ohio,New Philadelphia,8th St NW and Fair Ave,N/A,Officer,Injured
+2024-03-29,New Jersey,Hammonton,840 Piney Hollow Rd,N/A,Officer,Injured
+2024-03-29,New Jersey,Hammonton,840 Piney Hollow Rd,N/A,Officer,Injured
+2024-03-29,New Jersey,Hammonton,840 Piney Hollow Rd,N/A,Officer,Injured
+2024-03-29,Nevada,Sparks,1400 block of Geenbrae Dr,N/A,Deputy,Injured
+2024-03-29,Nevada,Sparks,1400 block of Geenbrae Dr,N/A,Officer,Injured
+2024-03-29,Nevada,Sparks,1400 block of Geenbrae Dr,N/A,Officer,Injured
+2024-03-29,Arizona,Phoenix,35th Ave and Southern Ave,male,Officer Harold Boswell,Injured
+2024-03-24,Indiana,Indianapolis,9439 E Washington St,male,Officer,Injured
+2024-03-24,Arkansas,North Little Rock,2300 block of AR-161,female,Officer,Injured
+2024-03-21,Illinois,Chicago,3800 block of W Ferdinand St,male,Officer,Injured
+2024-03-21,Florida,Fort Lauderdale,1500 SE 17th St Cswy,male,Officer,Injured
+2024-03-20,Idaho,Boise,1055 N Curtis Rd,N/A,Officer,Injured
+2024-03-20,Idaho,Boise,1055 N Curtis Rd,N/A,Officer,Injured
+2024-03-20,Idaho,Boise,1055 N Curtis Rd,male,Officer,Injured
+2024-03-19,Arkansas,Little Rock,4 Durance Ct,N/A,Officer,Injured
+2024-03-19,Missouri,Forsyth,US-160 and MO-76,N/A,N/A,Injured
+2024-03-18,Kentucky,Monticello,Carters Dock Rd,N/A,Deputy,Injured
+2024-03-18,Massachusetts,Boston,80 Esmond St,male,Officer,Injured
+2024-03-16,Texas,Mcallen,S FM 494 and Old Military Hwy,male,Sergeant Adrian Alejandro,Injured
+2024-03-14,Texas,Dallas,3200 block of Easter Ave,male,Officer Tyler Morris,Injured
+2024-03-11,Illinois,Oak Lawn,10825 Central Ave,male,Security,Injured
+2024-03-11,Arkansas,Hot Springs National Park (Hot Springs),2000 Albert Pike Rd,male,Officer,Injured
+2024-03-10,Mississippi,Perkinston,1534 US-49,male,Deputy,Injured
+2024-03-10,New Mexico,Santa Fe,2400 block of Vereda De Encanto,male,Officer Charles Ovalle,Injured
+2024-03-08,Florida,Tallahassee,2738 N Monroe St,male,Officer,Injured
+2024-03-08,Tennessee,Memphis,I-240 and S Pkwy E,male,II Lieutenant Bobby Johnson,Injured
+2024-03-08,New Jersey,Trenton,1800 block of Orchard Ave,male,Officer Derek Fiabane,Injured
+2024-03-04,California,Santa Rosa,Stony Point Rd and Todd Rd,female,Deputy Giulia Geary,Injured
+2024-03-04,California,Santa Rosa,Stony Point Rd and Todd Rd,male,Deputy James Blount,Injured
+2024-03-03,Illinois,Chicago,900 block of N Harding Ave,N/A,Officer,Injured
+2024-03-02,Florida,Miami Beach,126 Venetian Way,male,Officer Fabio Bolanos,Injured
+2024-03-01,Minnesota,Saint Paul,900 block of Euclid St,male,Deputy Joe Kill,Injured
+2024-03-01,Mississippi,Meridian,MS-493 and N Hills St,male,Deputy,Injured
+2024-02-29,District of Columbia,Washington,410 M St SE,N/A,Officer,Injured
+2024-02-29,Missouri,Independence,1111 N Elsea Smith Rd,N/A,Officer,Injured
+2024-02-29,Missouri,Independence,1111 N Elsea Smith Rd,N/A,Officer,Injured
+2024-02-29,West Virginia,Charleston (Sissonville),Walker Dr and Applehill Ln,male,Deputy S.B. Savilla,Injured
+2024-02-28,Kentucky,Lexington,900 block of Royal Ave,male,Detective Nick Music,Injured
+2024-02-23,Montana,Great Falls,77 Wexford Ln,male,Deputy,Injured
+2024-02-19,Alabama,Mobile,12251 Tanner Williams Rd,male,Officer,Injured
+2024-02-18,Minnesota,Burnsville,12605 33rd Ave,male,Sgt. Adam Medlicott,Injured
+2024-02-17,Pennsylvania,Chester,W 14th and Arbor Dr,male,Detective Steve Byrne,Injured
+2024-02-16,California,Los Angeles,13206 Paxton St,male,Officer,Injured
+2024-02-16,Washington,Kent,Willis St and Washington Ave,male,Trooper Raymond Seaburg,Injured
+2024-02-15,Michigan,Battle Creek,62 E Michigan Ave,female,Officer,Injured
+2024-02-14,District of Columbia,Washington,5000 block of Hanna Pl SE,N/A,Officer,Injured
+2024-02-14,District of Columbia,Washington,5000 block of Hanna Pl SE,N/A,Officer,Injured
+2024-02-14,District of Columbia,Washington,5000 block of Hanna Pl SE,N/A,Officer,Injured
+2024-02-14,Maine,Minot,1089 Woodman Hill Rd,male,Sgt. Randy Williams,Injured
+2024-02-14,Missouri,Saint Louis,3900 block of N Broadway,male,N/A,Injured
+2024-02-13,Illinois,Chillicothe,N Finney St and Matthews St,N/A,N/A,Injured
+2024-02-11,Ohio,Ontario,1000 block of Landings Ct,male,Officer Dylan Bailey,Injured
+2024-02-09,California,Temple City,8838 E Las Tunas Dr,male,Deputy,Injured
+2024-02-09,Ohio,Youngstown,Firnley Ave and Ravenwood Ave,N/A,Officer,Injured
+2024-02-08,Tennessee,Maryville,4900 block of Sevierville Rd,female,Deputy Shelby Eggers,Injured
+2024-02-07,Pennsylvania,Lansdowne (East Lansdowne),58 Lewis Ave,male,Officer David Schiazza,Injured
+2024-02-07,Pennsylvania,Lansdowne (East Lansdowne),58 Lewis Ave,male,Officer John Meehan,Injured
+2024-02-07,Louisiana,Shreveport,8200 Pines Rd,male,Deputy Justin Dunn,Injured
+2024-02-06,Illinois,Granite City,2400 block of Delmar Ave,N/A,Officer,Injured
+2024-02-02,Nevada,Las Vegas,N US-95 and E Charleston Blvd,male,Officer Nardone,Injured
+2024-02-02,Nebraska,Kearney,10 E 31st St,N/A,Officer,Injured
+2024-02-02,Oklahoma,Gracemont,N/A,N/A,Trooper,Injured
+2024-02-02,Oklahoma,Gracemont,N/A,N/A,Trooper,Injured
+2024-02-01,Mississippi,Meridian,510 22nd Ave,male,Officer Detrick Robinson,Injured
+2024-01-31,Pennsylvania,Philadelphia,1300 block of King Pl,male,Officer,Injured
+2024-01-28,Florida,Palm Bay,473 Forgal Ave,male,Officer Stephen Ball,Injured
+2024-01-28,Florida,Palm Bay,473 Forgal Ave,male,Officer Nicholas Franze,Injured
+2024-01-28,Tennessee,Ooltewah,I-75 and US-64,male,Deputy Jake Thomas,Injured
+2024-01-28,Tennessee,Ooltewah,I-75 and US-64,male,Deputy Alfred Girardot,Injured
+2024-01-26,Pennsylvania,Philadelphia,2859 N Mascher St,male,Officer,Injured
+2024-01-24,California,Union City,33370 Dowe Ave,male,Deputy,Injured
+2024-01-24,Missouri,Clarence,MO-151 and US-36 BUS,N/A,Trooper,Injured
+2024-01-23,Indiana,Martinsville,7000 block of Beech Grove Rd,female,Deputy Mallory K. Schwab,Injured
+2024-01-22,Rhode Island,Cranston,18 Slate Hill Dr,N/A,Deputy Sheriff,Injured
+2024-01-20,Massachusetts,Wilbraham,Old Carriage Dr,male,Officer Cameron Prosperi,Injured
+2024-01-18,California,Dinuba,Kern St and I St,male,Officer,Injured
+2024-01-17,Florida,Miami,22291 SW 162nd Ave,male,Officer Mario Bianchi,Injured
+2024-01-17,Florida,Miami,22291 SW 162nd Ave,male,Officer Nikolas Infante,Injured
+2024-01-16,New York,Brooklyn,1969 Bergen St,male,Officer,Injured
+2024-01-16,New York,Brooklyn,1969 Bergen St,male,Officer,Injured
+2024-01-14,New York,Rochester,709 Garfield St,male,Officer Brad Steve,Injured
+2024-01-14,Alabama,Pleasant Grove,400 block of 5th Way,male,Officer,Injured
+2024-01-13,Texas,San Antonio,8200 block of Marbach Rd,male,Officer Domonic Muro,Injured
+2024-01-11,Pennsylvania,Scranton,500 block of Hyde Pk,male,Officer Kyle Gilmartin,Injured
+2024-01-11,Illinois,Quincy,Third St and Elm St,male,Officer Matt Hermsmeier,Injured
+2024-01-11,Michigan,Detroit,12900 block of Burt Rd,male,Officer,Injured
+2024-01-09,Illinois,Chicago,7200 block of S Spaulding Ave,male,N/A,Injured
+2024-01-08,Illinois,Chicago,30 E Oak St,male,Officer,Injured
+2024-01-05,Arizona,Peoria,8425 W Bell Rd,male,Detective,Injured
+2024-01-03,Pennsylvania,Monroeville,Monroeville Blvd and Stonecliffe Dr,male,Police Officer,Injured
+2024-01-02,Wisconsin,Milwaukee,1818 W Fairmount Ave,male,Officer Dan Morrell,Injured
+2024-01-02,Florida,Fort Lauderdale,200 block of NW 22nd St,male,Officer,Injured
+2024-01-01,Hawaii,Honolulu,1400 block of University Ave,N/A,Officer,Injured
+2024-01-01,Hawaii,Honolulu,1400 block of University Ave,N/A,Officer,Injured
+2023-12-31,Nevada,Las Vegas,3000 block of Solento Ln,male,Officer Jake Freeman,Killed
+2023-12-30,North Carolina,Colfax,3202 Sandy Ridge Rd,male,Sergeant Philip Dale Nix,Killed
+2023-12-29,California,Oakland,400 block of Embarcadero,male,Officer Tuan Le,Killed
+2023-12-29,Georgia,Griffin,59 Deason St,male,Sergeant Marc McIntyre,Killed
+2023-12-28,Michigan,Marine City,6100 block of Genaw Rd,male,Court Officer Robert Silver,Killed
+2023-12-26,Mississippi,Meridian,10641 US-80,male,Justin Whipps,Killed
+2023-11-29,Colorado,Cortez,806 S Broadway,male,Sgt Michael Moran,Killed
+2023-11-11,Texas,Austin,9308 Bernoulli Dr,male,Officer Jorge Pastore,Killed
+2023-11-07,California,Los Angeles,N/A,male,Deputy Arturo Atilano-Valadez,Killed
+2023-11-06,California,Stevenson Ranch,N/A,female,Corina Thompson,Killed
+2023-11-06,California,Valencia,27023 Rio Prado Dr,male,Cmdr. Darren Harris,Killed
+2023-11-06,California,Lancaster,5130 W Rela Way,male,Sgt Greg Hovland,Killed
+2023-10-17,Texas,San Benito,1100 block of N Sam Houston Blvd,male,Lieutenant Milton Resendez,Killed
+2023-10-12,Pennsylvania,Philadelphia,8500 Essington Ave,male,Sgt. Richard Carrero Mendez,Killed
+2023-10-01,Tennessee,Knoxville,3200 block of Denver Ln,male,Deputy Sheriff Tucker Blakely,Killed
+2023-09-16,California,Palmdale,750 E Ave Q,male,Deputy Sheriff Ryan Clinkunbroomer,Killed
+2023-09-13,Iowa,Algona,1100 block of S Minnesota St,male,Officer Kevin M. Cram,Killed
+2023-08-06,Kansas,Mission,4700 Lamar Ave,male,Officer Jonah Oswald,Killed
+2023-07-31,Louisiana,Ville Platte,100 block of W Beauregard St,male,Deputy Marshal Barry Giglio,Killed
+2023-07-21,Texas,Rising Star,11317 US-183 Hwy,male,Deputy Sheriff David Bosecker,Killed
+2023-07-15,New Mexico,Alamogordo,100 block of Delaware Ave,male,Officer Anthony Ferguson,Killed
+2023-07-14,North Dakota,Fargo,901 25th St S,male,Officer Jake Wallin,Killed
+2023-07-05,Missouri,Webb City,1509 Kent Dr,male,Jacob A Williams,Killed
+2023-07-05,Georgia,Cordele,1300 block of US-280 W,male,Deputy Sheriff Tyee Michael Browne,Killed
+2023-07-03,Indiana,Tell City,8885 IN-237,female,Sgt. Heather Glenn,Killed
+2023-06-17,Pennsylvania,Mifflintown,400 block of Washington Ave,male,Trooper Jacques Rougeau Jr,Killed
+2023-06-16,Virginia,Nellysford (Wintergreen),Arrowood Ln,male,Officer Mark Christopher “Chris” Wagner II,Killed
+2023-06-02,West Virginia,Matewan,4000 block of Beech Creek Rd,male,Sgt. Cory Maynard,Killed
+2023-06-01,Mississippi,Brandon,50 block of Terrapin Hill Rd N,male,Madison Officer Horren Randy Tyler,Killed
+2023-05-22,Kentucky,Georgetown,I-75,male,Deputy Sheriff Caleb Conley,Killed
+2023-05-11,Louisiana,Denham Springs,2302 S Range Ave,male,Corporal Shawn Kelly,Killed
+2023-05-11,Texas,Cameron,700 block of N Travis Ave,male,Sgt Joshua Lee Clouse,Killed
+2023-05-06,Wisconsin,Glenwood City,WI-128 and Co Rd G,female,Deputy Sheriff Kaitie Leising,Killed
+2023-04-15,Minnesota,Cyrus,400 block of N Stromen St,male,Deputy Sheriff Joshua Owen,Killed
 2023-04-15,Oregon,Nyssa,Locust Ave and N 3rd St,male,Reserve Officer Joseph Johnson,Killed
+2023-04-08,Wisconsin,Cameron,US-8 and County Hwy SS,female,Officer Emily Ann Breidenbach,Killed
 2023-04-08,Wisconsin,Cameron,US-8 and County Hwy SS,male,Officer Hunter Scheel,Killed
-2023-04-08,Wisconsin,Cameron,US-8 and County Hwy SS,female,Officer Emily Breidenbach,Killed
 2023-04-08,New Jersey,Orange,29 Park St,male,Officer,Killed
 2023-03-30,New Jersey,Hackensack,30 Prospect Ave,male,Sgt Jason Y Liaban,Killed
-2023-03-28,Alabama,Huntsville,4600 block of Governors House Dr,male,Officer Garrett Crumby,Killed
+2023-03-28,Alabama,Huntsville,4611 Governors House Dr SW,male,Officer Garrett Crumby,Killed
 2023-03-12,Missouri,Hermann,811 Market St,male,Detective Sgt Mason Griffith,Killed
 2023-03-10,New Jersey,Deptford,Delsea Dr and Cobblestone Ln,male,Officer Robert Shisler,Killed
-2023-03-01,Illinois,Chicago,5258 S Spaulding Ave,male,Officer Andres Vasquez-Lasso,Killed
-2023-02-18,Pennsylvania,Philadelphia,1737 W Montgomery Ave,male,Officer Chris Fitzgerald,Killed
+2023-03-01,Illinois,Chicago,5258 S Spaulding Ave,male,Officer Andres M. Vasquez-Lasso,Killed
+2023-02-18,Pennsylvania,Philadelphia,1737 W Montgomery Ave,male,Officer Christopher D. Fitzgerald,Killed
 2023-02-08,Texas,Laredo,6100 block of Amir Dr,male,Officer Ramiro Paredes Jr,Killed
-2023-02-07,Wisconsin,Milwaukee,S 14th St and W Cleveland Ave,male,Officer Peter E. Jerving,Killed
-2023-02-06,Pennsylvania,Mckeesport,1300 block of Grandview Ave,male,Officer Sean Sluganski,Killed
+2023-02-07,Wisconsin,Milwaukee,S 14th St and W Cleveland Ave,male,Officer Peter E. C. Jerving,Killed
+2023-02-06,Pennsylvania,Mckeesport,1300 block of Grandview Ave,male,Officer Sean Leonard Sluganski,Killed
 2023-02-02,Tennessee,Memphis,5094 Poplar Ave,male,Officer Geoffrey Redd,Killed
 2023-01-31,California,Selma,2600 block of Pine St,male,Officer Gonzalo Carrasco Jr,Killed
 2023-01-20,California,Santa Clarita,26328 Bouquet Canyon Rd,male,Deputy Jonathan Buchan,Killed
-2023-01-13,California,Lake Elsinore,18500 block of Hilldale Ln,male,Deputy Darnell Calhoun,Killed
-2023-01-02,Pennsylvania,Brackenridge,Brackenridge Ave and Morgan St,male,Chief Justin McIntire,Killed
+2023-01-13,California,Lake Elsinore,18500 block of Hilldale Ln,male,Deputy Sheriff Darnell Calhoun,Killed
+2023-01-02,Pennsylvania,Brackenridge,Brackenridge Ave and Morgan St,male,Chief of Police Justin Clark McIntire,Killed
+2023-12-30,New Mexico,Albuquerque,7817 Central Ave SE,male,Officer Zachary Garris,Injured
+2023-12-29,Massachusetts,Fairhaven,125 Sconticut Neck Rd,N/A,Officer,Injured
+2023-12-28,New Jersey,Iselin,Garden State Parkway and Wood Ave,male,Officer,Injured
+2023-12-27,New York,Bronx,1161 E 225th St,male,N/A,Injured
+2023-12-23,Texas,Humble,2402 Cactus Bend Dr,male,Deputy,Injured
+2023-12-21,Arizona,Tucson,9000 block of N Kanawha St,male,Deputy Jaylon McEuen,Injured
+2023-12-21,Arizona,Tucson,9000 block of N Kanawha St,male,Deputy Leonardo Wells,Injured
+2023-12-20,Florida,Deltona,3230 Whitehorse Ct,male,Deputy Ethan Thomas,Injured
+2023-12-20,Colorado,Denver,85 Leona Dr,N/A,Deputy,Injured
+2023-12-17,West Virginia,Martinsburg,117 Connell St,male,Trooper Abraham A. Bean,Injured
+2023-12-17,West Virginia,Martinsburg,117 Connell St,male,Trooper Cadin D. Spessert,Injured
+2023-12-15,Tennessee,Trenton,100 block of Eldad Rd,N/A,Deputy Joshua Johnson,Injured
+2023-12-15,Oregon,Grants Pass,US-199 and Allen Creek Rd,N/A,Officer,Injured
+2023-12-10,Florida,Ocala,9355 SE Maricamp Rd,male,Deputy Kenneth Warner,Injured
+2023-12-10,Pennsylvania,Philadelphia,Frankford Ave and Welsh Rd,male,Officer Christopher Rycek,Injured
+2023-12-10,Pennsylvania,Philadelphia,Frankford Ave and Welsh Rd,male,Officer Harry Glenn,Injured
+2023-12-09,Alabama,Montgomery,Poplar St and Ann St,male,Officer Jonathan Cooper,Injured
+2023-12-07,Minnesota,Saint Paul,Cretin Ave N and Marshall Ave,male,Officer Michael Tschida,Injured
+2023-12-07,California,San Diego,10525 4S Commons Dr,male,Sgt. Anthony Elliott,Injured
+2023-12-05,Texas,Austin,7104 Berkman Dr,male,Officer Joseph Strother,Injured
+2023-12-05,Texas,Austin,7104 Berkman Dr,male,Sgt Val Barnes,Injured
+2023-12-03,Virginia,Roanoke,3038 Melrose Ave NW,female,Officer Lauren Camper,Injured
+2023-12-02,Texas,Houston,7000 block of Harwin Dr,male,Sgt Mauricio Valle,Injured
+2023-12-01,California,Victorville,13660 Bear Valley Rd,male,Sgt Shane Andersen,Injured
+2023-12-01,Connecticut,West Haven,296 Terrace Ave,male,Officer Cody Bacon,Injured
+2023-11-29,Virginia,Richmond,4800 block of Hillbrook Ave,N/A,N/A,Injured
+2023-11-27,Texas,Fort Worth,6454 Brentwood Stair Rd,male,Deputy Brent Brown,Injured
+2023-11-26,Illinois,Bedford Park,6800 S Archer Rd,male,Officer,Injured
+2023-11-24,Mississippi,Meridian,9417 US-495,N/A,Deputy,Injured
+2023-11-24,Pennsylvania,North Versailles,200 block of Arlington Ave,male,Officer Shawley,Injured
+2023-11-22,District of Columbia,Washington,1112 M St NW,male,Officer,Injured
+2023-11-20,Florida,Miami Gardens,NW 154th St and NW 18th Ave,male,N/A,Injured
+2023-11-20,Alabama,Oneonta,Sand Valley Rd,male,Officer Ryan Pinyan,Injured
+2023-11-16,California,Lemoore,23310 Elgin Ave,N/A,Deputy,Injured
+2023-11-16,California,Lemoore,23310 Elgin Ave,N/A,Deputy,Injured
+2023-11-16,Texas,Dallas,9900 block of Adleta Blvd,male,Officer Edgar Morales,Injured
+2023-11-16,South Carolina,Fair Play,Shelor Ferry Rd and Black Bass Rd,male,Corporal Lucas Watts,Injured
+2023-11-14,New York,Yonkers,Saw Mill River Pkwy and Tompkins Ave,male,Ofc. Jorge L. Bencosme,Injured
+2023-11-13,Michigan,Coloma,4300 block of Bundy Rd,male,Officer Drew Wagner,Injured
+2023-11-13,Arizona,Mesa,760 E Broadway Rd,N/A,N/A,Injured
+2023-11-12,Virginia,Petersburg,3400 block of Boisseau St,male,Officer Bruce Foster,Injured
+2023-11-11,Texas,Houston,5201 Southwest Fwy,male,Officer John Gibson,Injured
+2023-11-11,Texas,Austin,9308 Bernoulli Dr,male,Officer,Injured
+2023-11-10,Pennsylvania,Leechburg,PA-356 and Melwood Rd,N/A,Police Officer,Injured
+2023-11-07,North Carolina,Maxton,1265 Old Red Springs Rd,male,Deputy Jonathan Walker,Injured
+2023-11-07,North Carolina,Maxton,1265 Old Red Springs Rd,male,Deputy Kaelin Locklear,Injured
+2023-11-07,Texas,Houston,18800 block of Tomball Pkwy,male,Deputy Christian Villanueva,Injured
+2023-11-06,Indiana,Elkhart,700 block of W Franklin St,male,Corporal Jonathon Carver,Injured
+2023-11-06,Kansas,Wichita,3630 N Maize Rd,N/A,Officer,Injured
+2023-11-06,Illinois,Chicago,7300 block of S Dante Ave,N/A,N/A,Injured
+2023-11-04,Ohio,North Olmsted,28456 Alden Dr,male,N/A,Injured
+2023-11-03,Pennsylvania,Philadelphia,11630 Caroline Rd,female,Officer,Injured
+2023-11-02,South Carolina,Bishopville,Peel Rd,male,N/A,Injured
+2023-11-02,Virginia,Petersburg,Whitehill Dr,male,N/A,Injured
+2023-10-29,Tennessee,Madisonville,Meadow View Ln,N/A,Deputy,Injured
+2023-10-26,Indiana,Indianapolis,2055 Shadeland Ave,male,Officer Nicolas Deem,Injured
+2023-10-26,Ohio,Clayton,300 block of Hacker Rd,male,Officer Cody Cecil,Injured
+2023-10-25,Virginia,Petersburg (North Dinwiddie),River Rd and Ashley Ln,male,N/A,Injured
+2023-10-25,Georgia,Douglasville,2900 block of N Bear Dr,male,"Deputy Charles """"Ken"""" Davenport",Injured
+2023-10-24,Illinois,Springfield,1600 block of Toronto Rd,male,Trooper Dakotah Chapman-Green,Injured
+2023-10-24,Indiana,Union City,E Main St and N 1st St,male,Deputy Kevin Kouns,Injured
+2023-10-24,District of Columbia,Washington,2100 block of New York Ave NE,male,Housing Officer,Injured
+2023-10-21,Tennessee,La Vergne,670 Stones River Rd,male,Officer Gregory Kern,Injured
+2023-10-21,Tennessee,La Vergne,670 Stones River Rd,female,Officer Ashley Boleyjack,Injured
+2023-10-19,District of Columbia,Washington,2800 block of Gainesville St SE,male,Officer,Injured
+2023-10-19,Texas,San Antonio,1600 block of Amistad Pass,male,Officer Santiago Vizcarra,Injured
+2023-10-19,Texas,San Antonio,1600 block of Amistad Pass,male,Officer Nicolas Swain,Injured
+2023-10-18,New York,White Plains,175 Mamaroneck Ave,male,N/A,Injured
+2023-10-18,California,Thousand Palms,72440 E Ramon Rd,male,Deputy,Injured
+2023-10-17,Arizona,Tucson,4295 E 29th St,N/A,Agent,Injured
+2023-10-16,New York,Beacon,18 Strack Dr,male,Corrections Officer,Injured
+2023-10-15,California,Red Bluff,I-5 and Flores Ave,male,N/A,Injured
+2023-10-13,Georgia,Stone Mountain,1310 Wood Bend Dr,male,Deputy,Injured
+2023-10-13,Ohio,Sidney,Comanche Dr,male,Lt. Brad Pleiman,Injured
+2023-10-12,Pennsylvania,Philadelphia,8500 Essington Ave,male,Officer Raul Ortiz,Injured
+2023-10-12,Minnesota,Princeton,225 190th Ave NE,N/A,Officer,Injured
+2023-10-12,Minnesota,Princeton,225 190th Ave NE,N/A,Sergeant Austin Turner,Injured
+2023-10-12,Minnesota,Princeton,225 190th Ave NE,N/A,Deputy,Injured
+2023-10-12,Minnesota,Princeton,225 190th Ave NE,N/A,Deputy,Injured
+2023-10-12,Minnesota,Princeton,225 190th Ave NE,N/A,Deputy Ron Thomas,Injured
+2023-10-12,Texas,Huntsville,144 I-45,male,Sgt Kyle Dockery,Injured
+2023-10-08,Georgia,Rossville,Bragg Cir,N/A,Deputy,Injured
+2023-10-07,Kentucky,Adolphus,New Buck Creek Rd and Trevelstead Rd,male,Chief Deputy Brad Harper,Injured
+2023-10-06,Kansas,Kansas City,Parallel Pkwy and N 110th St,N/A,N/A,Injured
+2023-10-04,Pennsylvania,Philadelphia,7500 block of Whitaker Ave,N/A,Officer,Injured
+2023-10-04,Pennsylvania,Philadelphia,7500 block of Whitaker Ave,N/A,Officer,Injured
+2023-10-04,Pennsylvania,Philadelphia,7500 block of Whitaker Ave,N/A,Sgt,Injured
+2023-10-04,Oklahoma,Davis,I-35 and OK-7,male,Deputy  Sean Steadman,Injured
+2023-10-04,Colorado,Pueblo,4200 block of Surfwood Ln,N/A,Officer,Injured
+2023-10-01,Alaska,Anchorage,Independence Dr,male,N/A,Injured
+2023-09-30,Oregon,Salem,OR-22 and Doaks Ferry Rd,male,Yuleni Zavala,Injured
+2023-09-29,South Carolina,Irmo,1170 Kinley Rd,N/A,N/A,Injured
+2023-09-29,South Carolina,Irmo,1170 Kinley Rd,N/A,N/A,Injured
+2023-09-27,South Carolina,Johns Island,Harry Wilson Rd and Mary Ann Point Rd,male,Master Deputy James Gilbreath,Injured
+2023-09-25,Florida,Tallahassee,2300 block of Sandpiper St,male,Officer Caleb Babb,Injured
+2023-09-22,Pennsylvania,Upper Darby,100 block of Terrace Ave,male,Officer William Green,Injured
+2023-09-20,Tennessee,Memphis,6188 Ashton Rd,N/A,N/A,Injured
+2023-09-19,North Carolina,Fayetteville,7805 Ramsey St,male,Officer Joshua Elliott,Injured
+2023-09-17,Texas,Woodville,700 block of S Pecan St,male,Officer Troy Costello,Injured
+2023-09-14,Oregon,Eugene,599 Coburg Rd,male,Officer,Injured
+2023-09-14,Texas,Dallas,4847 Scyene Rd,male,Derek Williams,Injured
+2023-09-12,Texas,Laredo,US-59,male,N/A,Injured
+2023-09-12,Georgia,Swainsboro,Colegrove Dr,male,Investigator Dakota Lamb,Injured
+2023-09-09,Nevada,Las Vegas,CC Rte 215 and Lone Mountain Rd,male,N/A,Injured
+2023-09-07,Kentucky,Louisville,4000 block of W Kentucky St,male,Officer Brandon Haley,Injured
+2023-09-06,South Carolina,Lexington,100 block of Prismatic Way,male,Master Deputy Jacob Smith,Injured
+2023-09-05,Texas,San Antonio,Iroquois St and Ute St,male,Officer Jose Bernalrodriguez,Injured
+2023-08-31,Oregon,Springfield,1841 Market St,N/A,Officer,Injured
+2023-08-31,Oregon,Springfield,1841 Market St,N/A,Officer,Injured
+2023-08-30,New York,Corona (Queens),70th St and Queens Blvd,male,Ofc. Christopher Campos,Injured
+2023-08-28,Florida,Lehigh Acres,Harlow Ave S and 22nd St SW,N/A,Deputy,Injured
+2023-08-26,Texas,San Marcos,1800 Post Rd,male,N/A,Injured
+2023-08-26,Louisiana,Vinton,LA-108 and Gum Island Rd,N/A,N/A,Injured
+2023-08-24,California,Bakersfield,11300 block of Andretti Ave,N/A,Officer,Injured
+2023-08-24,Texas,San Antonio,100 block of Oriental Ave,male,Officer Raul Chavez,Injured
+2023-08-24,Texas,San Antonio,100 block of Oriental Ave,male,Officer Rhett Shoquist,Injured
+2023-08-24,Missouri,Troy,Creech School Rd,male,Deputy,Injured
+2023-08-23,Washington,Tacoma,9600 block of S Hosmer St,male,Detective,Injured
+2023-08-23,Ohio,Warren (Howland),Highlawn Ave SE,N/A,N/A,Injured
+2023-08-23,Ohio,Warren (Howland),Highlawn Ave SE,N/A,N/A,Injured
+2023-08-23,Ohio,Warren (Howland),Highlawn Ave SE,N/A,N/A,Injured
+2023-08-23,Ohio,Warren (Howland),Highlawn Ave SE,N/A,N/A,Injured
+2023-08-20,Illinois,Bolingbrook,125 W Briarcliff Rd,male,Officer,Injured
+2023-08-17,Texas,Humble,15111 Silhouette Ridge,N/A,Marshal,Injured
+2023-08-17,Texas,Humble,15111 Silhouette Ridge,N/A,Deputy,Injured
+2023-08-17,Texas,Humble,15111 Silhouette Ridge,N/A,Deputy,Injured
+2023-08-16,California,San Jose,Race St and Auzerais Ave,female,Officer A,Injured
+2023-08-16,Texas,Houston,13500 block of Homestead Rd,male,Deputy Joseph Anderson,Injured
+2023-08-15,Tennessee,Clarksville,2655 Union Hall Rd,N/A,Officer,Injured
+2023-08-15,Tennessee,Clarksville,2655 Union Hall Rd,N/A,Officer,Injured
+2023-08-15,Tennessee,Clarksville,2655 Union Hall Rd,N/A,Officer,Injured
+2023-08-15,Tennessee,Clarksville,2655 Union Hall Rd,N/A,Officer,Injured
+2023-08-14,Colorado,Westminster,W 74th Ave and Federal Blvd,N/A,Deputy,Injured
+2023-08-14,Michigan,Ravenna,Neil Rd and S Slocum Rd,N/A,Deputy Joshua Hankins,Injured
+2023-08-13,Oklahoma,Tulsa,S Lewis Ave and E 71st St,N/A,N/A,Injured
+2023-08-11,Michigan,Detroit,Whitehill St and Morang Ave,male,Officer,Injured
+2023-08-11,Tennessee,Chattanooga,1330 E 3rd St,male,Officer Celtain Batterson,Injured
+2023-08-11,Minnesota,Minneapolis,4300 block of N Colfax Ave,male,Officer Jacob Spies,Injured
+2023-08-09,Ohio,Columbus,45 Great Southern Blvd,male,Officer Anthony Sebastiano,Injured
+2023-08-09,Michigan,Goetzville,E Sand Ridge Rd and S Reynolds Rd,N/A,N/A,Injured
+2023-08-09,Texas,Dallas,2400 block of W Northwest Hwy,male,Officer Nathaniel Chapman,Injured
+2023-08-06,Texas,Austin,10028 Channel Island Dr,male,Detective Daniel Jackson,Injured
+2023-08-05,Louisiana,Lafayette,106 S General Marshall St,female,Officer Halli Bradford,Injured
+2023-08-05,Louisiana,Lafayette,106 S General Marshall St,male,Officer Raynard Ford,Injured
+2023-08-04,Texas,Amarillo,3400 block of Janet Dr,male,N/A,Injured
+2023-08-04,Florida,Orlando,50 W Washington St,male,Officer,Injured
+2023-08-04,Florida,Orlando,50 W Washington St,female,Officer,Injured
+2023-08-03,North Carolina,Newland,115 Pat V Eller Ln,N/A,Sergeant I.B. Aldridge,Injured
+2023-08-02,California,Stockton,Kentfield Rd and Gateway Ct,male,Police Sergeant,Injured
+2023-08-01,Washington,Yakima,900 block of S Fork Rd,male,Deputy Travis Watkins,Injured
+2023-07-31,California,Whittier,7300 block of Pickering Ave,female,N/A,Injured
+2023-07-30,Pennsylvania,Erie,507-509 E 22nd St,N/A,Patrol Sergeant David Stucke,Injured
+2023-07-30,Ohio,Logan,7900 block of Bremen Rd,male,Deputy Jason Miles,Injured
+2023-07-26,Oregon,Tualatin,6765 SW Nyberg St,male,Deputy Charles Dozé,Injured
+2023-07-25,Tennessee,Memphis,778 Parkrose Rd,male,N/A,Injured
+2023-07-24,Illinois,Chicago,5600 S Shields Ave,N/A,N/A,Injured
+2023-07-21,Georgia,Ringgold,98 Summit Dr,N/A,Deputy,Injured
+2023-07-20,New Mexico,Albuquerque,557 Tramway Blvd NE,N/A,N/A,Injured
+2023-07-18,South Carolina,Columbia,Greystone Blvd and Stoneridge Dr,N/A,Officer,Injured
+2023-07-17,Massachusetts,New Bedford,Rivet St and Orchard St,male,Detective Lavar Gilbert,Injured
+2023-07-17,West Virginia,Sophia,834 B WV-16,female,Trooper Courtney Casey,Injured
+2023-07-15,Georgia,Hampton,92 Dogwood Lakes Dr,N/A,Officer,Injured
+2023-07-15,Georgia,Hampton,92 Dogwood Lakes Dr,N/A,Officer,Injured
+2023-07-15,Georgia,Hampton,92 Dogwood Lakes Dr,male,Deputy Cpl. Daniel Podsiadly,Injured
+2023-07-14,North Dakota,Fargo,901 25th St S,male,Officer Andrew Dotas,Injured
+2023-07-14,North Dakota,Fargo,901 25th St S,male,Officer Tyler Hawes,Injured
+2023-07-13,North Carolina,Pembroke,2506 Evergreen Church Rd,male,Deputy Kevin Chavis,Injured
+2023-07-12,Hawaii,Waipahu,93-093 Waipahu Depot Rd,male,Recruit,Injured
+2023-07-08,Georgia,Augusta,1200 block of Ellis St,male,Deputy Kenneth Mercer,Injured
+2023-07-08,Arkansas,De Queen,100 block of Sweet Home Ln,male,Officer Chad Bradshaw,Injured
+2023-07-06,Kentucky,Bowling Green,1930 Russellville Rd,male,Officer Matt Davis,Injured
+2023-07-06,Ohio,Columbus,I-70 and Mound St,male,Officer,Injured
+2023-07-03,North Carolina,Asheville,I-26 and Brevard Rd,male,Trooper Jeffrey Dunlap,Injured
+2023-07-01,Arizona,Phoenix,3200 E Washington St,N/A,N/A,Injured
+2023-07-01,Arizona,Phoenix,3200 E Washington St,N/A,N/A,Injured
+2023-07-01,Tennessee,Gallatin,300 block of College St,male,Officer,Injured
+2023-07-01,New Mexico,Taos,203 Siler Rd,N/A,N/A,Injured
+2023-06-30,Oregon,Portland,SE Johnson Creek Blvd and SE Bell Ave,N/A,Deputy,Injured
+2023-06-30,Oregon,Portland,SE Johnson Creek Blvd and SE Bell Ave,N/A,Deputy,Injured
+2023-06-29,Florida,Frostproof,TS Wilson Rd and US-17,male,Deputy Samuel Yates,Injured
+2023-06-29,Ohio,Canton,12th St NW and Logan Ave,N/A,Officer,Injured
+2023-06-29,Arkansas,Marion,9499 US-70,N/A,Officer,Injured
+2023-06-28,Arizona,Maricopa,Honeycutt Rd and Hartman Rd,male,Corporal J Fox,Injured
+2023-06-19,Arizona,Phoenix,35th Ave and Holly St,male,Trooper Sean Harkins,Injured
+2023-06-19,Arizona,Phoenix,35th Ave and Holly St,male,Officer,Injured
+2023-06-18,South Carolina,Mccormick,Mears Ln and Greenfield Rd,male,Sgt. Robbie Coker,Injured
+2023-06-18,South Carolina,Bishopville,Piedmont Rd,N/A,Deputy,Injured
+2023-06-17,Texas,Caldwell,W Buck St and S Wright St,N/A,Officer,Injured
+2023-06-17,Pennsylvania,Mifflintown,400 block of Washington Ave,male,Lieutenant James Wagner,Injured
+2023-06-16,New York,Duanesburg,I-88,male,Trooper Richard Albert,Injured
+2023-06-16,California,Los Angeles,1800 Academy Dr,male,Detective,Injured
+2023-06-11,Tennessee,Selmer,County Club Ln,male,N/A,Injured
+2023-06-10,South Carolina,Myrtle Beach,1300 block of Withers Alley,N/A,N/A,Injured
+2023-06-09,Michigan,Warren,Sherwood Ave and Mackersie Ave,male,N/A,Injured
+2023-06-09,Massachusetts,Boston,44 Cedric St,male,Officer,Injured
+2023-06-08,California,San Diego,5200 block of Wightman St,male,Officer James Romero,Injured
+2023-06-08,Pennsylvania,Philadelphia,7600 block of Ridge Ave,male,N/A,Injured
+2023-06-07,Tennessee,Johnson City,100 block of Wilson Ave,N/A,Officer,Injured
+2023-06-07,Ohio,Canton,300 block of 25th Street SW,male,Officer,Injured
+2023-06-07,Colorado,Denver,2601 N Zuni St,male,Officer,Injured
+2023-06-07,Colorado,Denver,MLK Jr Blvd and Forest St,male,Officer,Injured
+2023-06-06,Utah,Ogden,170 N Washington Blvd,male,Officer,Injured
+2023-06-01,Oklahoma,Okmulgee,E 2nd St and N Central Ave,male,Officer Dustin Clark,Injured
+2023-06-01,Mississippi,Brandon,50 block of Terrapin Hill Rd N,N/A,Brandon Officer,Injured
+2023-06-01,Tennessee,Nashville,560 Donelson Pike,male,Officer Donovan Coble,Injured
+2023-05-31,Pennsylvania,Philadelphia,2800 block of Jasper St,male,Officer,Injured
+2023-05-31,North Carolina,Denton,489 Ebel Church Rd,N/A,Lt. Chris Stilwell,Injured
+2023-05-31,Illinois,Chicago,2200 block of W Maypole Ave,male,N/A,Injured
+2023-05-31,California,Salinas,Market St and Sun St,male,Jesse Grant,Injured
+2023-05-30,Indiana,New Albany,Main St and Spring St,male,Corporal Andrew Byrne,Injured
+2023-05-26,New Mexico,Las Vegas,N/A,female,Officer Deseree Salazar,Injured
+2023-05-25,Illinois,Romeoville,Sierra Trail and Summerfield Ct,male,Officer Dominic Thielmann,Injured
+2023-05-25,North Carolina,Andrews,1101 Main St,male,Assistant Chief David Southards,Injured
+2023-05-25,Arizona,Phoenix,19th Ave and Mohawk Ln,male,DPS Trooper,Injured
+2023-05-23,New York,Clifton Park,312 Foxwood Dr,male,Deputy,Injured
+2023-05-23,New York,Clifton Park,312 Foxwood Dr,male,Deputy,Injured
+2023-05-23,Georgia,Covington,10101 Alcovy Rd,male,Officer Rashad Rivers,Injured
+2023-05-21,Michigan,Quincy,1080 E Chicago Rd,male,Sgt Matthew Schoenauer,Injured
+2023-05-18,Tennessee,Lynnville,1600 block of Fairview Rd,male,Deputy,Injured
+2023-05-15,New Mexico,Farmington,700 block of N Dustin Ave,female,Sergeant Rachel Discenza,Injured
+2023-05-15,New Mexico,Farmington,700 block of N Dustin Ave,male,Trooper Andreas Stamatiadis,Injured
+2023-05-13,Texas,El Paso,9529 Viscount Blvd,male,Agent Matthew Ross,Injured
+2023-05-12,New York,Corona (Queens),Queens Blvd and 43rd St,male,Ofc. Ivan Gomez,Injured
+2023-05-11,New York,Coram,96 Homestead Dr,male,Ofc. Michael Lafauci,Injured
+2023-05-11,Texas,Houston,10202 Forum Park Dr,male,Senior Police Officer M Hunter,Injured
+2023-05-10,Florida,Lakeland,1401 Kettles ave,male,Officer Jamie Smith,Injured
+2023-05-09,Georgia,Atlanta (College Park),5301 Aldredge Rd SW,male,Officer,Injured
+2023-05-09,Illinois,Woodlawn,I-64 E,N/A,Trooper,Injured
+2023-05-07,South Carolina,Ravenel,4915 Savannah Hwy,male,Deputy Evan Cubbage,Injured
+2023-05-07,Maryland,Port Deposit,50 block of Twin Lakes Dr,N/A,Deputy,Injured
+2023-05-07,Maryland,Port Deposit,50 block of Twin Lakes Dr,N/A,Deputy,Injured
+2023-05-07,Maryland,Port Deposit,50 block of Twin Lakes Dr,N/A,Trooper,Injured
+2023-05-07,North Carolina,Asheville,20 Davidson Dr,male,Deputy William Matthew Johnston,Injured
+2023-05-06,Texas,Wichita Falls,E Hatton Rd and Old Windthorst Rd,N/A,N/A,Injured
+2023-05-05,North Carolina,Oxford,Prospect Ave,male,Corp. Daniel Allen,Injured
+2023-05-04,Ohio,Mansfield,Lind Ave,male,Officer Charles Hamilton,Injured
+2023-05-02,Mississippi,Mound Bayou,US-61,male,Trooper Ryan Watson,Injured
+2023-05-02,Louisiana,Bossier City,3820 LA-782,male,Officer Kenny Gallon,Injured
 2023-04-30,Pennsylvania,Philadelphia,400 block of W Bringhurst St,N/A,Officer Matthew Fitzpatrick,Injured
 2023-04-30,Pennsylvania,Philadelphia,400 block of W Bringhurst St,N/A,Sgt. Erik Bullock,Injured
 2023-04-29,California,Winton,Suzie St and Walnut Ave,female,Deputy Lisa Lopez,Injured
@@ -29,8 +460,8 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2023-04-24,Mississippi,Jackson,I-55 and Old Byram Rd,male,Deputy,Injured
 2023-04-22,Virginia,Hampton,300 block of Woodland Rd,N/A,Officer,Injured
 2023-04-22,Utah,West Jordan,3354 Jordan Line Pkwy,male,N/A,Injured
-2023-04-20,Indiana,Indianapolis,3000 block of N Post Rd,male,Deputy Joshua Rhoades,Injured
-2023-04-20,Indiana,Indianapolis,3000 block of N Post Rd,male,Officer Christian Anderson,Injured
+2023-04-20,Indiana,Indianapolis,3000 block of N Post Rd,male,Officer Sergio De Leon,Injured
+2023-04-20,Indiana,Indianapolis,3000 block of N Post Rd,male,Officer Jonathon Phelps,Injured
 2023-04-20,Vermont,Morrisville,Upper Main St and Pleasant St,male,Officer Brian Tomlinson,Injured
 2023-04-19,Tennessee,Memphis,2800 block of Vayu Dr,N/A,Officer,Injured
 2023-04-18,Florida,Jacksonville,14550 Old St Augustine Rd,male,Officer Taylor Smith,Injured
@@ -40,8 +471,8 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2023-04-15,Minnesota,Cyrus,400 block of N Stromen St,male,Deputy Brody Merrill,Injured
 2023-04-12,Pennsylvania,Watsontown,8th Ave and Merrill Dr,male,Trooper Logan Spiece,Injured
 2023-04-10,Kentucky,Louisville,333 E Main St,male,Officer Nickolas Wilt,Injured
-2023-04-10,Kentucky,Louisville,333 E Main St,male,"Officer Cory """"CJ"""" Galloway",Injured
 2023-04-10,Kentucky,Louisville,333 E Main St,N/A,Officer,Injured
+2023-04-10,Kentucky,Louisville,333 E Main St,male,"Officer Cory """"CJ"""" Galloway",Injured
 2023-04-10,Minnesota,Granite Falls,11th Ave and Bergeson Dr,male,Officer Jason Hay,Injured
 2023-04-09,Alabama,Brewton,AL-41 and Emmons Rd,male,Cpl. Jeremy Alford,Injured
 2023-04-08,Oklahoma,Blanchard,7762 N Council Ave,male,Officer,Injured
@@ -56,7 +487,7 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2023-03-30,Tennessee,Memphis,1200 block of E Raines Rd,N/A,Officer,Injured
 2023-03-30,North Carolina,Forest City,Providence Church Rd and Old Henrietta Rd,male,Deputy,Injured
 2023-03-29,Idaho,Paris,30 N Main St,male,Deputy,Injured
-2023-03-28,Alabama,Huntsville,4600 block of Governors House Dr,male,Officer  Albert Morin,Injured
+2023-03-28,Alabama,Huntsville,4611 Governors House Dr SW,male,Officer  Albert Morin,Injured
 2023-03-27,Colorado,Littleton (Lakewood),10880 W Alameda Ave,N/A,N/A,Injured
 2023-03-26,Tennessee,Henderson,Hill Ave and Steed St,N/A,N/A,Injured
 2023-03-26,California,Gilroy,3000 block of Dryden Ave,N/A,Deputy,Injured
@@ -68,15 +499,16 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2023-03-22,Alabama,Birmingham,3125 Bradford Pl,N/A,N/A,Injured
 2023-03-22,Washington,Everett,8600 block of Evergreen Way,N/A,N/A,Injured
 2023-03-20,Washington,Seattle (Ballard),800 block of NW 54th St,male,David Easterly,Injured
-2023-03-19,Utah,Springville,1000 W 1200 N,male,Officer,Injured
-2023-03-18,Montana,Billings,1000 block of Bench Blvd,N/A,N/A,Injured
+2023-03-19,Utah,Springville,1000 W 1200 N,male,Officer Riley Redford,Injured
+2023-03-18,Montana,Billings,1000 block of Bench Blvd,male,Det. Michael Yarina,Injured
 2023-03-16,Kentucky,Morganfield,3200 block of KY-871,N/A,N/A,Injured
 2023-03-14,Ohio,Cleveland,E 28th St and Cedar Ave,male,Det. Mark Bahrijczuk,Injured
 2023-03-13,Oklahoma,Oklahoma City,2625 General Pershing Blvd,N/A,N/A,Injured
-2023-03-12,Florida,Pinellas Park,6300 62nd Ave N,male,Cpl. Matt Aitken,Injured
 2023-03-12,Missouri,Hermann,811 Market St,N/A,Officer Adam Sullentrup,Injured
-2023-03-10,Michigan,Detroit,10205 Outer Dr W,N/A,Trooper Sergeant,Injured
+2023-03-12,Florida,Pinellas Park,6300 62nd Ave N,male,Cpl. Matt Aitken,Injured
 2023-03-10,Michigan,Detroit,10205 Outer Dr W,N/A,Trooper,Injured
+2023-03-10,Michigan,Detroit,10205 Outer Dr W,N/A,Trooper Sergeant,Injured
+2023-03-10,Kentucky,Louisville,4201 Algonquin Pkwy,male,Officer Recruit,Injured
 2023-03-08,Florida,Miami,NW 5 Ave and NW 43rd St,male,Darrion Washington,Injured
 2023-03-08,California,Los Angeles,Mission Rd and N Broadway,male,K9 Officer,Injured
 2023-03-08,California,Los Angeles,Mission Rd and N Broadway,male,K9 Officer,Injured
@@ -86,9 +518,9 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2023-03-06,Maryland,Mardela Springs,US-50 and Old Bradley Rd,male,Sgt Brooks Phillips,Injured
 2023-03-04,California,Fresno,W Herndon Ave and N Ingram Ave,male,N/A,Injured
 2023-03-02,New Jersey,Paterson,439 9th Ave,male,Trooper,Injured
+2023-02-28,Missouri,Kansas City,2300 block of Blue Ridge Blvd,male,N/A,Injured
+2023-02-28,Missouri,Kansas City,2300 block of Blue Ridge Blvd,male,N/A,Injured
 2023-02-28,Missouri,Kansas City,2300 block of Blue Ridge Blvd,N/A,N/A,Injured
-2023-02-28,Missouri,Kansas City,2300 block of Blue Ridge Blvd,male,N/A,Injured
-2023-02-28,Missouri,Kansas City,2300 block of Blue Ridge Blvd,male,N/A,Injured
 2023-02-26,Illinois,Dupo,780 McBride Ave,male,N/A,Injured
 2023-02-24,Indiana,Dana (Helt),W County Rd 700 S and IN-71,male,Deputy Joey Wilson,Injured
 2023-02-22,South Carolina,Abbeville,Hwy 28 S and Industrial Park Rd,male,Deputy,Injured
@@ -97,7 +529,7 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2023-02-17,Georgia,Richmond Hill,11 Plantation Way,male,Officer,Injured
 2023-02-12,Missouri,Kansas City,1125 Locust St,N/A,N/A,Injured
 2023-02-10,Pennsylvania,Allentown,8th St and W Maple St,male,Officer,Injured
-2023-02-08,Maryland,Cockeysville,10905 Powers Ave,male,Officer Scene 1,Injured
+2023-02-08,Maryland,Cockeysville,10905 Powers Ave,male,Officer Barry Jordan,Injured
 2023-02-08,Maryland,Cockeysville,10905 Powers Ave,male,Detective Jonathan Chih,Injured
 2023-02-08,Pennsylvania,Philadelphia,Summer St and N 60th St,male,Officer Giovanni Maysonet,Injured
 2023-02-07,New York,Bronx,4111 Laconia Ave,male,Officer,Injured
@@ -123,18 +555,18 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2023-01-24,Minnesota,Saint Paul (White Bear Lake),3185 Karth Rd,N/A,Officer Ryan Sheak,Injured
 2023-01-24,Washington,Puyallup,1617 E Main Ave,N/A,N/A,Injured
 2023-01-24,Washington,Puyallup,1617 E Main Ave,N/A,N/A,Injured
-2023-01-23,Kansas,Dodge City,US-50 and 113 Rd,male,Deputy Gary Salmans,Injured
-2023-01-23,Kansas,Dodge City,US-50 and 113 Rd,male,Deputy Brandon Hornback,Injured
-2023-01-23,Kansas,Dodge City,US-50 and 113 Rd,male,Undersheriff Wallace Long,Injured
 2023-01-23,Minnesota,Winsted,600 block of Pheasant Run,male,Deputy Darrell Caturia,Injured
 2023-01-23,Minnesota,Winsted,600 block of Pheasant Run,female,Deputy Angela Malz,Injured
+2023-01-23,Kansas,Dodge City,US-50 and 113 Rd,male,Deputy Brandon Hornback,Injured
+2023-01-23,Kansas,Dodge City,US-50 and 113 Rd,male,Undersheriff Wallace Long,Injured
+2023-01-23,Kansas,Dodge City,US-50 and 113 Rd,male,Deputy Gary Salmans,Injured
 2023-01-22,Arizona,Tucson,6400 block of W Swan Falls Way,male,Deputy Christopher Campbell,Injured
 2023-01-20,Florida,Jacksonville,1800 block of Hardee St,male,N/A,Injured
 2023-01-18,Georgia,Atlanta,Constitution Rd and Bouldercrest Rd,N/A,Trooper,Injured
 2023-01-18,Florida,Fort Lauderdale (Sunrise),16001 W State Rd 84,female,Deputy,Injured
 2023-01-17,New York,Bronx,E 183rd St and Prospect Ave,male,Ofc. Paul Lee,Injured
-2023-01-17,Wisconsin,Racine,2900 block of Gillen St,male,Officer Ben Eiden,Injured
 2023-01-17,Wisconsin,Racine,2900 block of Gillen St,male,Sgt. Joe Burinda,Injured
+2023-01-17,Wisconsin,Racine,2900 block of Gillen St,male,Officer Ben Eiden,Injured
 2023-01-17,New Jersey,Elizabeth,70 block of W Jersey St,male,N/A,Injured
 2023-01-17,Alabama,Double Springs,US-278 and Blake Dr,male,N/A,Injured
 2023-01-14,Texas,Newton,FM 1004,male,Police Chief Will Jackson,Injured
@@ -151,15 +583,15 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2022-12-29,California,Riverside (Jurupa Valley),3900 block of Golden West Ave,male,Deputy Isaiah Cordero,Killed
 2022-12-24,Florida,Fort Walton Beach,700 North Park Blvd,male,Corporal Ray Hamilton,Killed
 2022-12-24,Missouri,Old Monroe,200 block of Emerald Ct,male,Officer Robert Woods,Killed
-2022-12-14,Mississippi,Bay Saint Louis,1003 US-90,male,Officer Branden Estorffe,Killed
 2022-12-14,Mississippi,Bay Saint Louis,1003 US-90,male,Sgt Steven Robin,Killed
+2022-12-14,Mississippi,Bay Saint Louis,1003 US-90,male,Officer Branden Estorffe,Killed
 2022-12-14,Arkansas,Stuttgart,593 Rieger Rd,male,Sergeant Donald Scoby,Killed
 2022-12-13,Georgia,Lawrenceville,750 Hi Hope Rd,male,Corrections Officer Scott Riner,Killed
 2022-12-12,California,Belvedere Tiburon,1155 Tiburon Blvd,male,Sgt. Sean Christopher,Killed
 2022-10-29,New Jersey,Belleville,100 block of Bell St,male,Ricardo Barbosa,Killed
 2022-10-19,Florida,Miami,17601 SW 8th St,male,Officer Jorge Arias,Killed
 2022-10-13,Nevada,Las Vegas,800 block of E Flamingo Rd,male,Officer Truong Thai,Killed
-2022-10-13,North Carolina,Raleigh,5300 block of Sahalee Way,male,Officer Gabrial Torres,Killed
+2022-10-13,North Carolina,Raleigh,5300 block of Sahalee Way,male,Officer Gabriel Torres,Killed
 2022-10-12,Connecticut,Bristol,310 Redstone Hill Rd,male,Sgt. Dustin Demonte,Killed
 2022-10-12,Connecticut,Bristol,310 Redstone Hill Rd,male,Officer Alex Hamzy,Killed
 2022-10-11,Mississippi,Greenville,Reed St and Rebecca St,female,Detective Myiesha Stewart,Killed
@@ -187,15 +619,15 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2022-06-30,Kentucky,Allen,49 N Railroad St,male,City Police Captain Ralph Harlow Frasure,Killed
 2022-06-30,Kentucky,Allen,49 N Railroad St,male,Deputy William Edward Petry,Killed
 2022-06-29,Alabama,Brierfield,AL-25 and Bulldog Bend Rd,male,Deputy Brad Johnson,Killed
-2022-06-28,Arizona,Mayer (Cordes Lakes),E Stage Coach Trl and S Red Rock Ln,male,Sgt Richard Lopez,Killed
+2022-06-28,Arizona,Mayer (Cordes Lakes),E Stage Coach Trail and S Red Rock Ln,male,Sgt Richard Lopez,Killed
 2022-06-22,Arkansas,Perryville,511 Aplin Ave,male,Officer Jeremiah Story,Killed
-2022-06-21,South Carolina,Moore,4000 Block of Chaffee Dr,male,Deputy Austin Derek Aldridge,Killed
-2022-06-14,California,El Monte,10327 Garvey Ave,male,Officer Joseph Santana,Killed
+2022-06-21,South Carolina,Spartanburg,4214 Chaffee Rd,male,Deputy Austin Derek Aldridge,Killed
 2022-06-14,California,El Monte,10327 Garvey Ave,male,Corporal Michael Paredes,Killed
+2022-06-14,California,El Monte,10327 Garvey Ave,male,Officer Joseph Santana,Killed
 2022-06-12,Maryland,Pittsville,7409 Gumboro Rd,male,Deputy First Class Glenn Hilliard,Killed
 2022-06-09,Mississippi,Meridian,2400 block of 51st Ave,male,Officer Kennis Croom,Killed
 2022-06-03,West Virginia,Birch River,537 Old Rte 19,N/A,Deputy Tom Baker,Killed
-2022-06-02,Arizona,Whiteriver,East Fork Rd and Chief Ave,male,Tribal Officer Adrian Lopez Sr,Killed
+2022-06-02,Arizona,Whiteriver,E Fork Rd and Chief Ave,male,Tribal Officer Adrian Lopez Sr,Killed
 2022-05-22,District of Columbia,Washington,2500 block of Elvans Rd SE,male,Police Officer Shawn Minor,Killed
 2022-05-16,Kentucky,Benton,202 W 5th St,male,Deputy Jody Wayne Cash,Killed
 2022-05-08,New York,Middletown,567 Rte 211 E,male,Officer Sean Armstead,Killed
@@ -208,8 +640,8 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2022-03-15,Washington,Spanaway,19011 Pacific Ave S,male,"Deputy Dominique """"Dom"""" Calata",Killed
 2022-03-14,New York,Rochester,Wetmore Pk and Lyell Ave,male,Melvin Williams,Killed
 2022-03-14,Virginia,Covington,121 N Alleghany Ave,male,Officer Caleb Ogilvie,Killed
-2022-03-08,Missouri,Joplin,423 S Rangeline Rd,male,Officer Jake Reed,Killed
 2022-03-08,Missouri,Joplin,423 S Rangeline Rd,male,Cpl. Benjamin Cooper,Killed
+2022-03-08,Missouri,Joplin,423 S Rangeline Rd,male,Officer Jake Reed,Killed
 2022-02-27,Arkansas,Maumelle,14000 block of Corvallis Rd,male,Sergeant Joshua Caudell,Killed
 2022-02-25,California,Salinas,Griffin St and E Market St,male,Officer Jorge David Alvarado Jr,Killed
 2022-02-23,Texas,Houston,7500 Bellaire Blvd,N/A,Deputy Neil Adams,Killed
@@ -224,14 +656,14 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2022-12-29,Texas,Bryan,Wayside Dr and Avondale Ave,male,Deputy,Injured
 2022-12-29,Texas,Bryan,Wayside Dr and Avondale Ave,male,Officer Najee Watson,Injured
 2022-12-29,Tennessee,Chattanooga,100 block of E M L King Blvd,N/A,Deputy,Injured
-2022-12-28,Louisiana,New Orleans,13400 block of Old Gentilly Rd,male,Reserve Sergeant,Injured
+2022-12-28,Louisiana,New Orleans,13400 Old Gentilly Rd,male,Reserve Sergeant,Injured
 2022-12-28,Virginia,Amelia Court House,13500 block of West Ln,N/A,Deputy,Injured
 2022-12-27,Florida,Margate,5790 Margate Blvd,male,Officer,Injured
 2022-12-23,Indiana,Brookville,IN-1 and US-52,N/A,Officer,Injured
 2022-12-21,New York,Brooklyn,277 Gates Ave,male,Ofc. Orlando Adorno,Injured
 2022-12-18,Colorado,Colorado Springs,800 E Willamette Ave,N/A,N/A,Injured
-2022-12-17,Maryland,Dunkirk,MD-4 and Yellow Bank Rd,male,Senior Deputy James Flynt,Injured
 2022-12-17,Texas,Houston,4505 Main St,male,N/A,Injured
+2022-12-17,Maryland,Dunkirk,MD-4 and Yellow Bank Rd,male,Senior Deputy James Flynt,Injured
 2022-12-16,Utah,Roosevelt (Ballard),N/A,male,BIA Officer,Injured
 2022-12-16,Mississippi,Hattiesburg,2460 Old Highway 24,male,Deputy,Injured
 2022-12-16,Missouri,Kansas City,Bern St and Cookingham Dr,female,Officer,Injured
@@ -246,7 +678,7 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2022-12-02,California,Rosamond,2900 block of Locust St,male,Deputy Michael Valdez,Injured
 2022-12-02,North Carolina,Granite Quarry,520 Mahaffey Dr,N/A,Officer M.A. Coral,Injured
 2022-12-02,North Carolina,Granite Quarry,520 Mahaffey Dr,male,Deputy Robert Clement,Injured
-2022-12-01,Washington,Pasco,1900 block of Riverview Dr,male,Jeremy Jones,Injured
+2022-12-01,Washington,Pasco,1927 Riverview Dr,male,Officer Jeremy Jones,Injured
 2022-11-29,Wisconsin,Milwaukee,N 8th St and W Michigan St,male,N/A,Injured
 2022-11-28,Colorado,Denver,490 W Colfax Ave,male,N/A,Injured
 2022-11-25,Pennsylvania,Philadelphia,4536 Frankford Ave,male,Ofc Timothy McKenzie,Injured
@@ -265,8 +697,8 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2022-11-04,Georgia,Mcdonough,4100 Hopewell Pl,N/A,Detention Officer Williams,Injured
 2022-11-03,Iowa,Altoona,900 Venbury Dr,N/A,Officer,Injured
 2022-11-01,Georgia,Atlanta,Briarcliff Rd NE and Briarcliff Way NE,male,Lt. Collar,Injured
-2022-11-01,New Jersey,Newark,25 Van Velsor Pl,male,Officer Jabril Paul,Injured
 2022-11-01,New Jersey,Newark,25 Van Velsor Pl,male,Officer Johnny Aquino,Injured
+2022-11-01,New Jersey,Newark,25 Van Velsor Pl,male,Officer Jabril Paul,Injured
 2022-10-31,Wyoming,Cheyenne,6900 block of Horse Soldier Rd,N/A,Deputy,Injured
 2022-10-28,South Carolina,Beech Island,2100 block of Storm Branch Rd,male,Officer,Injured
 2022-10-27,Colorado,Alamosa,1200 block of Denver Ave,female,Officer Mollee Heeney,Injured
@@ -279,7 +711,6 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2022-10-16,Alabama,Birmingham (Hoover),3627 Cedarbrook Dr,male,N/A,Injured
 2022-10-13,North Carolina,Raleigh,5300 block of Sahalee Way,male,Officer Casey Joseph Clark,Injured
 2022-10-13,Michigan,University Center,1961 Delta Rd,male,Cadet,Injured
-2022-10-13,Louisiana,New Orleans,300 block of N Rendon St,male,Officer Louis Blackmon III,Injured
 2022-10-12,Illinois,Decatur,1300 block of E Walnut St,male,Officer Austin Bowman,Injured
 2022-10-12,Illinois,Decatur,1300 block of E Walnut St,male,Sergeant Timothy Wittmer,Injured
 2022-10-12,Tennessee,Nashville,7741 US-70S,male,Officer,Injured
@@ -294,8 +725,8 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2022-10-05,Louisiana,New Orleans,7800 block of S Coronet St,male,Deputy Constable Warren Smith,Injured
 2022-10-03,Florida,West Palm Beach,5400 block of Eadie Place,male,Deputy,Injured
 2022-10-02,Florida,Jacksonville,4100 block of Middleburg Rd,male,Officer,Injured
-2022-10-01,Texas,Seminole,1010 Hobbs Hwy,male,Officer,Injured
 2022-10-01,Missouri,Excelsior Springs,Kearney Rd and Crown Hill Rd,male,Officer,Injured
+2022-10-01,Texas,Seminole,1010 Hobbs Hwy,male,Officer,Injured
 2022-09-30,Kentucky,Bardstown,100 block of Ivy Ave,male,Deputy Bryan Adams,Injured
 2022-09-30,Maryland,Baltimore,1109 E Chase St,N/A,N/A,Injured
 2022-09-29,Kansas,Topeka,3500 block of SW Kerry Ave,N/A,Officer,Injured
@@ -315,12 +746,12 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2022-09-10,Nevada,Las Vegas,Flamingo Rd and University Center Dr,female,Officer Tierney Tomburo,Injured
 2022-09-10,Wisconsin,Milwaukee,N 59th St and W Center St,N/A,Officer,Injured
 2022-09-09,Florida,Melbourne,1125 Dr Martin Luther King Jr Blvd,male,N/A,Injured
-2022-09-08,Kentucky,Lexington,3500 Tates Creek Rd,N/A,Officer,Injured
+2022-09-08,Kentucky,Lexington,3500 Tates Creek Rd,male,Officer,Injured
 2022-09-08,Texas,Magnolia,22000 block of Linden Ln,male,N/A,Injured
 2022-09-07,Georgia,Columbus,4200 block of Earline Ave,male,N/A,Injured
 2022-09-04,Pennsylvania,Wilkes Barre,Carey Ave and Academy St,male,Ofc Ogdon,Injured
-2022-09-02,Texas,Sachse,7760 S TX-78,N/A,N/A,Injured
-2022-09-02,Texas,Sachse,7760 S TX-78,N/A,N/A,Injured
+2022-09-02,Texas,Sachse,7760 S TX-78,male,Sgt Brent Merryman,Injured
+2022-09-02,Texas,Sachse,7760 S TX-78,male,Officer Cory Bable,Injured
 2022-08-31,Virginia,Norfolk,2700 block of Vincent Ave,N/A,Officer,Injured
 2022-08-31,Tennessee,Memphis,W Van Huesen Dr and Deneen Dr,male,Officer Jesse Acosta,Injured
 2022-08-29,Pennsylvania,Philadelphia,600 Arch St,N/A,Special Agent,Injured
@@ -337,17 +768,17 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2022-08-10,California,Arcadia,2531 Greenfield Ave,N/A,Officer,Injured
 2022-08-10,North Carolina,Semora,326 Paradise Ln,male,Deputy Aaron Tyndall,Injured
 2022-08-06,Arkansas,Texarkana,S Kings Hwy and US-59,male,Lt Scott Lillis,Injured
-2022-08-05,Virginia,Norfolk,216 E Plume St,male,Deputy,Injured
+2022-08-05,Virginia,Norfolk,216 E Plume St,male,Deputy Ryan Moore,Injured
 2022-08-05,North Carolina,Clemmons,2400 block of Lewisville-Clemmons Rd,N/A,Officer M.J. Ambrosio,Injured
 2022-08-03,Washington,Spokane,601 E 3rd Ave,male,N/A,Injured
-2022-08-01,North Carolina,Dudley,2592 Arrington Bridge Rd,male,Deputy Alexander Ramon Torres,Injured
 2022-08-01,North Carolina,Dudley,2592 Arrington Bridge Rd,male,Corporal Andrew Cox,Injured
+2022-08-01,North Carolina,Dudley,2592 Arrington Bridge Rd,male,Deputy Alexander Ramon Torres,Injured
 2022-08-01,Virginia,Charles City,10341 Courthouse Rd,N/A,N/A,Injured
 2022-07-30,Arkansas,Knoxville,200 block of Ivy Ln,male,Deputy Brent Scott,Injured
 2022-07-29,Pennsylvania,Aliquippa,1125 Franklin Ave,male,Trooper Jonnie Schooley,Injured
 2022-07-29,Texas,Brownsville,N/A,male,N/A,Injured
 2022-07-27,Georgia,Atlanta,Newbury Dr,female,Officer Demika Lloyd,Injured
-2022-07-25,Virginia,Richmond,Commerce Rd and Stockton St,N/A,Officer Timothy R. Burgess,Injured
+2022-07-25,Virginia,Richmond,Commerce Rd and Stockton St,male,Officer Timothy R. Burgess,Injured
 2022-07-24,Georgia,Fayetteville,429 Sage Brush Trail,male,US Marshall William Helton,Injured
 2022-07-23,Texas,Missouri City,6100 block of Maywood Dr,female,Officer Crystal Sepulveda,Injured
 2022-07-23,Tennessee,Etowah,600 block of Georgia Ave,male,N/A,Injured
@@ -362,37 +793,38 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2022-07-16,California,Rancho Cucamonga,5700 block of Seymour Ct,male,Deputy Marcus Mason,Injured
 2022-07-14,California,Los Angeles,N Fairfax Ave and Melrose Ave,N/A,Officer,Injured
 2022-07-13,Oregon,Salem,4900 block of Oak Park Dr NE,N/A,Officer,Injured
-2022-07-12,Ohio,Lebanon,5945 N OH-48,male,Officer Eric Ney,Injured
+2022-07-12,Ohio,Lebanon,5945 OH-48,male,Officer Eric Ney,Injured
 2022-07-11,Wisconsin,Milwaukee (West Milwaukee),1802 S 55th St,N/A,Officer,Injured
 2022-07-10,Kentucky,Louisville,4501 W Broadway,N/A,Officer,Injured
 2022-07-09,Tennessee,Memphis,5932 Hickory Hill Square,N/A,Officer,Injured
-2022-07-06,Texas,Corpus Christi,N/A,male,"Raul """"Pinky"""" Gonzales",Injured
+2022-07-06,Texas,Refugio,N/A,male,"Sheriff Raul """"Pinky"""" Gonzales",Injured
 2022-07-05,Tennessee,Powell,8200 block of Brickyard Rd,female,Deputy Lydia Driver,Injured
 2022-07-04,Pennsylvania,Philadelphia,2500 block of Spring Garden St,N/A,Officer,Injured
 2022-07-04,Pennsylvania,Philadelphia,2500 block of Spring Garden St,male,Officer John Foster,Injured
-2022-07-03,New York,Corona (Queens),214th Place and Jamaica Ave,male,David Donegan,Injured
+2022-07-03,New York,Corona (Queens),214th Pl and Jamaica Ave,male,Officer David Donegan,Injured
 2022-07-02,Texas,Haltom City,5700 block of Diamond Oaks Dr N,male,Officer Jose Avila,Injured
 2022-07-02,Texas,Haltom City,5700 block of Diamond Oaks Dr N,male,Officer Tim Barton,Injured
 2022-07-02,Texas,Haltom City,5700 block of Diamond Oaks Dr N,male,Cpl. Zach Tabler,Injured
 2022-07-01,Illinois,Chicago,1300 block of W Taylor St,male,Officer,Injured
-2022-06-30,Kentucky,Allen,49 N Railroad St,male,Constable Gary Wolfe,Injured
 2022-06-30,Kentucky,Allen,49 N Railroad St,N/A,Trooper,Injured
-2022-06-30,Kentucky,Allen,49 N Railroad St,N/A,Deputy Darrin Lawson,Injured
 2022-06-30,Kentucky,Allen,49 N Railroad St,N/A,Deputy,Injured
+2022-06-30,Kentucky,Allen,49 N Railroad St,N/A,Deputy Darrin Lawson,Injured
+2022-06-30,Kentucky,Allen,49 N Railroad St,male,Constable Gary Wolfe,Injured
+2022-06-29,North Carolina,Greensboro,Westhaven Dr,N/A,N/A,Injured
 2022-06-29,Alabama,Brierfield,AL-25 and Bulldog Bend Rd,male,Deputy Chris Poole,Injured
 2022-06-28,North Carolina,Charlotte,453 E 36th St,N/A,Officer,Injured
+2022-06-27,Tennessee,Erin,300 block of Highway 149,male,Officer Darrel Tiebor,Injured
 2022-06-27,Tennessee,Hendersonville,Vietnam Veterans Blvd and US-31E BYP,male,Officer Cameron Ferrell,Injured
-2022-06-27,Tennessee,Erin,300 block of Highway 149,N/A,N/A,Injured
 2022-06-26,Ohio,Columbus,300 block of S Harris Ave,male,N/A,Injured
 2022-06-26,Washington,Spokane,3000 block of N Martin St,male,Officer Kris Honaker,Injured
 2022-06-26,Arkansas,North Little Rock,3100 block of Donaghey Dr,male,Officer Nicholas Stewart,Injured
 2022-06-25,Pennsylvania,Pittsburgh (Mount Oliver),400 block of Brownsville Rd,male,Officer,Injured
 2022-06-23,Texas,Roanoke (Trophy Club),500 block of Indian Creek Dr,male,N/A,Injured
-2022-06-21,Ohio,Lima,Second St,male,Deputy Izak Ackerman,Injured
+2022-06-21,Ohio,Lima,2nd St,male,Deputy Izak Ackerman,Injured
 2022-06-20,Alaska,Fairbanks,23rd Ave and S Cushman St,N/A,Trooper,Injured
 2022-06-19,District of Columbia,Washington,14th St NW and U St NW,male,Officer,Injured
+2022-06-18,Texas,Falfurrias,E Terry St,N/A,N/A,Injured
 2022-06-18,Texas,Houston,12801 Roydon Dr,male,Officer Sabeh Salameh,Injured
-2022-06-18,Texas,Falfurrias,HWY 281 and Terry St,N/A,N/A,Injured
 2022-06-16,West Virginia,Weston,I-79 and US-119,male,Chief Deputy Sheriff Mike Coffman,Injured
 2022-06-14,Vermont,Woodstock,13 Slayton Ter,male,Sgt. Joseph Swanson,Injured
 2022-06-14,Arizona,Phoenix,S 43rd Ave and W Baseline Rd,female,N/A,Injured
@@ -403,8 +835,8 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2022-06-04,Maryland,Towson,185 E Pennsylvania Ave,N/A,N/A,Injured
 2022-06-03,West Virginia,Birch River,537 Old Rte 19,male,Corporal Josh Ellison,Injured
 2022-06-03,New Jersey,West New York,311 59th St,male,Officer,Injured
-2022-06-02,Utah,Bountiful,N/A,N/A,N/A,Injured
-2022-06-02,Arizona,Whiteriver,East Fork Rd and Chief Ave,male,Sgt Lonnie Thompson,Injured
+2022-06-02,Arizona,Whiteriver,E Fork Rd and Chief Ave,male,Sgt Lonnie Thompson,Injured
+2022-06-02,Utah,Bountiful,N/A,female,Officer Lacy Turner,Injured
 2022-06-02,Illinois,Chicago,5200 block of W Belmont Ave,male,N/A,Injured
 2022-06-01,Illinois,Chicago,W 64th St and S Paulina St,female,Officer Fernanda Ballesteros,Injured
 2022-05-30,Montana,Billings,Burnstead Dr and N 19th St,male,N/A,Injured
@@ -413,8 +845,8 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2022-05-26,Georgia,Augusta,2119 Lumpkin Rd,male,Deputy John A. Tarpley,Injured
 2022-05-25,Louisiana,Covington,LA-21 and LA-1083,male,Deputy Kenneth Doby,Injured
 2022-05-24,Texas,Uvalde,715 Old Carrizo Rd,male,CPD Officer,Injured
-2022-05-24,Texas,Uvalde,715 Old Carrizo Rd,male,Officer,Injured
 2022-05-24,Texas,Uvalde,715 Old Carrizo Rd,male,CPD Officer,Injured
+2022-05-24,Texas,Uvalde,715 Old Carrizo Rd,male,Officer,Injured
 2022-05-19,Virginia,Virginia Beach,1060 First Colonial Rd,N/A,Officer,Injured
 2022-05-19,Washington,Sequim,W Washington St and N Third Ave,N/A,Officer,Injured
 2022-05-16,Indiana,Palmyra,12000 block of IN-135,male,N/A,Injured
@@ -439,8 +871,8 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2022-04-20,New York,Yonkers,115 Elm St,male,Det Brian Menton,Injured
 2022-04-19,Florida,Clearwater,4900 Ulmerton Rd,male,Officer Jacob Derr,Injured
 2022-04-16,Maryland,Baltimore,34 Market Pl,male,Police Officer,Injured
-2022-04-15,Kansas,Walnut,US-77 and 122nd Rd,N/A,Deputy,Injured
 2022-04-15,Kansas,Walnut,US-77 and 122nd Rd,male,Deputy,Injured
+2022-04-15,Kansas,Walnut,US-77 and 122nd Rd,N/A,Deputy,Injured
 2022-04-15,Kansas,Walnut,US-77 and 122nd Rd,N/A,Deputy,Injured
 2022-04-14,Arizona,Phoenix,E Beardsley Rd and N Cave Creek Rd,female,Officer Denise Bruce-Jones,Injured
 2022-04-14,Arizona,Glendale,N 59th Ave and W Olive Ave,male,Officer,Injured
@@ -457,15 +889,15 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2022-04-03,Arkansas,Wynne,300 block of Smithdale Ave,male,Sheriff David West,Injured
 2022-04-02,Texas,Humble,4811 Canyon Trace Dr,male,N/A,Injured
 2022-04-02,Wyoming,Cheyenne,3500 block of Miles Ct,male,Deputy,Injured
-2022-04-01,West Virginia,Old Fields,US-220 and Justamere Rd,male,Deputy,Injured
 2022-04-01,Arizona,Kingman,Thompson Ave and Powell Ave,male,Trooper Donald Shed,Injured
+2022-04-01,West Virginia,Old Fields,US-220 and Justamere Rd,male,Deputy,Injured
 2022-03-31,California,Inglewood,10920 Osage Ave,N/A,Deputy David Yoo,Injured
-2022-03-31,Pennsylvania,Lebanon,1100 block of Forest St,male,Officer Ryan Adams,Injured
 2022-03-31,Pennsylvania,Lebanon,1100 block of Forest St,male,Officer Derek Underkoffler,Injured
+2022-03-31,Pennsylvania,Lebanon,1100 block of Forest St,male,Officer Ryan Adams,Injured
 2022-03-30,Arizona,Winkelman (Dudleyville),N/A,male,Deputy,Injured
-2022-03-29,New York,Buffalo,E Ferry St and Fillmore Ave,male,Officer Joseph McCarthy,Injured
 2022-03-29,New York,Buffalo,E Ferry St and Fillmore Ave,male,Officer Trevor Sheehan,Injured
 2022-03-29,New York,Buffalo,E Ferry St and Fillmore Ave,male,Officer Christopher Wilson,Injured
+2022-03-29,New York,Buffalo,E Ferry St and Fillmore Ave,male,Officer Joseph McCarthy,Injured
 2022-03-29,Texas,Waco,3700 block of Hay Ave,N/A,N/A,Injured
 2022-03-28,Illinois,Chicago,S Sacramento Blvd and W Polk St,N/A,Officer,Injured
 2022-03-27,Missouri,Moberly,600 block of Adams Ave,male,Deputy Z. Baker,Injured
@@ -478,7 +910,7 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2022-03-15,Washington,Spanaway,19011 Pacific Ave S,male,Sgt Rich Scaniffe,Injured
 2022-03-15,Tennessee,Kingsport,1900 block of Lincoln St,male,Officer,Injured
 2022-03-14,Illinois,Crest Hill,Pioneer Rd and Bicentennial Ave,male,Officer,Injured
-2022-03-13,Arizona,Phoenix,27th Ave and Maryland Ave,male,N/A,Injured
+2022-03-13,Arizona,Phoenix,N 27th Ave and W Maryland Ave,male,Officer,Injured
 2022-03-13,Texas,Bastrop,101-105 Lba Dr,male,Deputy Sawyer Wilson,Injured
 2022-03-11,Tennessee,Covington,881 US-51 S,male,Deputy Gene Molder,Injured
 2022-03-11,Illinois,Chicago,5700 block of S Loomis Blvd,N/A,N/A,Injured
@@ -501,25 +933,25 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2022-02-22,Florida,Steinhatchee,US-19 and Deer Run Rd,male,Deputy Troy Anderson,Injured
 2022-02-19,North Carolina,Charlotte,N Tryon St and Salome Church Rd,male,Dep. Dijon Whyms,Injured
 2022-02-16,Pennsylvania,Carlisle,50 block of Brittney Dr,N/A,Officer,Injured
-2022-02-16,California,El Cajon,Ballard St and Decker St,N/A,N/A,Injured
+2022-02-16,California,El Cajon,Ballard St and Decker St,male,Officer,Injured
 2022-02-16,California,Azusa,1000 block of W Gladstone St,N/A,Officer,Injured
 2022-02-15,Texas,Katy,6600 block of Amberfield Ln,male,Deputy Y Martinez,Injured
 2022-02-15,Texas,Katy,6600 block of Amberfield Ln,male,Deputy M Delgado,Injured
-2022-02-11,New Mexico,Tijeras,US-66 and Sedillo Hill Rd,male,Lieutenant Jeremy Vaughan,Injured
-2022-02-11,Pennsylvania,Philadelphia,100 block of W Lehigh Ave,male,Officer,Injured
-2022-02-11,Arizona,Phoenix,5405 W Warner St,male,Officer Aldo Nunez,Injured
-2022-02-11,Arizona,Phoenix,5405 W Warner St,male,Officer Austin Peru,Injured
-2022-02-11,Arizona,Phoenix,5405 W Warner St,male,Officer,Injured
-2022-02-11,Arizona,Phoenix,5405 W Warner St,female,Officer Trisha Eskridge,Injured
-2022-02-11,Arizona,Phoenix,5405 W Warner St,N/A,Officer,Injured
-2022-02-11,Arizona,Phoenix,5405 W Warner St,N/A,Officer,Injured
-2022-02-11,Arizona,Phoenix,5405 W Warner St,N/A,Officer,Injured
-2022-02-11,Arizona,Phoenix,5405 W Warner St,N/A,Officer,Injured
-2022-02-11,Arizona,Phoenix,5405 W Warner St,N/A,Officer,Injured
 2022-02-11,Maryland,Frederick,Key Pkwy and Waverly Dr,male,Officer Bryan Snyder,Injured
 2022-02-11,Maryland,Frederick,Key Pkwy and Waverly Dr,female,Officer Kristen Kowalski,Injured
-2022-02-10,Washington,Maple Falls,3041 Green Valley Dr,male,Deputy Jason Thompson,Injured
+2022-02-11,New Mexico,Tijeras,US-66 and Sedillo Hill Rd,male,Lieutenant Jeremy Vaughan,Injured
+2022-02-11,Pennsylvania,Philadelphia,100 block of W Lehigh Ave,male,Officer,Injured
+2022-02-11,Arizona,Phoenix,5405 W Warner St,N/A,Officer,Injured
+2022-02-11,Arizona,Phoenix,5405 W Warner St,N/A,Officer,Injured
+2022-02-11,Arizona,Phoenix,5405 W Warner St,N/A,Officer,Injured
+2022-02-11,Arizona,Phoenix,5405 W Warner St,N/A,Officer,Injured
+2022-02-11,Arizona,Phoenix,5405 W Warner St,N/A,Officer,Injured
+2022-02-11,Arizona,Phoenix,5405 W Warner St,female,Officer Trisha Eskridge,Injured
+2022-02-11,Arizona,Phoenix,5405 W Warner St,male,Officer,Injured
+2022-02-11,Arizona,Phoenix,5405 W Warner St,male,Officer Austin Peru,Injured
+2022-02-11,Arizona,Phoenix,5405 W Warner St,male,Officer Aldo Nunez,Injured
 2022-02-10,Washington,Maple Falls,3041 Green Valley Dr,male,Deputy Ryan Rathburn,Injured
+2022-02-10,Washington,Maple Falls,3041 Green Valley Dr,male,Deputy Jason Thompson,Injured
 2022-02-09,Arkansas,Jonesboro,200 block of Spruce St,male,Officer Corey Obregon,Injured
 2022-02-09,Arizona,Camp Verde,AZ-260 and Cherry Creek Rd,male,Sergeant Preston Brogdon,Injured
 2022-02-08,Georgia,Commerce,152 Eisenhower Dr,male,Deputy Dillon Crump,Injured
@@ -533,9 +965,9 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2022-01-29,Alabama,Eclectic,Claud Rd,male,Deputy,Injured
 2022-01-28,California,Coachella,51700 block of Cesar Chavez St,male,N/A,Injured
 2022-01-28,Kentucky,Cynthiana,Delta Ct,male,Trooper Michael Sanguigni II,Injured
-2022-01-27,Texas,Houston,2100 block of McGowen St,male,Officer Nate Gadson,Injured
-2022-01-27,Texas,Houston,2100 block of McGowen St,male,Officer Daniel Hayden,Injured
 2022-01-27,Texas,Houston,2100 block of McGowen St,male,Officer Anthony Alvarez,Injured
+2022-01-27,Texas,Houston,2100 block of McGowen St,male,Officer Daniel Hayden,Injured
+2022-01-27,Texas,Houston,2100 block of McGowen St,male,Officer Nate Gadson,Injured
 2022-01-27,Wisconsin,Milwaukee,2100 block of W St Paul Ave,N/A,Officer Herbert Davis,Injured
 2022-01-26,Missouri,Saint Louis,4266 Natural Bridge Ave,male,Officer,Injured
 2022-01-26,Missouri,Saint Louis,4266 Natural Bridge Ave,N/A,Officer,Injured
@@ -549,7 +981,7 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2022-01-18,New York,Bronx,2356 Lorillard Pl,male,Ofc. Kaseem Pennant,Injured
 2022-01-16,South Carolina,Mount Pleasant,259 Magrath Darby Blvd,male,PFC Dylan French,Injured
 2022-01-15,Montana,Billings,905 Grand Ave,male,Deputy,Injured
-2022-01-14,North Carolina,Sanford,Post Office Rd,N/A,Deputy,Injured
+2022-01-14,North Carolina,Sanford,Post Office Rd,N/A,Deputy Daniel Holmes,Injured
 2022-01-13,Wisconsin,Milwaukee,220 E Buffalo St,male,Det. Andrew Wilkiewicz,Injured
 2022-01-11,Georgia,Ochlocknee,Ellen St,N/A,Deputy,Injured
 2022-01-11,Georgia,Ochlocknee,Ellen St,male,Deputy Brandon Hill,Injured
@@ -560,8 +992,8 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2022-01-07,New Mexico,Farmington,N Fairview Ave and N Tucker Ave,male,Officer Joseph Barreto,Injured
 2022-01-05,Texas,Houston,9253 Opelika St,N/A,Officer J Seay,Injured
 2022-01-01,New York,New York (Manhattan),120 E 119th St,male,Officer Keith Wagenhauser,Injured
-2021-12-29,Illinois,Bourbonnais,1500 IL-50,female,Sgt. Marlene Rittmanic,Killed
 2021-12-29,Illinois,Burnt Prairie,I-64,male,Deputy Sheriff Sean Riley,Killed
+2021-12-29,Illinois,Bourbonnais,1500 IL-50,female,Sgt. Marlene Rittmanic,Killed
 2021-12-16,Maryland,Baltimore,4400 block of Pennington Ave,female,Officer Keona Holley,Killed
 2021-12-03,Texas,Mesquite,1500 S Beltline Rd,male,Sgt Richard Houston,Killed
 2021-12-01,Alabama,Pine Hill (Yellow Bluff),N/A,male,Deputy Madison Nicholson,Killed
@@ -579,10 +1011,9 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2021-10-04,Arizona,Tucson,400 N Toole Ave,male,"Special Agent Michael """"Mike"""" Garbo",Killed
 2021-10-01,Illinois,Chicago,I-90/94 and W 43rd St,male,Trooper Gerald Mason,Killed
 2021-10-01,Alabama,Muscle Shoals,301 Avalon Ave,male,Sgt. Nick Risner,Killed
-2021-09-27,Louisiana,Pioneer,N/A,male,Chief,Killed
+2021-09-27,Louisiana,Pioneer,N/A,male,Chief of Police,Killed
 2021-09-25,Tennessee,Clifton,3000 block of Nance Bend Rd,male,Deputy Matthew Locke,Killed
-2021-09-24,Florida,Callahan,US-301 and N Mickler St,male,Deputy Josh Moyers,Killed
-2021-09-23,Colorado,Estes Park,N/A,male,Cpt Eric Rose,Killed
+2021-09-24,Florida,Callahan,US-301 and N Mickler St,male,Deputy Joshua Moyers,Killed
 2021-09-21,District of Columbia,Washington,3300 block of 10th Pl SE,female,Special Police Officer Angela Washington,Killed
 2021-09-20,Texas,Houston,5350 Aeropark Dr,male,"Senior Police Officer William """"Bill"""" Jeffrey",Killed
 2021-09-15,Missouri,Independence,2400 block of S Northern Blvd,male,Officer Blaize Madrid-Evans,Killed
@@ -621,9 +1052,9 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2021-02-27,Georgia,Brinson,US-84 and SR 310,male,Lieutenant Justin Bedwell,Killed
 2021-02-26,Virginia,Stanley,600 block of Judy Ln,male,Officer Dominic  'Nick' J. Winum,Killed
 2021-02-26,Louisiana,New Orleans,3059 Higgins Blvd,male,Constable Martinus Mitchum,Killed
-2021-02-04,New Mexico,Las Cruces,I-10,male,Trooper Darian Jarrott,Killed
-2021-02-02,Florida,Fort Lauderdale (Sunrise),10100 Reflections Blvd W,male,Special Agent Daniel Alfin,Killed
+2021-02-04,New Mexico,Deming,I-10,male,Trooper Darian Jarrott,Killed
 2021-02-02,Florida,Fort Lauderdale (Sunrise),10100 Reflections Blvd W,female,Special Agent Laura Schwartzenberger,Killed
+2021-02-02,Florida,Fort Lauderdale (Sunrise),10100 Reflections Blvd W,male,Special Agent Daniel Alfin,Killed
 2021-02-01,Louisiana,Lafayette,316 W Main St,male,Deputy Clyde Kerr III,Killed
 2021-02-01,Mississippi,Perkinston,Caesar Necaise Rd and Earl C Ladner Rd,male,Lt. Michael Boutte,Killed
 2021-01-18,California,Sacramento,Arden Way and Morse Ave,male,Deputy Adam Gibson,Killed
@@ -638,28 +1069,28 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2021-12-27,California,Escondido,Mission Ave and Gamble St,male,N/A,Injured
 2021-12-25,Kansas,Wichita,2701 S Emporia St,male,Officer,Injured
 2021-12-25,Kansas,Wichita,2701 S Emporia St,male,Officer,Injured
-2021-12-21,Michigan,Burton,Connell St and Barnes Ave,male,Deputy Brandon Fachting,Injured
 2021-12-21,Michigan,Burton,Connell St and Barnes Ave,male,Officer Dalton Christie,Injured
+2021-12-21,Michigan,Burton,Connell St and Barnes Ave,male,Deputy Brandon Fachting,Injured
 2021-12-21,Pennsylvania,Philadelphia,1400 block of N Leithgow St,N/A,Officer,Injured
 2021-12-16,California,Turlock,600 block of High St,N/A,N/A,Injured
 2021-12-16,Texas,Beaumont,3150 W Cardinal Dr,male,N/A,Injured
 2021-12-16,Tennessee,Memphis,I-55 and W McLemore Ave,male,Trooper Spencer Morris,Injured
 2021-12-14,New Jersey,Newark,14th Ave and S 14th St,male,Officer Nicholas Edert,Injured
 2021-12-14,New Jersey,Newark,14th Ave and S 14th St,female,Officer Quadiryyah Marshall,Injured
+2021-12-14,North Carolina,Burnsville,US-19E and Newdale Church Rd,male,Trooper Kevin E. Glenn,Injured
 2021-12-14,Arizona,Phoenix,W Camelback Rd and N 15th Ave,male,Officer Tyler Moldovan,Injured
-2021-12-14,North Carolina,Burnsville,US-19E and Silver Hallow Rd,male,Trooper Kevin E. Glenn,Injured
 2021-12-13,North Carolina,Greensboro,1101 Lanada Rd,female,Officer H.L. Jefferson,Injured
 2021-12-10,Missouri,Springfield,4600 block of S Luster Ave,male,Trooper Colton Beck,Injured
 2021-12-09,South Carolina,North Augusta,400 block of Georgia Ave,male,Lt. Aaron Fittery,Injured
 2021-12-08,Colorado,Estes Park,Fall River Rd and Bighorn Ranger Station,male,Park Ranger Mitchell Hauptman,Injured
 2021-12-08,Ohio,Columbus,2700 block of Four Seasons Dr,N/A,Deputy US Marshall,Injured
 2021-12-06,District of Columbia,Washington,800 Southern Avenue SE,male,N/A,Injured
-2021-12-03,Indiana,Elkhart (Dunlap),W County Rd 1250 S,male,Clay Co Deputy Brison Swearingen,Injured
-2021-12-02,Montana,Busby,N/A,N/A,BIA Officer,Injured
-2021-12-02,Montana,Busby,N/A,N/A,BIA Officer,Injured
+2021-12-03,Indiana,Clay City,IN-59 and W County Rd 1250 S,male,Clay Co Deputy Brison Swearingen,Injured
+2021-12-02,Montana,Lame Deer,N/A,N/A,BIA Officer,Injured
+2021-12-02,Montana,Lame Deer,N/A,N/A,BIA Officer,Injured
+2021-12-01,Alabama,Pine Hill (Yellow Bluff),N/A,male,Chief Deputy Trenton Gulley,Injured
 2021-12-01,Utah,Salt Lake City (Taylorsville),4100 S Redwood St,N/A,Sgt Christopher McHugh,Injured
 2021-12-01,Utah,Salt Lake City (Taylorsville),4100 S Redwood St,N/A,Officer,Injured
-2021-12-01,Alabama,Pine Hill (Yellow Bluff),N/A,male,Chief Deputy Trenton Gulley,Injured
 2021-12-01,Georgia,Redan,Wellington Cir,male,Jar'rad Hunt,Injured
 2021-12-01,Georgia,Redan,Wellington Cir,male,Aaron Jackson,Injured
 2021-12-01,Illinois,Chicago,9200 block of S Stony Island Ave,male,Officer,Injured
@@ -682,15 +1113,15 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2021-11-13,Mississippi,Biloxi,100 block of Eisenhower Dr,N/A,N/A,Injured
 2021-11-11,Missouri,Springfield,3055 S Glenstone Ave,male,Officer Robert Bridges,Injured
 2021-11-10,Maryland,Upper Marlboro,3100 block of Squire Rd,female,N/A,Injured
-2021-11-09,Massachusetts,Boston,29 Ferndale St,N/A,Officer,Injured
 2021-11-09,Massachusetts,Boston,29 Ferndale St,N/A,Officer Michael Ridge,Injured
+2021-11-09,Massachusetts,Boston,29 Ferndale St,N/A,Officer,Injured
 2021-11-09,Colorado,Denver,W Kentucky Ave and S Knox Ct,male,N/A,Injured
+2021-11-08,Maryland,Riverdale,MD-410 and Taylor Rd,male,Pvt. Josey Quenton,Injured
 2021-11-08,Texas,Dallas,9857 Audelia Rd,male,N/A,Injured
-2021-11-08,Maryland,Riverdale (Riverdale Park),MD-410 and Taylor Rd,male,Pvt. Josey Quenton,Injured
 2021-11-06,Illinois,Bensenville,100 block of S York Rd,male,Officer Steven Kotlewski,Injured
 2021-11-06,Wisconsin,Milwaukee,2303 N Mayfair Rd,N/A,Sergeant,Injured
-2021-11-06,Wisconsin,Milwaukee,2303 N Mayfair Rd,N/A,Officer,Injured
 2021-11-06,Wisconsin,Milwaukee,2303 N Mayfair Rd,N/A,Sergeant,Injured
+2021-11-06,Wisconsin,Milwaukee,2303 N Mayfair Rd,N/A,Officer,Injured
 2021-11-06,Oklahoma,Broken Arrow,2900 block of E Kenosha St,male,Officer Caleb Sherman,Injured
 2021-11-06,Texas,Riesel,TX-6 and Broadway St,male,Officer Patrick Bellringer,Injured
 2021-11-06,Washington,Spokane,1500 block of S Rustle St,N/A,Agent,Injured
@@ -705,10 +1136,10 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2021-10-25,Oklahoma,Tulsa,6110 S Peoria Ave,male,N/A,Injured
 2021-10-24,Arkansas,Conway,College St,male,Officer,Injured
 2021-10-23,Michigan,Muskegon (Muskegon Heights),8th St and W Delano Ave,male,N/A,Injured
-2021-10-22,Florida,Miami (Doral),NW 94th Ave and NW 25th St,male,Officer Johnny Beautelus,Injured
 2021-10-22,Florida,Miami (Doral),NW 94th Ave and NW 25th St,male,Officer Daniel Vilarchao,Injured
-2021-10-20,Illinois,Lyons,8050 Ogden Ave,N/A,N/A,Injured
+2021-10-22,Florida,Miami (Doral),NW 94th Ave and NW 25th St,male,Officer Johnny Beautelus,Injured
 2021-10-20,Illinois,Lyons,8050 Ogden Ave,male,N/A,Injured
+2021-10-20,Illinois,Lyons,8050 Ogden Ave,N/A,N/A,Injured
 2021-10-20,Alabama,Beauregard,700 block of Lee County Rd 121,male,Deputy Tyron Ponds,Injured
 2021-10-19,Florida,Pensacola,3207 W La Rua St,male,Deputy,Injured
 2021-10-18,Illinois,Chicago,1000 W North Ave,male,N/A,Injured
@@ -776,8 +1207,8 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2021-08-22,Wisconsin,Milwaukee,S 27th and W Becher St,male,N/A,Injured
 2021-08-19,Mississippi,Jackson,Maple St and Rondo St,male,Officer Alan Mayes,Injured
 2021-08-19,New Mexico,Albuquerque,1105 Juan Tabo Blvd NE,male,Officer Mario Verbeck,Injured
-2021-08-19,New Mexico,Albuquerque,1105 Juan Tabo Blvd NE,male,Sergeant Sean Kenny,Injured
 2021-08-19,New Mexico,Albuquerque,1105 Juan Tabo Blvd NE,male,Officer James Eichel,Injured
+2021-08-19,New Mexico,Albuquerque,1105 Juan Tabo Blvd NE,male,Sergeant Sean Kenny,Injured
 2021-08-18,Texas,Somerville,FM 60 and Co Rd 230,male,Chief Deputy John Pollock,Injured
 2021-08-18,Texas,Somerville,FM 60 and Co Rd 230,male,Trooper Joshua Strawn,Injured
 2021-08-18,California,Highland,73798 Rosemary Dr,N/A,Officer,Injured
@@ -799,10 +1230,10 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2021-08-05,Indiana,Rockville,9856 South St,male,Officer,Injured
 2021-08-04,Texas,Corpus Christi,5901 Weber Rd,male,Officer Manuel Dominguez,Injured
 2021-08-04,Idaho,Blackfoot,100 block of S University Ave,N/A,Deputy,Injured
-2021-08-01,Illinois,Peoria,NE Adams St and Green St,male,Officer,Injured
+2021-08-01,Illinois,Peoria,NE Adams St and Green St,male,Officer Danny Marx,Injured
 2021-08-01,Texas,Uvalde,431 Apolonio St,male,Officer Justin Mendoza,Injured
 2021-07-30,New York,Bronx,E 169th St and Lyman Pl,male,NYPD Lt,Injured
-2021-07-29,Pennsylvania,Pittsburgh,239 Gilkeson Rd,male,Officer,Injured
+2021-07-29,Pennsylvania,Pittsburgh,239 Gilkeson Rd,male,Officer Rob Barnes,Injured
 2021-07-28,Florida,Boynton Beach,Jog Rd and Woolbright Rd,N/A,Deputy,Injured
 2021-07-27,Ohio,Nelsonville,3rd St,male,Officer KJ Tracy,Injured
 2021-07-26,Washington,Yakima,1st Ave and F St,N/A,Officer,Injured
@@ -823,8 +1254,8 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2021-07-13,Maryland,Baltimore,6901 Security Blvd,N/A,Officer,Injured
 2021-07-11,Maryland,North East,100 block of Chesapeake Ridge Ln,male,Officer,Injured
 2021-07-10,Kentucky,Carrie,N/A,male,Trooper Bradley Couch,Injured
-2021-07-07,Illinois,Chicago,11700 block of S Ashland Ave,female,Agent,Injured
 2021-07-07,Illinois,Chicago,11700 block of S Ashland Ave,male,Agent,Injured
+2021-07-07,Illinois,Chicago,11700 block of S Ashland Ave,female,Agent,Injured
 2021-07-07,Illinois,Chicago,11700 block of S Ashland Ave,male,Officer,Injured
 2021-07-05,Illinois,Chicago,100 block of N Long Ave,female,Cmdr Patrina Wines,Injured
 2021-07-05,Illinois,Chicago,100 block of N Long Ave,N/A,Sergeant,Injured
@@ -851,8 +1282,8 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2021-06-10,Arizona,Willcox,W Airport Rd and Quail Dr,male,N/A,Injured
 2021-06-09,Connecticut,Waterbury,2000 Thomaston Ave,female,N/A,Injured
 2021-06-06,Illinois,Harvey,17038 S Halsted St,male,Officer E. Muhamad,Injured
-2021-06-04,Georgia,Tifton,1400 block of Tifton Eldorado Rd,male,Deputy Robert Owens,Injured
 2021-06-04,Colorado,Colorado Springs,3110 N Nevada Ave,male,N/A,Injured
+2021-06-04,Georgia,Tifton,1400 block of Tifton Eldorado Rd,male,Deputy Robert Owens,Injured
 2021-06-04,Massachusetts,Braintree,Commercial St and McCusker Dr,male,Billy Cushing,Injured
 2021-06-04,Massachusetts,Braintree,Commercial St and McCusker Dr,male,Matthew Donaghue,Injured
 2021-06-03,Delaware,Wilmington,2400 block of N Market St,N/A,N/A,Injured
@@ -880,9 +1311,9 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2021-05-17,Maryland,Waldorf,6300 block of Josephine Rd,male,N/A,Injured
 2021-05-16,Illinois,Chicago,1500 block of S Lawndale Ave,N/A,Officer,Injured
 2021-05-16,Illinois,Chicago,1500 block of S Lawndale Ave,N/A,Officer,Injured
-2021-05-16,Alabama,Birmingham,1010 18th St S,N/A,Officer,Injured
 2021-05-16,Alabama,Birmingham,1010 18th St S,male,Officer Jeremy Dorr,Injured
 2021-05-16,Alabama,Birmingham,1010 18th St S,male,Officer Jacob Rouse,Injured
+2021-05-16,Alabama,Birmingham,1010 18th St S,N/A,Officer,Injured
 2021-05-16,Alabama,Birmingham,1010 18th St S,N/A,Officer,Injured
 2021-05-13,Texas,Alvarado,I-35 Frontage Rd and County Rd 604,male,Constable Kevin Cordell,Injured
 2021-05-12,New York,Brooklyn,Macon St and Howard Ave,male,Ofc. Brian McGurran,Injured
@@ -892,15 +1323,15 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2021-05-08,Alabama,Montgomery,3700 block of Lower Wetumpka Rd,N/A,N/A,Injured
 2021-05-08,Alabama,Montgomery,3700 block of Lower Wetumpka Rd,N/A,N/A,Injured
 2021-05-08,Oregon,Oregon City,I-205 and OR-213,N/A,N/A,Injured
-2021-05-07,Tennessee,Memphis,Leath St and Peach Ave,N/A,Agent,Injured
 2021-05-07,Tennessee,Memphis,Leath St and Peach Ave,N/A,Officer,Injured
+2021-05-07,Tennessee,Memphis,Leath St and Peach Ave,N/A,Agent,Injured
 2021-05-07,Georgia,Austell,5000 block of Maxham Rd,N/A,Officer,Injured
 2021-05-07,Virginia,Norton,780 Commonwealth Dr,male,Police Chief James Lane,Injured
 2021-05-06,California,San Andreas,55 W Saint Charles St,N/A,N/A,Injured
 2021-05-04,Arkansas,Prairie Grove,313 W Thurman St,male,Officer Tyler Franks,Injured
 2021-05-04,Tennessee,Nashville,7200 block of Sugarloaf Dr,N/A,Officer Brian Sherman,Injured
 2021-04-29,Missouri,Saint Peters,3000 block of Mid Rivers Mall Dr,male,N/A,Injured
-2021-04-24,South Carolina,Mc Clellanville (Mcclellanville),8400 Block of Old Georgetown Rd,male,Master Deputy Micah Cox,Injured
+2021-04-24,South Carolina,Mc Clellanville,8400 block of Old Georgetown Rd,male,Master Deputy Micah Cox,Injured
 2021-04-23,Texas,Haslet,545 Salida Rd,male,Trooper William Wallace,Injured
 2021-04-23,Florida,Fort Lauderdale (Dania Beach),200 Gulf Stream Way,male,Officer,Injured
 2021-04-20,Michigan,Detroit,20400 block of Hanna St,male,N/A,Injured
@@ -934,7 +1365,7 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2021-03-21,Oklahoma,Davidson,200 block of W Grand Ave,male,Sheriff William Ingram,Injured
 2021-03-20,Virginia,Harrisonburg,910 N Main St,male,MPO Bradley Boyce,Injured
 2021-03-20,Illinois,Chicago,100 block of N La Crosse Ave,female,Officer,Injured
-2021-03-18,South Carolina,Columbia,Harmon Rd,female,Deputy Chief Steffany Snowden,Injured
+2021-03-18,South Carolina,Columbia,Shivers Rd,female,Deputy Chief Steffany Snowden,Injured
 2021-03-18,Texas,Magnolia,22000 block of Allyson Rd,male,Deputy,Injured
 2021-03-16,California,Hayward,30155 Industrial Pkwy SW,N/A,N/A,Injured
 2021-03-16,California,Los Angeles,1000 block of W 21st St,male,N/A,Injured
@@ -942,23 +1373,23 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2021-03-16,Arizona,Apache Junction,E Main St and S Crismon Rd,male,Officer Brian Brugman,Injured
 2021-03-14,Illinois,Chicago,7808 S Halsted St,male,Sgt,Injured
 2021-03-14,Georgia,Reidsville,Rabun Ave,N/A,Trooper,Injured
-2021-03-14,Montana,Lodge Grass,N/A,N/A,BIA Officer,Injured
 2021-03-12,Tennessee,Nashville,3053 Brick Church Pike,male,Officer Josh Baker,Injured
 2021-03-12,Nebraska,Omaha,10000 California St,male,Officer Jeffrey Wittstruck,Injured
 2021-03-11,New Mexico,Las Cruces,Campo St and E Hadley Ave,N/A,N/A,Injured
-2021-03-07,New York,Brooklyn,42 Hawthorne St,male,Officer Jonathan Landro,Injured
 2021-03-07,New York,Brooklyn,42 Hawthorne St,male,Officer Robert Aviles,Injured
+2021-03-07,New York,Brooklyn,42 Hawthorne St,male,Officer Jonathan Landro,Injured
 2021-03-07,Missouri,Anderson,State Hwy 76 and Anderson St,male,Officer Hollis,Injured
+2021-03-04,Texas,Mabank (Gun Barrel City),US-175 and TX-334,male,Deputy,Injured
 2021-03-03,Pennsylvania,Lancaster,500 block of W King St,male,N/A,Injured
 2021-03-01,New York,Ontario,6076 Ontario Center Rd,male,Deputy Robert Mansell,Injured
 2021-02-27,Georgia,Brinson,US-84 and SR 310,N/A,Deputy,Injured
 2021-02-27,Kansas,Wichita,1400 block of S St Francis,N/A,N/A,Injured
 2021-02-27,Kansas,Wichita,1400 block of S St Francis,N/A,N/A,Injured
 2021-02-27,Kansas,Wichita,1400 block of S St Francis,N/A,N/A,Injured
-2021-02-27,Minnesota,Sebeka,205th Ave and 270th St,male,Deputy Troy Mayer,Injured
 2021-02-27,Minnesota,Sebeka,205th Ave and 270th St,male,Officer Jason Worm,Injured
-2021-02-25,Utah,Provo,80 S 900 E,N/A,N/A,Injured
+2021-02-27,Minnesota,Sebeka,205th Ave and 270th St,male,Deputy Troy Mayer,Injured
 2021-02-25,Utah,Provo,80 S 900 E,male,Officer John Oseguera,Injured
+2021-02-25,Utah,Provo,80 S 900 E,N/A,N/A,Injured
 2021-02-24,Oregon,Eagle Point,400 Stevens Rd,male,Deputy,Injured
 2021-02-22,California,Escondido,Lincoln Ave and Morning View Dr,male,N/A,Injured
 2021-02-22,North Carolina,Nebo,Randolph Rd,N/A,Deputy,Injured
@@ -969,15 +1400,14 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2021-02-18,Texas,Dallas,5300 block of Bonita Ave,N/A,Officer,Injured
 2021-02-18,Iowa,Davenport,W Kimberly Rd and N Division St,male,Officer Nathaniel Missimer,Injured
 2021-02-13,New Mexico,Albuquerque,Charleston St NE and Chico Rd NE,N/A,Officer,Injured
+2021-02-04,New Mexico,Deming,I-10,N/A,Officer Adrian De La Garza,Injured
+2021-02-04,North Carolina,Rocky Mount,I-95 and Dortches Blvd,male,"Deputy William """"Tommy"""" Toney",Injured
 2021-02-04,North Carolina,High Point,2912 W English Rd,N/A,Officer,Injured
 2021-02-04,North Carolina,High Point,2912 W English Rd,N/A,Officer,Injured
 2021-02-04,North Carolina,High Point,2912 W English Rd,N/A,Officer,Injured
-2021-02-04,New Mexico,Las Cruces,I-10,N/A,Officer Adrian De La Garza,Injured
 2021-02-04,Maryland,Baltimore,1500 block of N Mount St,male,Deputy Marshal,Injured
-2021-02-04,North Carolina,Rocky Mount,I 95 and CR 43,female,Deputy Shelby Smith,Injured
-2021-02-04,North Carolina,Rocky Mount,I 95 and CR 43,male,"Deputy William """"Tommy"""" Toney",Injured
-2021-02-03,Arizona,Polacca (First Mesa),N/A,N/A,N/A,Injured
 2021-02-03,Texas,San Antonio,6945 I-10 W,male,Sgt. Joey Sepulveda,Injured
+2021-02-03,Arizona,Polacca (First Mesa),N/A,N/A,N/A,Injured
 2021-02-02,Florida,Fort Lauderdale (Sunrise),10100 Reflections Blvd W,N/A,Special Agent,Injured
 2021-02-02,Florida,Fort Lauderdale (Sunrise),10100 Reflections Blvd W,N/A,Special Agent,Injured
 2021-02-02,Florida,Fort Lauderdale (Sunrise),10100 Reflections Blvd W,N/A,Special Agent,Injured
@@ -993,12 +1423,12 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2021-01-14,Florida,Homestead (Florida City),33501 S Dixie Hwy,male,Timothy Hunsberger,Injured
 2021-01-12,Nevada,Sparks,Glendale Ave,N/A,N/A,Injured
 2021-01-08,Missouri,Saint Louis,900 block of LaSalle Park Ct,male,Officer,Injured
+2021-01-03,Texas,Houston,2900 Travis St,male,Deputy,Injured
+2021-01-03,Texas,Houston,2900 Travis St,male,Deputy,Injured
 2021-01-03,Texas,Houston,2900 Travis St,female,Deputy,Injured
-2021-01-03,Texas,Houston,2900 Travis St,male,Deputy,Injured
-2021-01-03,Texas,Houston,2900 Travis St,male,Deputy,Injured
 2021-01-02,Virginia,Sterling,45415 Dulles Crossing Plaza,male,Deputy Camron Gentry,Injured
-2021-01-01,Colorado,Pueblo,1042 N Tenderfoot Ln,male,Deputy Nick Berumen,Injured
-2021-01-01,Colorado,Pueblo,1042 N Tenderfoot Ln,N/A,Deputy Sgt Rude,Injured
+2021-01-01,Colorado,Pueblo,1042 N Tenderfoot Ln,N/A,Deputy Sgt Josh Rude,Injured
+2021-01-01,Colorado,Pueblo,1042 N Tenderfoot Ln,male,"Deputy Nicolas """"Nick"""" Berumen",Injured
 2020-12-16,Texas,Houston,Bell St and Collier St,female,Officer,Killed
 2020-12-16,North Carolina,Concord,7761 Gateway Ln NW,male,Officer Jason Shuping,Killed
 2020-12-11,North Carolina,Belmont,313 Beatty Dr,male,Officer Tyler Avery Herndon,Killed
@@ -1034,18 +1464,18 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2020-06-03,Arkansas,Bryant,15458 Evergreen Dr,N/A,Officer Scott Hutton,Killed
 2020-06-02,Alabama,Moody,2451 Moody Pkwy,male,Sgt. Stephen Williams,Killed
 2020-05-31,New York,Bronx,2976 Lawton Ave,female,Officer Amy Fantauzzi,Killed
-2020-05-29,California,Oakland,1301 Clay St,male,Officer Patrick Underwood,Killed
 2020-05-29,Texas,Missouri City,3900 block of Chestnut Bend,male,Constable Caleb Rule,Killed
+2020-05-29,California,Oakland,1301 Clay St,male,Officer Patrick Underwood,Killed
 2020-05-28,Utah,Ogden,300 block of Jackson Ave,N/A,Officer Nathan Lyday,Killed
 2020-05-27,North Dakota,Grand Forks,2627 S 17th St,N/A,Officer Cody Holte,Killed
 2020-05-03,Missouri,Kansas City,W 123rd St and Mackey St,male,Officer Michael Mosher,Killed
 2020-05-03,Kansas,Overland Park,W 123rd St and Antioch Rd,male,Officer Mike Mosher,Killed
-2020-04-26,Louisiana,Baton Rouge,3100 block of Conrad Dr,male,Sgt. Glen Dale Hutto Jr,Killed
+2020-04-26,Louisiana,Baton Rouge,3150 block of Conrad Dr,male,Sgt. Glen Dale Hutto Jr,Killed
 2020-04-18,Texas,San Marcos,2917 Hunter Rd,male,Officer Justin Putnam,Killed
 2020-04-09,Indiana,Indianapolis,1800 block of Edinburge Square,female,Patrol Officer Breann Leath,Killed
 2020-03-29,Arizona,Phoenix,23800 block of N 40th Dr,male,Cmdr Greg Carnicle,Killed
 2020-03-27,Nevada,Ely,US-93,male,Sergeant Ben Jenkins,Killed
-2020-03-15,Missouri,Springfield,2885 E. Chestnut Expressway,male,Officer Christopher Walsh,Killed
+2020-03-15,Missouri,Springfield,2885 E Chestnut Expressway,male,Officer Christopher Walsh,Killed
 2020-03-13,New York,New York (Manhattan),1 Central Park W,female,Officer Erica Reyes,Killed
 2020-03-13,Alabama,Birmingham (Hoover),3142 Lorna Rd,N/A,Officer,Killed
 2020-03-13,Pennsylvania,Philadelphia,1600 block of Bridge St,male,Sgt. James O'Connor,Killed
@@ -1054,8 +1484,8 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2020-02-17,Arizona,Pinetop,777 AZ-260,male,Officer David Kellywood,Killed
 2020-02-05,Florida,Palm City,I-95,male,Trooper Joseph Bullock,Killed
 2020-02-04,Alabama,Kimberly,I-65,male,Officer Nick O'Rear,Killed
-2020-01-19,Hawaii,Honolulu,3015 Hibiscus Dr,female,Officer Tiffany-Victoria Enriquez,Killed
 2020-01-19,Hawaii,Honolulu,3015 Hibiscus Dr,male,Officer Kaulike Kalama,Killed
+2020-01-19,Hawaii,Honolulu,3015 Hibiscus Dr,female,Officer Tiffany-Victoria Enriquez,Killed
 2020-01-19,New Jersey,Matawan,208 Broad St,male,Officer Edward Nortrup,Killed
 2020-01-05,South Carolina,Florence,2100 Terminal Dr,male,Officer Jackson Ryan Winkeler,Killed
 2020-12-31,Massachusetts,Springfield,195 Nursery St,male,N/A,Injured
@@ -1095,23 +1525,23 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2020-11-27,Texas,Mcallen,S McColl Rd and Orangewood Dr E,male,N/A,Injured
 2020-11-27,Tennessee,Memphis,Winchester Rd and Ridgeway Rd,N/A,N/A,Injured
 2020-11-26,North Carolina,Reidsville,294 Dover Cir,male,Deputy Tyler Wiseman,Injured
-2020-11-24,New York,Corona (Queens),145-86 179th St,male,Officer Joseph Murphy,Injured
 2020-11-24,New York,Corona (Queens),145-86 179th St,male,Officer Christopher Wells,Injured
+2020-11-24,New York,Corona (Queens),145-86 179th St,male,Officer Joseph Murphy,Injured
 2020-11-24,Virginia,Broadway,Daphna Rd and Brethren Rd,N/A,Deputy,Injured
 2020-11-23,California,Hemet,W Florida Ave and Golden Village,N/A,N/A,Injured
 2020-11-21,Florida,New Smyrna Beach,Turnbull St and Industrial Park Ave,male,Cpl. Ralph Hunnefeld,Injured
 2020-11-20,Massachusetts,Hyannis,Camp St,male,Trooper,Injured
 2020-11-19,North Carolina,La Grange,2544 Lang Skinner Rd,male,Deputy Steven Key,Injured
-2020-11-18,Washington,Soap Lake,WA-17 and Rd 19 NE,male,Deputy Sheriff Jeff Wentworth,Injured
-2020-11-17,Kentucky,Mc Daniels (Mcdaniels),13000 block of KY-259,N/A,Deputy,Injured
+2020-11-18,Washington,Ephrata,N/A,male,Deputy Sheriff Jeff Wentworth,Injured
 2020-11-17,Georgia,Atlanta,301 Fulton Industrial Cir SW,male,Officer,Injured
 2020-11-17,Maryland,Laurel,9500 block of Muirkirk Rd,male,Detective Donnie Oaks,Injured
+2020-11-17,Kentucky,Mc Daniels,13598 KY-259,N/A,Deputy,Injured
 2020-11-16,Texas,Gilmer,1011 US-271,N/A,Deputy,Injured
 2020-11-15,Ohio,Cleveland,2361 E 61st St,male,Officer,Injured
 2020-11-15,Florida,Mulberry,Nichols Rd,male,Deputy Sheriff Joshua Chaves,Injured
 2020-11-14,North Carolina,Durham,Mineral Springs Rd and Fletchers Chapel Rd,male,Deputy,Injured
-2020-11-12,North Carolina,Gastonia,1225 Union Rd,N/A,Officer M. Lewis,Injured
-2020-11-12,North Carolina,Gastonia,1225 Union Rd,N/A,Sergeant E. Nelson,Injured
+2020-11-12,North Carolina,Gastonia,1225 Union Rd,male,Sergeant Eric Charles Nelson,Injured
+2020-11-12,North Carolina,Gastonia,1225 Union Rd,male,Officer Michael Lewis,Injured
 2020-11-11,Oklahoma,Oklahoma City,Couch Dr and N Lee Ave,male,N/A,Injured
 2020-11-09,Maryland,Baltimore,3200 block of Westwood Ave,male,Det. Brandon Bolt,Injured
 2020-11-09,Washington,Woodinville,14000 block of NE 183rd St,male,Deputy,Injured
@@ -1120,8 +1550,8 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2020-11-06,Wisconsin,Delafield,3030 Golf Rd,N/A,Officer,Injured
 2020-11-06,Wisconsin,Delafield,3030 Golf Rd,N/A,Officer,Injured
 2020-11-05,Texas,Dallas,700 block of Elm St,N/A,Officer,Injured
-2020-11-02,Tennessee,Jackson,201 Morningside Dr,male,Agent,Injured
 2020-11-02,Tennessee,Jackson,201 Morningside Dr,male,Agent Joe Frye,Injured
+2020-11-02,Tennessee,Jackson,201 Morningside Dr,male,Agent,Injured
 2020-11-01,Illinois,Oak Forest,4300 block of Frontage Road,N/A,N/A,Injured
 2020-11-01,California,Granada Hills,16940 Devonshire St,N/A,N/A,Injured
 2020-10-30,Texas,Rockwall,400 block of Tubbs Rd,male,N/A,Injured
@@ -1135,7 +1565,7 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2020-10-20,Texas,Houston,2626 Holly Hall St,male,Officer Courtney Waller,Injured
 2020-10-18,Tennessee,Chattanooga (East Ridge),3980 Ringgold Rd,male,Cpl Terry Prescott,Injured
 2020-10-16,Kansas,Lyons,1 Arrowhead Dr,male,Officer Cory Ryan,Injured
-2020-10-14,New York,Troy,Landfill Dr,male,N/A,Injured
+2020-10-14,New York,Troy,Landfill Dr,male,Det. Justin Ashe,Injured
 2020-10-13,Indiana,South Bend,52000 block of Lilac Rd,male,Officer Joseph Kasznia,Injured
 2020-10-09,Georgia,Jonesboro,2615 Mt Zion Pkwy,male,N/A,Injured
 2020-10-08,Indiana,Wabash,294 E Maple St,male,Officer Nick Brubaker,Injured
@@ -1146,13 +1576,14 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2020-10-02,California,Los Angeles,1310 W Imperial Hwy,female,Deputy,Injured
 2020-10-01,West Virginia,Coal City,1400 block of W Whitby Rd,N/A,Deputy,Injured
 2020-09-30,Georgia,Bowman,Rehoboth Rd,male,Deputy Jonathan Alewine,Injured
+2020-09-28,California,Victorville,12600 block of Stage Coach Dr,male,Deputy Arootin Bandari,Injured
 2020-09-28,Florida,Jacksonville,7200 Block of Rutledge Pearson Dr,male,Detective R.M. Nauss,Injured
 2020-09-26,Missouri,Peculiar,S Hedgewood Hills and SE Outer Rd,N/A,Officer,Injured
 2020-09-26,Missouri,Peculiar,S Hedgewood Hills and SE Outer Rd,N/A,Officer,Injured
 2020-09-24,Florida,Sebring,9133 Markland Ln,male,Deputy,Injured
 2020-09-24,California,Paso Robles,100 Templeton Cemetery Rd,male,"Deputy Richard """"Ted"""" Lehnhoff",Injured
-2020-09-23,Kentucky,Louisville,1st St and Broadway,N/A,Officer Robinson Desroches,Injured
 2020-09-23,Kentucky,Louisville,1st St and Broadway,N/A,Officer Aubrey Gregory,Injured
+2020-09-23,Kentucky,Louisville,1st St and Broadway,N/A,Officer Robinson Desroches,Injured
 2020-09-20,Louisiana,Pineville,1313 Military Hwy,male,Officer John Michael Goulart Jr.,Injured
 2020-09-18,Pennsylvania,Philadelphia,1400 block of Sharpnack St,male,N/A,Injured
 2020-09-16,Michigan,Ypsilanti (Superior Township),8300 Lakeview Dr,male,Deputy,Injured
@@ -1175,17 +1606,17 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2020-08-29,Florida,Daytona Beach,1629 Espanola Ave,male,Officer Dominic Besse,Injured
 2020-08-29,New York,Middletown,28 Myrtle Ave,male,Officer Evan Barone,Injured
 2020-08-29,Missouri,Saint Louis,3700 block of Hartford St,male,Officer Arlando Bailey,Injured
-2020-08-24,North Carolina,Lincolnton,2590 Gaston Webbs Chapel Rd,N/A,Deputy B Alexander,Injured
 2020-08-24,North Carolina,Lincolnton,2590 Gaston Webbs Chapel Rd,male,Deputy W Spurling,Injured
+2020-08-24,North Carolina,Lincolnton,2590 Gaston Webbs Chapel Rd,N/A,Deputy B Alexander,Injured
 2020-08-23,Maryland,Hyattsville,1333 Capital View Terrace,male,N/A,Injured
 2020-08-23,Maryland,Hyattsville,1333 Capital View Terrace,male,N/A,Injured
 2020-08-23,Maryland,Hyattsville,1333 Capital View Terrace,male,Officer Brandon Westfall,Injured
 2020-08-22,Arkansas,Little Rock,4513 Rosswood Dr,male,Officer Christopher Crowder,Injured
 2020-08-22,California,Rancho Cordova,Dutchess Way,N/A,Deputy,Injured
 2020-08-20,Texas,Spring Branch,1400 block of Springwood Dr,male,Deputy Eddy Luna,Injured
-2020-08-16,Texas,Cedar Park,2304 Natalie Cove,female,Officer Jacqueline Quiles,Injured
-2020-08-16,Texas,Cedar Park,2304 Natalie Cove,male,Officer Cris Hester,Injured
 2020-08-16,Texas,Cedar Park,2304 Natalie Cove,male,Officer Nik Anderson,Injured
+2020-08-16,Texas,Cedar Park,2304 Natalie Cove,male,Officer Cris Hester,Injured
+2020-08-16,Texas,Cedar Park,2304 Natalie Cove,female,Officer Jacqueline Quiles,Injured
 2020-08-16,Louisiana,Mansfield,Booker Loop Rd,male,Deputy Gabe Whitaker II,Injured
 2020-08-14,North Dakota,Grafton,N/A,male,Ofc. Lucas Campoverde,Injured
 2020-08-09,South Carolina,Columbia,2221 Bush River Rd,male,N/A,Injured
@@ -1201,9 +1632,9 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2020-08-01,Florida,Miami,SW 255th St and 147th Ave,male,N/A,Injured
 2020-07-31,Pennsylvania,Slatington,N/A,N/A,N/A,Injured
 2020-07-30,Florida,Tampa,I-275 and N Westshore Blvd,male,N/A,Injured
-2020-07-30,Illinois,Chicago,5555 W Grand Ave,male,Officer Jason Cloherty,Injured
-2020-07-30,Illinois,Chicago,5555 W Grand Ave,male,Officer James Rowe,Injured
 2020-07-30,Illinois,Chicago,5555 W Grand Ave,male,Officer James Kurth,Injured
+2020-07-30,Illinois,Chicago,5555 W Grand Ave,male,Officer James Rowe,Injured
+2020-07-30,Illinois,Chicago,5555 W Grand Ave,male,Officer Jason Cloherty,Injured
 2020-07-29,Georgia,La Grange,242 Newton Rd,male,Marshall,Injured
 2020-07-28,North Carolina,Canton,Old Asheville Hwy,male,Deputy Eric Batchelor,Injured
 2020-07-28,Florida,Lake City,NE Webster Ave and NE Jenkins Ln,male,"Officer Remington """"Cody"""" Chauncey",Injured
@@ -1254,32 +1685,32 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2020-06-15,Illinois,Chicago,5000 block of S Martin Luther King Dr,male,N/A,Injured
 2020-06-14,Maryland,Baltimore,2300 block of Winchester St,male,Officer Brian Burke,Injured
 2020-06-12,Indiana,Remington,4154 W US-24,male,N/A,Injured
-2020-06-10,California,Paso Robles,900 Park St,male,Sergeant Michael Smiley,Injured
 2020-06-10,California,Paso Robles,900 Park St,male,Deputy Nicholas Dreyfus,Injured
 2020-06-10,California,Paso Robles,900 Park St,N/A,CHP Trooper,Injured
 2020-06-10,California,Paso Robles,900 Park St,male,Deputy Blake Bursiaga,Injured
+2020-06-10,California,Paso Robles,900 Park St,male,Sergeant Michael Smiley,Injured
 2020-06-09,Colorado,Englewood,899 W Floyd Ave,female,Officer,Injured
 2020-06-08,Illinois,Chicago,500 block of N Leamington Ave,male,N/A,Injured
-2020-06-06,California,Ben Lomond,120 Waldeberg Dr,male,CHP Officer,Injured
 2020-06-06,California,Ben Lomond,120 Waldeberg Dr,N/A,Deputy,Injured
+2020-06-06,California,Ben Lomond,120 Waldeberg Dr,male,CHP Officer,Injured
 2020-06-04,North Carolina,Lexington,403 Northview Dr,male,N/A,Injured
-2020-06-03,New York,Brooklyn,Church Ave and Flatbush Ave,male,Officer Randy Ramnarine,Injured
 2020-06-03,New York,Brooklyn,Church Ave and Flatbush Ave,N/A,Officer,Injured
+2020-06-03,New York,Brooklyn,Church Ave and Flatbush Ave,male,Officer Randy Ramnarine,Injured
 2020-06-02,Arkansas,Fort Smith,700 N Albert Pike Ave,male,Detective,Injured
 2020-06-02,Virginia,Richmond,1000 block of Semmes Ave,male,Officer Rashad Martin,Injured
 2020-06-02,Virginia,Richmond,1000 block of Semmes Ave,male,Officer Jason Scott,Injured
 2020-06-01,Nevada,Las Vegas,2880 S Las Vegas Blvd,male,Officer Shay K Mikalonis,Injured
 2020-06-01,Iowa,Davenport,N Myrtle St and W 15th St,male,N/A,Injured
 2020-06-01,California,Los Angeles,Vermont Ave and 22nd St,N/A,N/A,Injured
-2020-06-01,Missouri,Saint Louis,1915 Olive St,N/A,N/A,Injured
-2020-06-01,Missouri,Saint Louis,1915 Olive St,N/A,N/A,Injured
-2020-06-01,Missouri,Saint Louis,1915 Olive St,N/A,N/A,Injured
 2020-06-01,Missouri,Saint Louis,1915 Olive St,male,Ryan Murphy,Injured
+2020-06-01,Missouri,Saint Louis,1915 Olive St,N/A,N/A,Injured
+2020-06-01,Missouri,Saint Louis,1915 Olive St,N/A,N/A,Injured
+2020-06-01,Missouri,Saint Louis,1915 Olive St,N/A,N/A,Injured
 2020-05-31,California,Los Angeles,Lincoln Blvd and Machado St,female,N/A,Injured
 2020-05-30,Florida,Altha,21281 Apachee Rd,male,Sgt Colby Beck,Injured
 2020-05-30,Wisconsin,Milwaukee,200 W Locust St,male,N/A,Injured
-2020-05-29,California,Oakland,1301 Clay St,male,Officer Sombat Mifkovic,Injured
 2020-05-29,Pennsylvania,Philadelphia,1405 S 10th St,male,Robert Friel,Injured
+2020-05-29,California,Oakland,1301 Clay St,male,Officer Sombat Mifkovic,Injured
 2020-05-28,Utah,Ogden,300 block of Jackson Ave,N/A,N/A,Injured
 2020-05-28,West Virginia,Beckley,Coal St,N/A,Trooper,Injured
 2020-05-28,West Virginia,Beckley,Coal St,N/A,Deputy,Injured
@@ -1307,13 +1738,13 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2020-05-06,Arizona,Cottonwood,E Birch St and 15th St,male,Officer Matt Strickland,Injured
 2020-05-06,Florida,Interlachen,Arrowhead Dr,male,Deputy,Injured
 2020-05-05,Missouri,Saint Louis (Webster Groves),I-44 and S Elm Ave,male,Officer,Injured
-2020-05-04,North Carolina,Spring Lake,600 block of Poe Ave,male,Detective Kevin Love,Injured
 2020-05-04,North Carolina,Spring Lake,600 block of Poe Ave,male,Detective Sgt Brandyn Lyles,Injured
+2020-05-04,North Carolina,Spring Lake,600 block of Poe Ave,male,Detective Kevin Love,Injured
 2020-05-04,Missouri,Saint Louis,5400 block of Bircher Blvd,male,Officer,Injured
 2020-04-27,Arizona,Chandler,589 N Delaware St,N/A,Officer,Injured
 2020-04-27,Arizona,Chandler,589 N Delaware St,N/A,Officer,Injured
 2020-04-27,Arizona,Chandler,589 N Delaware St,N/A,Officer Chase Babek-Miller,Injured
-2020-04-26,Louisiana,Baton Rouge,3100 block of Conrad Dr,male,Cpl Derrick Maglone,Injured
+2020-04-26,Louisiana,Baton Rouge,3150 block of Conrad Dr,male,Cpl Derrick Maglone,Injured
 2020-04-25,New Jersey,Elmer,187 Harding Hwy,male,Richard Hershey,Injured
 2020-04-25,Georgia,Hogansville,Lincoln St,N/A,Officer,Injured
 2020-04-24,Alabama,Birmingham,4012 24th St N,male,Det. Mikiel Smith,Injured
@@ -1322,11 +1753,11 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2020-04-19,Nevada,Henderson,2200 block of Galindo Ct,N/A,N/A,Injured
 2020-04-19,Texas,Rowlett,George Bush Hwy and Liberty Grove Rd,N/A,Officer,Injured
 2020-04-19,Texas,Rowlett,George Bush Hwy and Liberty Grove Rd,N/A,Officer,Injured
-2020-04-18,Texas,San Marcos,2917 Hunter Rd,male,Officer Franco Stewart,Injured
 2020-04-18,Texas,San Marcos,2917 Hunter Rd,male,Officer Justin Mueller,Injured
+2020-04-18,Texas,San Marcos,2917 Hunter Rd,male,Officer Franco Stewart,Injured
 2020-04-15,Missouri,Jefferson City,E Atchison St and Jackson St,N/A,N/A,Injured
-2020-04-14,Louisiana,New Orleans,Strathmore Dr and Briarheath Dr,male,Officer,Injured
 2020-04-14,Louisiana,New Orleans,Strathmore Dr and Briarheath Dr,N/A,Officer,Injured
+2020-04-14,Louisiana,New Orleans,Strathmore Dr and Briarheath Dr,male,Officer,Injured
 2020-04-10,Oregon,Klamath Falls,1700 block of Fargo St,male,Trooper Kameron Gordon,Injured
 2020-04-09,Illinois,Chicago,945 W Belmont Ave,male,Eric Camp,Injured
 2020-04-09,Texas,Comfort,I-10,male,Deputy,Injured
@@ -1349,7 +1780,7 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2020-03-17,Georgia,Atlanta,11th St and Piedmont Ave,male,Officer,Injured
 2020-03-16,Louisiana,Hammond,Booker II Rd,male,Deputy,Injured
 2020-03-15,Illinois,Round Lake (Round Lake Beach),100 block of Golfview Dr,male,N/A,Injured
-2020-03-15,Missouri,Springfield,2885 E. Chestnut Expressway,male,Officer Josiah Overton,Injured
+2020-03-15,Missouri,Springfield,2885 E Chestnut Expressway,male,Officer Josiah Overton,Injured
 2020-03-13,Kentucky,Louisville,3003 Springfield Dr,male,Sgt. Jonathan Mattingly,Injured
 2020-03-11,Alabama,Birmingham,1200 block of Tuscaloosa Ave,male,Officer Anthony Wheeler,Injured
 2020-03-11,California,Fresno,Cedar Ave and McKinley Ave,male,Deputy,Injured
@@ -1368,8 +1799,8 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2020-02-13,Arkansas,Forrest City,205 Deaderick Rd,male,Lt Eric Varner,Injured
 2020-02-13,Arkansas,Forrest City,205 Deaderick Rd,male,Detective Eugene Watlington,Injured
 2020-02-13,District of Columbia,Washington,700 block of Varnum St NW,N/A,N/A,Injured
-2020-02-12,Maryland,Baltimore,5900 block of Radecke Ave,N/A,Detective Robert Adams,Injured
 2020-02-12,Maryland,Baltimore,5900 block of Radecke Ave,N/A,Officer First Class Swinney,Injured
+2020-02-12,Maryland,Baltimore,5900 block of Radecke Ave,N/A,Detective Robert Adams,Injured
 2020-02-12,Georgia,Austell,970 Ellison Ct,male,N/A,Injured
 2020-02-11,Arkansas,Magnolia,Co Rd 78,male,Chief Todd Dew,Injured
 2020-02-10,Arkansas,Forrest City,205 Deaderick Rd,male,Detective Eugene Watlington,Injured
@@ -1406,7 +1837,7 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2019-12-10,New Jersey,Jersey City,223 Martin Luther King Dr,male,Detective Joseph Seals,Killed
 2019-12-07,Arkansas,Fayetteville,100 W Rock St,male,Officer Stephen Carr,Killed
 2019-12-07,Texas,Houston,7400 block of Avenue L,male,Sergeant Christopher Brewster,Killed
-2019-12-06,Alabama,Huntsville,Levert St and Oakwood Ave,male,STAC Officer Billy Clardy III,Killed
+2019-12-06,Alabama,Huntsville,Levert St and Oakwood Ave,male,STAC Officer Billy Fred Clardy III,Killed
 2019-11-23,Alabama,Hayneville,15 W Tuskeena St,male,Sheriff Big John Williams,Killed
 2019-11-20,Michigan,Detroit,20040 block of Wyoming Ave,male,Officer Rasheen McClain,Killed
 2019-11-19,Georgia,Augusta,1713 Martin Luther King Jr Blvd,male,Investigator Cecil Ridley,Killed
@@ -1469,7 +1900,7 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2019-01-13,Alabama,Birmingham,700 block of 5th Ave N,male,Sgt. Wytasha Carter,Killed
 2019-01-10,California,Davis,5th St and D St,female,Officer Natalie Corona,Killed
 2019-01-09,Louisiana,Shreveport,1633 Midway Ave,female,Ofc Chatéri Payne,Killed
-2019-01-05,Utah,Orem,50 W University Parkway,male,Officer Joseph Shinners,Killed
+2019-01-05,Utah,Orem,50 W University Pkwy,male,Officer Joseph Shinners,Killed
 2019-12-31,Washington,Federal Way,30800 block of 14th Ave S,N/A,Officer,Injured
 2019-12-31,Washington,Federal Way,30800 block of 14th Ave S,N/A,Officer,Injured
 2019-12-31,Nebraska,Omaha,3600 N 24th St,male,Officer Joshua Ames,Injured
@@ -1492,16 +1923,16 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2019-12-10,Pennsylvania,Elkland,1507 Barney Hill Rd,male,Trooper,Injured
 2019-12-10,New Jersey,Jersey City,223 Martin Luther King Dr,female,Officer Mariela Fernandez,Injured
 2019-12-10,New Jersey,Jersey City,223 Martin Luther King Dr,male,Officer Ray Sanchez,Injured
-2019-12-06,Florida,Pensacola,280 Taylor Rd,N/A,Deputy,Injured
-2019-12-06,Florida,Pensacola,280 Taylor Rd,N/A,Deputy,Injured
 2019-12-06,Florida,Pensacola,280 Taylor Rd,male,Officer Charles Hogue,Injured
+2019-12-06,Florida,Pensacola,280 Taylor Rd,N/A,Deputy,Injured
+2019-12-06,Florida,Pensacola,280 Taylor Rd,N/A,Deputy,Injured
 2019-12-03,Texas,Houston,17000 Aldine Westfield Rd,male,Officer,Injured
 2019-12-03,Oklahoma,Ada,800 block of W 12th St,male,Officer Matthew Mericle,Injured
 2019-12-02,Colorado,Fort Lupton,200 block of Ponderosa Pl,male,Sgt. Christopher Pelton,Injured
 2019-12-02,Texas,Port Arthur,7901 Twin City Hwy,male,Deputy,Injured
-2019-12-01,Michigan,Kalamazoo,6300 block of Proctor St,male,Kalamazoo County deputy,Injured
 2019-12-01,Michigan,Kalamazoo,6300 block of Proctor St,male,Public Safety Officer Caleb Jones,Injured
 2019-12-01,Michigan,Kalamazoo,6300 block of Proctor St,male,MSP Trooper Mark Fletcher,Injured
+2019-12-01,Michigan,Kalamazoo,6300 block of Proctor St,male,Kalamazoo County deputy,Injured
 2019-11-30,Michigan,Battle Creek,310 Cherry St,male,Officer Jeff Johnson,Injured
 2019-11-29,California,Los Angeles (Boyle Heights),Malabar St and Fickett St,male,N/A,Injured
 2019-11-26,Texas,Laredo,100 block of Knoll Ave,male,Officer Anthony Cabello,Injured
@@ -1522,8 +1953,8 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2019-11-03,Arizona,Phoenix,S 28th St and E Atlanta Ave,N/A,Officer Chad Estle,Injured
 2019-11-01,Mississippi,Jackson,1005 E McDowell Rd,male,Officer,Injured
 2019-11-01,North Carolina,Charlotte,Oakburn Dr,male,N/A,Injured
-2019-10-30,West Virginia,Ona,4036 Blue Sulphur Rd,male,Deputy Jared Cremeans,Injured
 2019-10-30,West Virginia,Ona,4036 Blue Sulphur Rd,male,Deputy Jimmy Johnston,Injured
+2019-10-30,West Virginia,Ona,4036 Blue Sulphur Rd,male,Deputy Jared Cremeans,Injured
 2019-10-29,Texas,Denton,1800 block of W University Dr,male,Officer Urbano Rodriguez Jr,Injured
 2019-10-23,California,Placerville,4740 Sand Ridge Rd,male,Deputy Joshua Tasabia,Injured
 2019-10-23,New York,New York (Manhattan),Frederick Douglass Blvd and W 148th St,male,Officer Christopher Hernandez,Injured
@@ -1543,8 +1974,8 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2019-09-25,Florida,Brooksville,18900 Cortez Rd,male,Officer,Injured
 2019-09-21,Illinois,Chicago,S Winchester Ave and W 65th St,male,Officer Adam Wazny,Injured
 2019-09-21,Arizona,Flagstaff,2004 W Historic Rte 66,male,Officer Jordan Schiffman,Injured
-2019-09-20,Louisiana,Mandeville,US 190 and LA 22,male,Officer Benjamin Cato,Injured
 2019-09-20,Arizona,Gilbert,E Baseline Rd and N Cooper Rd,N/A,N/A,Injured
+2019-09-20,Louisiana,Mandeville,US 190 and LA 22,male,Officer Benjamin Cato,Injured
 2019-09-18,New Mexico,Albuquerque,Tres Vistas Rd NW and Montano Plaza Dr NW,male,N/A,Injured
 2019-09-18,New Mexico,Albuquerque,Tres Vistas Rd NW and Montano Plaza Dr NW,male,N/A,Injured
 2019-09-18,Tennessee,Memphis,1230 Haven Cir N,N/A,Deputy Josh Fox,Injured
@@ -1558,12 +1989,12 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2019-09-10,Florida,Miami,8000 Block of SW 89th Terrace,N/A,N/A,Injured
 2019-09-10,Florida,Miami,8000 Block of SW 89th Terrace,N/A,N/A,Injured
 2019-09-09,Texas,San Antonio,200 block of W Mayfield Blvd,male,Officer Adam Azua,Injured
-2019-09-05,Mississippi,Canton,MS 16 and Avondale Rd,male,Deputy Brad Sullivan,Injured
 2019-09-05,Mississippi,Canton,MS 16 and Avondale Rd,male,Deputy,Injured
+2019-09-05,Mississippi,Canton,MS 16 and Avondale Rd,male,Deputy Brad Sullivan,Injured
 2019-09-04,California,Dos Palos,Eucalyptus Rd and Hwy 33,male,Sgt Clint Landrum,Injured
 2019-09-02,New York,Wappingers Falls (Wappinger),22 Marlorville Rd,male,Christopher DeMilio,Injured
-2019-08-31,Texas,Odessa,8250 TX 191,male,Officer James 'Tom' Santana,Injured
 2019-08-31,Texas,Odessa,8250 TX 191,male,Trooper Chuck Pryor,Injured
+2019-08-31,Texas,Odessa,8250 TX 191,male,Officer James 'Tom' Santana,Injured
 2019-08-31,Texas,Odessa,8250 TX 191,male,Officer Zachary Owens,Injured
 2019-08-28,Maryland,Baltimore,N Caroline St and E Fayette St,male,N/A,Injured
 2019-08-26,Louisiana,Rayne,800 block of N Polk Ave,N/A,Officer,Injured
@@ -1574,12 +2005,12 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2019-08-16,Missouri,Van Buren,Route M and Main St,male,Deputy Brigg Pierson,Injured
 2019-08-16,Missouri,Van Buren,Route M and Main St,male,Trooper Caleb McCoy,Injured
 2019-08-15,Illinois,Wheeling,E Manchester Dr and Park Ave,N/A,Trooper,Injured
-2019-08-14,Pennsylvania,Philadelphia,3716 N 15th St,male,Officer Nathaniel Harper,Injured
+2019-08-14,Pennsylvania,Philadelphia,3716 N 15th St,male,Officer Michael Guinter,Injured
 2019-08-14,Pennsylvania,Philadelphia,3716 N 15th St,male,Officer Ryan Waltman,Injured
 2019-08-14,Pennsylvania,Philadelphia,3716 N 15th St,male,Officer Justin Matthews,Injured
-2019-08-14,Pennsylvania,Philadelphia,3716 N 15th St,male,Officer Joshua Burkitt,Injured
+2019-08-14,Pennsylvania,Philadelphia,3716 N 15th St,male,Officer Nathaniel Harper,Injured
 2019-08-14,Pennsylvania,Philadelphia,3716 N 15th St,male,Officer Shaun Parker,Injured
-2019-08-14,Pennsylvania,Philadelphia,3716 N 15th St,male,Officer Michael Guinter,Injured
+2019-08-14,Pennsylvania,Philadelphia,3716 N 15th St,male,Officer Joshua Burkitt,Injured
 2019-08-14,Texas,Odessa,S Sam Houston Ave and Mable St,N/A,N/A,Injured
 2019-08-12,New York,New York (Manhattan),36 Central Park S,male,N/A,Injured
 2019-08-12,Connecticut,New Haven,Dixwell Ave and Henry St,male,Captain Anthony Duff,Injured
@@ -1591,14 +2022,14 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2019-08-08,New Jersey,Irvington,300 block of Myrtle Ave,male,Officer,Injured
 2019-08-08,New Jersey,Irvington,300 block of Myrtle Ave,male,Officer,Injured
 2019-08-08,New Jersey,Irvington,300 block of Myrtle Ave,male,Officer,Injured
-2019-08-08,Oregon,Gaston,SW Scoggins Valley Rd and SW West Shore Dr,male,Deputy,Injured
 2019-08-08,Oregon,Gaston,SW Scoggins Valley Rd and SW West Shore Dr,N/A,Deputy,Injured
+2019-08-08,Oregon,Gaston,SW Scoggins Valley Rd and SW West Shore Dr,male,Deputy,Injured
 2019-08-07,Colorado,Fort Garland,N/A,male,Deputy,Injured
 2019-08-05,Washington,Prosser,229 Canyon Dr,male,Ofc. Antonio Bustamante,Injured
 2019-08-05,Louisiana,Baton Rouge,900 block of Geranium St,male,Sgt. Ralph Walker,Injured
 2019-08-05,West Virginia,Pocahontas (county),N/A,male,State Trooper Josh M. Tallman,Injured
 2019-08-03,Wisconsin,La Crosse,317 S 9th St,male,Officer Dustin Darling,Injured
-2019-08-01,Georgia,Lithonia,Hodgdon Corners Cove,male,Officer Derek Nunn,Injured
+2019-08-01,Georgia,Lithonia,4800 block of Hodgdon Corners Cove,male,Officer Derek Nunn,Injured
 2019-08-01,Pennsylvania,Allentown,N 5th St and Tilghman St,male,Officer,Injured
 2019-08-01,New Hampshire,Weare,236 Buckley Rd,male,Ofc. William Paul Lewis IV,Injured
 2019-07-30,Mississippi,Southaven,6811 Southcrest Parkway,male,Officer,Injured
@@ -1637,8 +2068,8 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2019-06-11,Kentucky,Hazard,Hull School Road,male,Trooper Brad Martin,Injured
 2019-06-11,Wisconsin,Arpin,WI-186 and Co Rd N,N/A,Deputy Corey Leigh,Injured
 2019-06-11,California,Riverside,17700 block of Cedarwood Dr,male,N/A,Injured
-2019-06-08,Florida,New Port Richey,Humboldt Ave and Seven Springs Blvd,N/A,Deputy Chris Stone,Injured
 2019-06-08,Florida,New Port Richey,Humboldt Ave and Seven Springs Blvd,N/A,Deputy,Injured
+2019-06-08,Florida,New Port Richey,Humboldt Ave and Seven Springs Blvd,N/A,Deputy Chris Stone,Injured
 2019-06-07,Florida,Orlando,14500 Wewahootee Rd,male,Officer,Injured
 2019-06-04,Florida,Indialantic,200 Block of Avenida De La Vista,male,Deputy Paul Phillips,Injured
 2019-06-03,New York,Ardsley,560 Saw Mill River Rd,male,Sgt,Injured
@@ -1654,8 +2085,8 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2019-05-22,Tennessee,Jasper,5 Oak Ave,female,Detective Mary Beth Raulston,Injured
 2019-05-22,Ohio,Columbus (Whitehall),365 S Yearling Rd,male,Officer Tanner Williams,Injured
 2019-05-20,Oklahoma,Blackwell,1300 block of S Main St,male,Lieutenant John Mitchell,Injured
-2019-05-19,Alabama,Auburn,4477 Co Rd 137,male,Officer Webb Sistrunk,Injured
 2019-05-19,Alabama,Auburn,4477 Co Rd 137,male,Officer Evan Elliott,Injured
+2019-05-19,Alabama,Auburn,4477 Co Rd 137,male,Officer Webb Sistrunk,Injured
 2019-05-18,Michigan,Detroit,Florence St and Greenfield Rd,male,Officer,Injured
 2019-05-18,Tennessee,Chattanooga,2600 Glass St,N/A,N/A,Injured
 2019-05-16,Florida,Palm Beach Gardens,4120 Union Square Blvd,male,N/A,Injured
@@ -1803,8 +2234,8 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2018-10-23,California,Sacramento,N/A,,,Killed
 2018-10-20,Georgia,Snellville,Shiloh Rd,,,Killed
 2018-10-18,California,Adelanto,18125 Bellflower St,,,Injured
-2018-10-17,Tennessee,Memphis,2774 S Mendenhall Rd,,,Injured
 2018-10-17,North Carolina,Whiteville,US 701 and Sellers Town Rd,,,Killed
+2018-10-17,Tennessee,Memphis,2774 S Mendenhall Rd,,,Injured
 2018-10-15,North Carolina,Autryville,Maxwell Rd,,,Injured
 2018-10-15,Ohio,Jeffersonville,10160 Carr Rd,,,Injured
 2018-10-10,Kentucky,Owensboro,522 Hathaway St,,,Injured
@@ -2001,3 +2432,4 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2022-08-11,Nevada,Las Vegas,,,K9 Officer,Injured
 2022-08-11,Nevada,Las Vegas,,,Officer,Injured
 2022-08-11,Nevada,Las Vegas,,,Officer,Injured
+2022-10-13,Louisiana,New Orleans,300 block of N Rendon St,male,Officer Louis Blackmon III,Injured
