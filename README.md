@@ -116,7 +116,7 @@ After making these changes accordingly, I created the set for transport mode inf
 2. Filter the *recordsCleaned.csv* and only keep the State-City.Or.County pairs that had more than 10 police injured or killed during this period of time;
 3. One of the five boroughs of NYC, Staten Island, was dropped. But it does not make sense to exclude it so I manually added it back.
 
-| State                | City.Or.County       | Injury.And.Death |
+|:State                |:City.Or.County       | Injury.And.Death |
 |----------------------|----------------------|:----------------:|
 | Alabama              | Birmingham           |        13        |
 | Arizona              | Phoenix              |        34        |
