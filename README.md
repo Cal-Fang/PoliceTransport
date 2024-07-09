@@ -29,9 +29,9 @@ This script used the download link generated from the GVA website to download th
 
 
 ## STEP 1 Clean and combine raw data files
-I first dropped the "Operations" and "Participant.Age.Group" columns from records of 2019-2023. And then I did some time-wise cleaning and case-wise cleaning.
+I first dropped the "Operations" and "Participant.Age.Group" columns from records of 2019-2024. And then I did some time-wise cleaning and case-wise cleaning.
 ### Time-wise cleaning  
-Since we have decided the time window should be from 2018-04-30 to 2023-04-30 for this project, we would need to drop all records prior to this period for the 2018 file and all records post to this period for the 2023 files.
+Since we have decided the time window should be from 2018-04-30 to 2024-04-30 for this project, we would need to drop all records prior to this period for the 2018 file and all records post to this period for the 2023 files.
 
 ### Reformatting 
 GVA data is stored in another format for all records prior to 2019-01-01. So for our analysis, we would need to do some extra cleaning and proofreading for ***2018 records***. The 2018 file have following features:
@@ -102,56 +102,60 @@ There are several changes needed to be made in specific cases. Although in my ac
 7. GVA recorded [two officers shot and injured](https://www.gunviolencearchive.org/incident/1314289) in Houston on 2019-01-28. There were actually [five officers shot and injured](https://www.fox26houston.com/news/sergeant-who-sustained-knee-injury-during-shooting-released-from-hospital);
 8. GVA recorded [two officers shot and injured](https://www.gunviolencearchive.org/incident/1723067) in Kansas City, MI at 2020-07-02. There was actually only [one male officer shot and injured](https://fox4kc.com/news/missouri-highway-patrol-responding-to-kansas-city-officer-involved-shooting/). The other injured person is a Kansas City Bus driver and should not be included here;
 9. GVA did not record any case for 2022-08-11 in Las Vegas NV but there actually was [three officer injured](https://www.youtube.com/watch?v=c075Xx138Uc&ab_channel=LasVegasMetropolitanPolice) in a shoutout that day;
-10. GVA recorded [two officers shot and injured](https://www.gunviolencearchive.org/incident/2077587) in Pittsburgh on 2021-07-29. One of them suffered from a minor injury [not related to gunfire](https://www.pennlive.com/news/2021/07/pa-man-killed-parents-shot-at-police-died-in-crash-reports.html)
+10. GVA did not record any case for 2022-10-13 in New Orleans	LA but there actually was [an off-duty police shot and injured](https://www.nola.com/news/crime_police/article_ca714662-4bf4-11ed-a467-4b49e4d22e1d.html) that day at 300 block of N Rendon St;
+11. GVA recorded [two officers shot and injured](https://www.gunviolencearchive.org/incident/2077587) in Pittsburgh on 2021-07-29. One of them suffered from a minor injury [not related to gunfire](https://www.pennlive.com/news/2021/07/pa-man-killed-parents-shot-at-police-died-in-crash-reports.html).
 
 It is possible these mistakes could be corrected from GVA's end. So anyone trying to reproduce the result should examine whether these mistakes still persist before running this part of code.
 
-The script used for this step is named **01_clean.R**. The result is saved as *All_2018_2023.csv*
+The script used for this step is named **01_clean.R**. The result is saved as *recordsCleaned.csv*
 
 
 ## STEP 2 Sort and identify the analysis subject cities
 After making these changes accordingly, I created the set for transport mode information collection in the following steps:
 1. Group the data by State and City.Or.County and summarize the total case number for each State-City.Or.County pair;
-2. Filter the *All_2018_2023.csv* and only keep the State-City.Or.County pairs that had more than 10 police injured or killed during this period of time;
+2. Filter the *recordsCleaned.csv* and only keep the State-City.Or.County pairs that had more than 10 police injured or killed during this period of time;
 3. One of the five boroughs of NYC, Staten Island, was dropped. But it does not make sense to exclude it so I manually added it back.
 
 | State                | City.Or.County       | Injury.And.Death |
 |----------------------|----------------------|:----------------:|
 | Alabama              | Birmingham           |        13        |
-| Arizona              | Phoenix              |        28        |
-| California           | Los Angeles          |        17        |
-| Colorado             | Denver               |        10        |
-| District of Columbia | Washington           |        14        |
+| Arizona              | Phoenix              |        34        |
+| Arizona              | Tucson               |        12        |
+| California           | Los Angeles          |        20        |
+| Colorado             | Denver               |        13        |
+| District of Columbia | Washington           |        21        |
+| Florida              | Miami                |        11        |
 | Georgia              | Atlanta              |        13        |
-| Illinois             | Chicago              |        54        |
-| Indiana              | Indianapolis         |        10        |
-| Kentucky             | Louisville           |        12        |
+| Illinois             | Chicago              |        62        |
+| Indiana              | Indianapolis         |        12        |
+| Kentucky             | Louisville           |        15        |
 | Louisiana            | New Orleans          |        12        |
 | Maryland             | Baltimore            |        17        |
-| Michigan             | Detroit              |        11        |
-| Missouri             | Kansas City          |        14        |
-| Missouri             | Saint Louis          |        22        |
-| Nevada               | Las Vegas            |        15        |
-| New Mexico           | Albuquerque          |        10        |
-| New York             | Bronx                |        16        |
-| New York             | Brooklyn             |        13        |
-| New York             | Corona (Queens)      |        14        |
+| Michigan             | Detroit              |        13        |
+| Missouri             | Kansas City          |        15        |
+| Missouri             | Saint Louis          |        23        |
+| Nevada               | Las Vegas            |        18        |
+| New Mexico           | Albuquerque          |        12        |
+| New York             | Bronx                |        17        |
+| New York             | Brooklyn             |        15        |
+| New York             | Corona (Queens)      |        17        |
 | New York             | New York (Manhattan) |        10        |
 | New York             | Staten Island        |        6         |
-| Ohio                 | Columbus             |        13        |
-| Pennsylvania         | Philadelphia         |        33        |
-| Tennessee            | Memphis              |        15        |
-| Texas                | Dallas               |        10        |
-| Texas                | Houston              |        41        |
-| Texas                | San Antonio          |        10        |
-| Wisconsin            | Milwaukee            |        16        |
+| North Carolina       | Charlotte            |        13        |
+| Ohio                 | Columbus             |        15        |
+| Pennsylvania         | Philadelphia         |        45        |
+| Tennessee            | Memphis              |        21        |
+| Texas                | Dallas               |        14        |
+| Texas                | Houston              |        46        |
+| Texas                | San Antonio          |        16        |
+| Wisconsin            | Milwaukee            |        17        |
 
-Here, only State-City.Or.County pairs that had more than 10 police injured or killed were kept for two concerns: 1) when a city had very little police shot in five years, we are not so sure whether the number is truly showing a pattern or just a random number. We arbitrarily used 10 as the threshold for this; 2) More importantly, it consumes a lot of time to do the media search and there were in total around 2000 police shot through these five years. This project has only one analyst and it is simply not realistic to collect transport mode information for all cases.
+Here, only State-City.Or.County pairs that had more than 10 police injured or killed were kept for two concerns: 1) when a city had very little police shot in five years, we are not so sure whether the number is truly showing a pattern or just a random number. We arbitrarily used 10 as the threshold for this; 2) More importantly, it consumes a lot of time to do the media search and there were in total around 2000 police shot through these five years. This project has only one analyst and it is simply not realistic to collect transport mode information for all cases. The only exception is Staten Island as it is one of the five boroughs of NYC and should be considered along with the rest four.
 
-The script used for this step is named **02_sort.R**. The result is saved as *Above10_2018_2023.csv*.
+The script used for this step is named **02_sort.R**. The result is saved as *recordsFiltered.csv*.
 
 ## STEP 3 Collect the transport mode information
-Since GVA does not record what transport mode was used to carry each police to ER/hospitals, I copy-pasted the *Above10_2018_2023.csv* into [this Google Sheets document](https://docs.google.com/spreadsheets/d/1w_BaFUAuatmUQBt3qtRBzhm9tTDV4B9lRjTGTq79bAg/edit?usp=sharing), and then used following resources to manually record such information. 
+Since GVA does not record what transport mode was used to carry each police to ER/hospitals, I copy-pasted the *recordsFiltered.csv* into [this Google Sheets document](https://docs.google.com/spreadsheets/d/1w_BaFUAuatmUQBt3qtRBzhm9tTDV4B9lRjTGTq79bAg/edit?usp=sharing), and then used following resources to manually record such information. 
 - GVA collected some news links for each case on their website which is a good starting point;
 - If the news collected by GVA did not disclose the transport mode, I would google the keyword to look for others (especially later reports);
 - For each police-engaged case, the police department usually would have a media brief. The videos are usually uploaded online for transparency. Sometimes Chiefs would disclose how injured/killed officers were transported.

@@ -9,7 +9,7 @@
 
 # Raw Data files (stored in .dta and .csv format)
 *.dta
-*.csv
+#*.csv
 *.xlsx
 *.txt
 
