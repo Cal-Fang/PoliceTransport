@@ -117,7 +117,7 @@ After making these changes accordingly, I created the set for transport mode inf
 3. One of the five boroughs of NYC, Staten Island, was dropped. But it does not make sense to exclude it so I manually added it back.
 
 | State                | City.Or.County       | Injury.And.Death |
-|----------------------|----------------------|:----------------:|
+|:---------------------|:---------------------|:----------------:|
 | Alabama              | Birmingham           |        13        |
 | Arizona              | Phoenix              |        34        |
 | Arizona              | Tucson               |        12        |
