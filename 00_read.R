@@ -1,4 +1,4 @@
-## ---------------------------
+## ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ##
 ## Script name: 00_read.R
 ##
@@ -8,28 +8,31 @@
 ##
 ## Date Created: 2023-09-26
 ##
-## Copyright (c) Cal Chengqi Fang, 2023
+## Copyright (c) Cal Chengqi Fang, 2024
 ## Email: cal.cf@uchicago.edu
 ##
-## ---------------------------
+## ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ##
 ## Notes:
 ##   This is to read all record files from GVA website for the homeboy drop off project 
-##  that I worked on with Dr. Prachi Sanghavi.
-##
-## ---------------------------
+## that I worked on with Dr. Prachi Sanghavi.
+##   I utilized the download link generated from the website. Since it is not 100% stable,
+## researchers trying to reproduce this might need to click-open the website and generate
+## new download link and update them to this script in order to run it.
+## 
+## ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ## set working directory for Mac and PC
-setwd("/Users/atchoo/Documents/GitHub/homeboydropoff")  # Cal's working directory (mac)
+setwd("/Users/atchoo/Documents/GitHub/HomeboyDropOff")  # Cal's working directory (mac)
 # setwd("C:/Users/")     # Cal's working directory (PC)
 
-## ---------------------------
+## ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 rm(list=ls())
 options(scipen=6, digits=4)         # I prefer to view outputs in non-scientific notation
 memory.limit(30000000)                  # this is needed on some PCs to increase memory allowance, but has no impact on macs.
 
-## ---------------------------
+## ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ## load up the packages we will need:  (uncomment as required)
 
@@ -37,9 +40,9 @@ require(tidyverse)
 require(data.table)
 require(httr)       # For url requesting and parsing
 
-## ---------------------------
-prefix <- "https://www.gunviolencearchive.org/export-finished/download?uuid=436a0477-9747-4396-a32c-71086dcce9bf&filename=public%3A//"
+## ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+# ----------------------------------------------- STEP 1 ----------------------------------------------- 
 # Write a function to handle downloading
 download <- function(end, pre=prefix){
   # Make the url address
@@ -52,6 +55,9 @@ download <- function(end, pre=prefix){
   result <- fread(content, check.names=TRUE)
   return(result)
 }
+
+# Set up the prefix of the download link - you might need to change this
+prefix <- "https://www.gunviolencearchive.org/export-finished/download?uuid=436a0477-9747-4396-a32c-71086dcce9bf&filename=public%3A//"
 
 # 2024
 K2024 <- download("export-f5f8702b-eab3-46d1-a11c-d5dee7f36893.csv")
@@ -81,6 +87,7 @@ I2019 <- download("export-a6e7ff9b-fbb1-4eef-bf21-ab812663279f.csv")
 A2018 <- download("export-e51ddca1-8bbb-4d2b-90b3-f2c8a6b7fd05.csv") 
 
 
+# ----------------------------------------------- STEP 2 ----------------------------------------------- 
 # Save all raw data file for later cleaning and merging
 save(K2024, I2024,
      K2023, I2023,
