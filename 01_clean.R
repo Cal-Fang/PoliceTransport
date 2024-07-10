@@ -190,20 +190,6 @@ if (length(which(A2018_2024$City.Or.County == "Houston" & A2018_2024$Incident.Da
 A2018_2024 <- A2018_2024[-which(A2018_2024$Incident.Date == "2020-07-02" & A2018_2024$Address == "Independence Ave and Hardesty Ave" & A2018_2024$Participant.Gender == "female"), ]
 A2018_2024$Participant.Gender[which(A2018_2024$Incident.Date == "2020-07-02" & A2018_2024$Address == "Independence Ave and Hardesty Ave")] <- "male"
 
-# Add the 2022-08-11 Las Vegas case
-if (length(which(A2018_2024$City.Or.County == "Las Vegas" & A2018_2024$Incident.Date == "2022-08-11")) == 0) {
-  lasvegas_20220811 <- data.table(Incident.Date = rep(as.Date("2022-08-11"), 3),
-                                  State = rep("Nevada", 3),	
-                                  City.Or.County	= rep("Las Vegas", 3),
-                                  Address = rep(NA, 3),
-                                  Participant.Gender = rep(NA, 3),
-                                  Participant.Name	= c("K9 Officer", "Officer", "Officer"),
-                                  Outcome = rep("Injured", 3))
-  A2018_2024 <- rbindlist(list(A2018_2024, lasvegas_20220811), fill=TRUE)
-} else {
-  print("Have a look on the data.")
-}
-
 # Add the 2022-10-13 New Orleans case
 if (length(which(A2018_2024$City.Or.County == "New Orleans" & A2018_2024$Incident.Date == "2022-10-13")) == 0) {
   neworleans_20221013 <- list(as.Date("2022-10-13"), "Louisiana", "New Orleans", "300 block of N Rendon St", "male", "Officer Louis Blackmon III", "Injured")
@@ -215,6 +201,8 @@ if (length(which(A2018_2024$City.Or.County == "New Orleans" & A2018_2024$Inciden
 # Drop one row for the 2021-07-29 239 Gilkeson Rd Pittsburgh case
 A2018_2024 <- A2018_2024[-which(A2018_2024$Incident.Date == "2021-07-29" & A2018_2024$Address == "239 Gilkeson Rd")[2], ]
 
+# Drop the 2023-07-25	778 Parkrose Rd Memphis	case as the injured person is not a police officer
+A2018_2024 <- A2018_2024[-which(A2018_2024$Incident.Date == "2023-07-25" & A2018_2024$Address == "778 Parkrose Rd"), ]
 
 # ----------------------------------------------- STEP 6 ----------------------------------------------- 
 # Save the final result

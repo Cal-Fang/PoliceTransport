@@ -365,7 +365,6 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2023-07-30,Pennsylvania,Erie,507-509 E 22nd St,N/A,Patrol Sergeant David Stucke,Injured
 2023-07-30,Ohio,Logan,7900 block of Bremen Rd,male,Deputy Jason Miles,Injured
 2023-07-26,Oregon,Tualatin,6765 SW Nyberg St,male,Deputy Charles Dozé,Injured
-2023-07-25,Tennessee,Memphis,778 Parkrose Rd,male,N/A,Injured
 2023-07-24,Illinois,Chicago,5600 S Shields Ave,N/A,N/A,Injured
 2023-07-21,Georgia,Ringgold,98 Summit Dr,N/A,Deputy,Injured
 2023-07-20,New Mexico,Albuquerque,557 Tramway Blvd NE,N/A,N/A,Injured
@@ -2429,7 +2428,4 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2019-01-28,Texas,Houston,7815 Harding St,N/A,Officer,Injured
 2019-01-28,Texas,Houston,7815 Harding St,male,Officer Gerald Goines,Injured
 2019-01-28,Texas,Houston,7815 Harding St,male,Officer Steven Bryant,Injured
-2022-08-11,Nevada,Las Vegas,,,K9 Officer,Injured
-2022-08-11,Nevada,Las Vegas,,,Officer,Injured
-2022-08-11,Nevada,Las Vegas,,,Officer,Injured
 2022-10-13,Louisiana,New Orleans,300 block of N Rendon St,male,Officer Louis Blackmon III,Injured

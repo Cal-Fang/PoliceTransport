@@ -101,9 +101,9 @@ There are several changes needed to be made in specific cases. Although in my ac
 6. GVA did not record any case for 2021-12-16 in Corona (Queens) NYC, but there actually was [an off-duty police shot and injured](https://sunnysidepost.com/off-duty-cop-shot-robbery-suspect-killed-in-wild-shootout-outside-woodside-nightclub) that day at 56-15 Northern Blvd;
 7. GVA recorded [two officers shot and injured](https://www.gunviolencearchive.org/incident/1314289) in Houston on 2019-01-28. There were actually [five officers shot and injured](https://www.fox26houston.com/news/sergeant-who-sustained-knee-injury-during-shooting-released-from-hospital);
 8. GVA recorded [two officers shot and injured](https://www.gunviolencearchive.org/incident/1723067) in Kansas City, MI at 2020-07-02. There was actually only [one male officer shot and injured](https://fox4kc.com/news/missouri-highway-patrol-responding-to-kansas-city-officer-involved-shooting/). The other injured person is a Kansas City Bus driver and should not be included here;
-9. GVA did not record any case for 2022-08-11 in Las Vegas NV but there actually was [three officer injured](https://www.youtube.com/watch?v=c075Xx138Uc&ab_channel=LasVegasMetropolitanPolice) in a shoutout that day;
-10. GVA did not record any case for 2022-10-13 in New Orleans	LA but there actually was [an off-duty police shot and injured](https://www.nola.com/news/crime_police/article_ca714662-4bf4-11ed-a467-4b49e4d22e1d.html) that day at 300 block of N Rendon St;
-11. GVA recorded [two officers shot and injured](https://www.gunviolencearchive.org/incident/2077587) in Pittsburgh on 2021-07-29. One of them suffered from a minor injury [not related to gunfire](https://www.pennlive.com/news/2021/07/pa-man-killed-parents-shot-at-police-died-in-crash-reports.html).
+9. GVA did not record any case for 2022-10-13 in New Orleans	LA but there actually was [an off-duty police shot and injured](https://www.nola.com/news/crime_police/article_ca714662-4bf4-11ed-a467-4b49e4d22e1d.html) that day at 300 block of N Rendon St;
+10. GVA recorded [two officers shot and injured](https://www.gunviolencearchive.org/incident/2077587) in Pittsburgh on 2021-07-29. One of them suffered from a minor injury [not related to gunfire](https://www.pennlive.com/news/2021/07/pa-man-killed-parents-shot-at-police-died-in-crash-reports.html).
+11. GVA recorded [one officer shot and injured](https://www.gunviolencearchive.org/incident/2663163) in Memphis on 2023-07-25. This injured person is [not a police officer](https://www.actionnews5.com/2023/07/25/school-security-guard-injured-westwood-shooting/).
 
 It is possible these mistakes could be corrected from GVA's end. So anyone trying to reproduce the result should examine whether these mistakes still persist before running this part of code.
 
@@ -134,7 +134,7 @@ After making these changes accordingly, I created the set for transport mode inf
 | Michigan             | Detroit              |        13        |
 | Missouri             | Kansas City          |        15        |
 | Missouri             | Saint Louis          |        23        |
-| Nevada               | Las Vegas            |        18        |
+| Nevada               | Las Vegas            |        15        |
 | New Mexico           | Albuquerque          |        12        |
 | New York             | Bronx                |        17        |
 | New York             | Brooklyn             |        15        |
@@ -144,7 +144,7 @@ After making these changes accordingly, I created the set for transport mode inf
 | North Carolina       | Charlotte            |        13        |
 | Ohio                 | Columbus             |        15        |
 | Pennsylvania         | Philadelphia         |        45        |
-| Tennessee            | Memphis              |        21        |
+| Tennessee            | Memphis              |        20        |
 | Texas                | Dallas               |        14        |
 | Texas                | Houston              |        46        |
 | Texas                | San Antonio          |        16        |

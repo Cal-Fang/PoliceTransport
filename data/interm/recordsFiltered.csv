@@ -81,7 +81,6 @@ Incident.Date,State,City.Or.County,Address,Outcome,Participant.Name,Participant.
 2023-08-11,Michigan,Detroit,Whitehill St and Morang Ave,Injured,Officer,male
 2023-08-09,Ohio,Columbus,45 Great Southern Blvd,Injured,Officer Anthony Sebastiano,male
 2023-08-09,Texas,Dallas,2400 block of W Northwest Hwy,Injured,Officer Nathaniel Chapman,male
-2023-07-25,Tennessee,Memphis,778 Parkrose Rd,Injured,N/A,male
 2023-07-24,Illinois,Chicago,5600 S Shields Ave,Injured,N/A,N/A
 2023-07-20,New Mexico,Albuquerque,557 Tramway Blvd NE,Injured,N/A,N/A
 2023-07-06,Ohio,Columbus,I-70 and Mound St,Injured,Officer,male
@@ -583,7 +582,4 @@ Incident.Date,State,City.Or.County,Address,Outcome,Participant.Name,Participant.
 2019-01-28,Texas,Houston,7815 Harding St,Injured,Officer,N/A
 2019-01-28,Texas,Houston,7815 Harding St,Injured,Officer Gerald Goines,male
 2019-01-28,Texas,Houston,7815 Harding St,Injured,Officer Steven Bryant,male
-2022-08-11,Nevada,Las Vegas,"",Injured,K9 Officer,""
-2022-08-11,Nevada,Las Vegas,"",Injured,Officer,""
-2022-08-11,Nevada,Las Vegas,"",Injured,Officer,""
 2022-10-13,Louisiana,New Orleans,300 block of N Rendon St,Injured,Officer Louis Blackmon III,male
