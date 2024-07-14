@@ -37,9 +37,13 @@ require(tidyverse)
 require(data.table)
 
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-raw <- fread("data/interm/recordsCleaned.csv")
 
 # ----------------------------------------------- STEP 1 ----------------------------------------------- 
+# Load the cleaned records
+raw <- fread("data/interm/recordsCleaned.csv")
+
+
+# ----------------------------------------------- STEP 2 ----------------------------------------------- 
 # Sort by case number
 above10_list <- raw %>% 
   mutate(geo = paste0(State, "_", City.Or.County)) %>% 
@@ -51,7 +55,7 @@ above10_list <- above10_list %>%
   filter(casenum >= 10 | geo == "New York_Staten Island")
 
 
-# ----------------------------------------------- STEP 2 ----------------------------------------------- 
+# ----------------------------------------------- STEP 3 ----------------------------------------------- 
 # Filter the observations by the above10_list
 above10 <- raw %>% 
   mutate(geo = paste0(State, "_", City.Or.County)) %>% 
@@ -60,6 +64,6 @@ above10 <- raw %>%
          Outcome, Participant.Name, Participant.Gender)
 
 
-# ----------------------------------------------- STEP 3 ----------------------------------------------- 
+# ----------------------------------------------- STEP 4 ----------------------------------------------- 
 fwrite(above10, "data/interm/recordsFiltered.csv")
 
