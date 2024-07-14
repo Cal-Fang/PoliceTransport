@@ -1,5 +1,5 @@
 ---
-title: "Pivot Tables"
+title: "Tables for the police drop off perspective article"
 author: "Cal Chengqi Fang"
 date: "2023-06-29"
 output: pdf_document
@@ -7,8 +7,7 @@ header-includes:
   - \setlength{\parindent}{2.5em}
   - \setlength{\parskip}{0em}
 knit: >
-  (function(inputFile, encoding){rmarkdown::render(inputFile, encoding=encoding, output_file="pivottables.pdf")}) 
----
+  (function(inputFile, encoding){rmarkdown::render(inputFile, encoding=encoding, output_file="results/analysisResults.pdf")}) 
 ---
 
 ```{r setup, include=FALSE}
@@ -18,11 +17,23 @@ rm(list = ls())
 require(tidyverse)
 require(data.table)
 require(googlesheets4)
+
+require(knitr)      # For generating nice and organized results
+require(kableExtra) # For generating nice and organized results
 ```
 
 ```{r data prep, include=FALSE}
 # Read google sheets data into R
-final <- read_sheet('1w_BaFUAuatmUQBt3qtRBzhm9tTDV4B9lRjTGTq79bAg')
+final <- read_sheet("https://docs.google.com/spreadsheets/d/1w_BaFUAuatmUQBt3qtRBzhm9tTDV4B9lRjTGTq79bAg")
+# You would need to go through the authorization process here. More details can be found here:
+# https://www.digitalocean.com/community/tutorials/google-sheets-in-r
+#
+# If you have any error accessing this Google sheet after a long while, please consider redo
+# the authorization by running:
+# gs4_auth()
+
+fwrite(final, "data/interm/recordsLabeled.csv")
+final <- fread("data/interm/recordsLabeled.csv")
 
 # Replace NYC boroughs with NYC
 final$City.Or.County[final$City.Or.County=="Bronx"] <- "NYC"
@@ -36,10 +47,10 @@ final$GEO <- str_c(final$City.Or.County, ", ", append(state.abb, "DC")[match(fin
 
 # Drop suicide case
 final <- final %>% 
-  filter(Detail != "Suicide" | is.na(Detail))
+  filter(!grepl("Suicide", Detail, ignore.case=TRUE))
 
 # Drop cities with higher than 30% Unknown
-temp <- final %>% 
+unknownSummary <- final %>% 
   group_by(GEO, Response.Type) %>% 
   summarise(Count = n()) %>%
   pivot_wider(names_from = Response.Type, values_from = Count) %>% 
@@ -47,51 +58,79 @@ temp <- final %>%
   filter(Unknown <= 0.30*Total | is.na(Unknown))
 
 final <- final %>% 
-  filter(GEO %in% temp$GEO) %>% 
+  filter(GEO %in% unknownSummary$GEO) %>% 
   mutate(Year = format(Incident.Date, "%Y")) %>% 
-  mutate(across(all_of(c("GEO","Response.Type")), as.factor))
+  mutate(across(all_of(c("GEO","Response.Type")), as.factor)) %>% 
+  rename(City = GEO)
 ```
 
-# Question 1: What data are we using to create these tables?
+After cleaning operations detailed in the [GitHub Page](https://github.com/Cal-Fang/homeboydropoff) of this project, STEP 1 and STEP 2, ***we were left with 584 police shot*** in 27 cities with more than 10 police shot from April 20th, 2018 to April 20th, 2024. 
 
-After cleaning operations detailed in the [GitHub Page]() of this project, STEP 1 and STEP 2, we were left with 469 police shot in cities with more than 10 police shot from April 20th, 2018 to April 20th, 2023. 
+We then obtained the information of how these police were transported to medical facilities through media research using the news, police press articles, and/or videos. After that, as in suicide cases, the EMS team usually were dispatched at the same time and oftentimes the officer were found dead so there is no need to transport the officer, we also dropped all suicide cases. ***This left us with 555 police shot.***        
 
-We then obtained the information of how these police were transported to medical facilities through media research using the news, police press articles, and/or videos. After that, as in suicide cases, the EMS team usually were dispatched at the same time and oftentimes the officer were found dead so there is no need to transport the officer, we also dropped all suicide cases. ***This left us with 444 police shot.***        
+We then filtered out all cities that have more than 30% cases that we can not find the information of how officers were transported. ***This left us with 452 police shot.*** 
 
-We then filtered out all cities that have more than 25% cases that we can not find the information of how officers were transported. ***This left us with 382 police shot.*** 
+\newpage
+# Table 1. The proportion of different transportation method used for police shot and the total number of police shot by city: April 20, 2018-April 20, 2024
+```{r prep tab1, message=FALSE, echo=FALSE}
+# Summarize the total number of police shot by city
+total <- final %>% 
+  group_by(City, Response.Type) %>% 
+  summarise(Count = n()) %>% 
+  pivot_wider(names_from = Response.Type,
+              values_from = Count) %>% 
+  ungroup() %>% 
+  mutate(Total = rowSums(select_if(., is.numeric), na.rm=TRUE)) %>% 
+  select(City, Total)
 
-```{r table1, message=FALSE, echo=FALSE}
+# Summarize the transport mode proportion by city
+prop <- final %>% 
+  group_by(City, Response.Type) %>% 
+  summarise(Count = n()) %>% 
+  mutate(Prop = round(Count / sum(Count) * 100, 2)) %>% 
+  select(-Count) %>% 
+  pivot_wider(names_from = Response.Type,
+              values_from = Prop) %>% 
+  select(City, `Police Self-transfer`, Ambulance, Others, Unknown)
+
+# Merge the total number and transport mode proportion
+tab1 <- prop %>% 
+  merge(total) %>% 
+  arrange(desc(Total))
+
+# Replace NA with 0
+tab1[is.na(tab1)] <- 0.00
+
+# Prepare the footnote symbols
+names(tab1) <- c("City", "Police", "Ambulance", "Other", "Could not be determined", "Total police shot")
+names(tab1)[1] <- paste0(names(tab1)[1], 
+                         footnote_marker_alphabet(1))
+names(tab1)[4] <- paste0(names(tab1)[4], 
+                         footnote_marker_alphabet(2))
+```
+
+```{r tab1, message=FALSE, echo=FALSE}
+tab1  %>% 
+  kbl(align="lccccc", booktabs=TRUE, escape=FALSE) %>% 
+  kable_styling(latex_options = c("hold_position")) %>%
+  add_header_above(header=c("", "Transport mode (%)"=4, "")) %>% 
+  footnote(alphabet = c("Using GVA data, we identified 27 cities that had more than 10 police shot from April 20th, 2018 to April 20th, 2024. We then obtained the information of how these police were transported to medical facilities through media research using the news, police press articles, and/or videos. As in suicide cases, the EMS team usually were dispatched at the same time and oftentimes the officer were found dead so there is no need to transport the officer, we dropped all suicide cases. We then filtered out all cities that have more than 30% cases that we can not find the information of how officers were transported.",
+                        "Other modes include cases where police were transported by air ambulance, drove themselves to hospital, did not require to be transported to hospital, or were shot in a hospital."),
+           threeparttable=TRUE)
+```
+
+\newpage
+# Other tables - left out
+```{r tab leftout1, message=FALSE, echo=FALSE}
 final %>% 
-  group_by(GEO, Year) %>% 
+  group_by(City, Year) %>% 
   summarise(Count = n()) %>%
   pivot_wider(names_from = Year, values_from = Count) %>% 
-  mutate(Total = sum(c(`2018`, `2019`, `2020`, `2021`, `2022`, `2023`), na.rm=TRUE)) %>% 
+  mutate(Total = sum(c(`2018`, `2019`, `2020`, `2021`, `2022`, `2023`, `2023`), na.rm=TRUE)) %>% 
   knitr::kable()
 ```
-\newpage
-# Question 2: How were police transported in these cities?
-```{r table2, message=FALSE, echo=FALSE}
-final %>% 
-  group_by(GEO, Response.Type) %>% 
-  summarise(Count = n()) %>% 
-  pivot_wider(names_from = Response.Type,
-              values_from = Count) %>% 
-  ungroup() %>% 
-  mutate(Total = rowSums(select_if(., is.numeric), na.rm=TRUE)) %>% 
-  knitr::kable()
 
-final %>% 
-  group_by(GEO, Response.Type) %>% 
-  summarise(Count = n()) %>% 
-  mutate(Prop = round(Count / sum(Count), 2)) %>% 
-  select(-Count) %>% 
-  pivot_wider(names_from = Response.Type,
-              values_from = Prop) %>% 
-  knitr::kable()
-```
-\newpage
-# Question 3: Is there any trend through time?
-```{r table3, message=FALSE, echo=FALSE}
+```{r tab leftout2, message=FALSE, echo=FALSE}
 final %>% 
   group_by(Year, Response.Type) %>% 
   summarise(Count = n()) %>% 
@@ -110,6 +149,4 @@ final %>%
               values_from = Prop) %>% 
   knitr::kable()
 ```
-
-
 
