@@ -94,16 +94,18 @@ After cleaning the 2018 files, all years' records were row-bound together to cre
 ### Case-specific cleaning
 There are several changes needed to be made in specific cases. Although in my actual analysis, these were found in a later step, to ensure the accuracy of sorting and filtering, it makes more sense for anyone trying to reproduce the result to change these first;:
 1. GVA recorded [a police shot and injured](https://www.gunviolencearchive.org/incident/2342312) in New Orleans, LA because the suspect was arrested in New Orleans. However, the injured police was shot in Erin, TN, and is a part of the Erin police department;
-2. GVA recorded [three police shot and injured](https://www.gunviolencearchive.org/incident/2094830) for the 2021-08-19 Albuquerque NM case. However, there were actually four police shot and injured. One extra row for Officer Harry Gunderson needs to be added;
-3. GVA recorded [one police shot and injured](https://www.gunviolencearchive.org/incident/2170769) in Atlanta GA on 2021-11-19. This police was actually shot and injured at Sandy Springs. He also works for the Sandy Springs Police Department. This case should be altered;
+2. GVA recorded [three police shot and injured](https://www.gunviolencearchive.org/incident/2094830) for the 2021-08-19 Albuquerque, NM case. However, there were actually four police shot and injured. One extra row for Officer Harry Gunderson needs to be added;
+3. GVA recorded [one police shot and injured](https://www.gunviolencearchive.org/incident/2170769) in Atlanta, GA on 2021-11-19. This police was actually shot and injured at Sandy Springs. He also works for the Sandy Springs Police Department. This case should be altered;
 4. GVA recorded [three marshals shot and injured](https://www.gunviolencearchive.org/incident/1868904) in Bronx NYC on 2020-12-04. This was early misinformation. There were only two marshals injured according to later news;
-5. GVA did not record any case for 2021-03-15 in Chicago, but there actually was [an off-duty police shot and injured](https://abc7chicago.com/chicago-shooting-police-office-shot-injured-cpd-cop/10419984/) that day in South Chicago;
-6. GVA did not record any case for 2021-12-16 in Corona (Queens) NYC, but there actually was [an off-duty police shot and injured](https://sunnysidepost.com/off-duty-cop-shot-robbery-suspect-killed-in-wild-shootout-outside-woodside-nightclub) that day at 56-15 Northern Blvd;
-7. GVA recorded [two officers shot and injured](https://www.gunviolencearchive.org/incident/1314289) in Houston on 2019-01-28. There were actually [five officers shot and injured](https://www.fox26houston.com/news/sergeant-who-sustained-knee-injury-during-shooting-released-from-hospital);
-8. GVA recorded [two officers shot and injured](https://www.gunviolencearchive.org/incident/1723067) in Kansas City, MI at 2020-07-02. There was actually only [one male officer shot and injured](https://fox4kc.com/news/missouri-highway-patrol-responding-to-kansas-city-officer-involved-shooting/). The other injured person is a Kansas City Bus driver and should not be included here;
-9. GVA did not record any case for 2022-10-13 in New Orleans	LA but there actually was [an off-duty police shot and injured](https://www.nola.com/news/crime_police/article_ca714662-4bf4-11ed-a467-4b49e4d22e1d.html) that day at 300 block of N Rendon St;
-10. GVA recorded [two officers shot and injured](https://www.gunviolencearchive.org/incident/2077587) in Pittsburgh on 2021-07-29. One of them suffered from a minor injury [not related to gunfire](https://www.pennlive.com/news/2021/07/pa-man-killed-parents-shot-at-police-died-in-crash-reports.html).
-11. GVA recorded [one officer shot and injured](https://www.gunviolencearchive.org/incident/2663163) in Memphis on 2023-07-25. This injured person is [not a police officer](https://www.actionnews5.com/2023/07/25/school-security-guard-injured-westwood-shooting/).
+5. GVA recorded [two officers shot and injured](https://www.gunviolencearchive.org/incident/1314289) in Houston on 2019-01-28. There were actually [five officers shot and injured](https://www.fox26houston.com/news/sergeant-who-sustained-knee-injury-during-shooting-released-from-hospital);
+6. GVA recorded [two officers shot and injured](https://www.gunviolencearchive.org/incident/1723067) in Kansas City, MI at 2020-07-02. There was actually only [one male officer shot and injured](https://fox4kc.com/news/missouri-highway-patrol-responding-to-kansas-city-officer-involved-shooting/). The other injured person is a Kansas City Bus driver and should not be included here;
+7. GVA recorded [two officers shot and injured](https://www.gunviolencearchive.org/incident/2077587) in Pittsburgh on 2021-07-29. One of them suffered from a minor injury [not related to gunfire](https://www.pennlive.com/news/2021/07/pa-man-killed-parents-shot-at-police-died-in-crash-reports.html);
+8. GVA recorded [one officer shot and injured](https://www.gunviolencearchive.org/incident/2663163) in Memphis on 2023-07-25. This injured person is [not a police officer](https://www.actionnews5.com/2023/07/25/school-security-guard-injured-westwood-shooting/);
+9. GVA recorded [one officer shot and injured](https://www.gunviolencearchive.org/incident/1655454) in Chicago on 2020-04-09. This injured person is [not a police officer](https://cwbchicago.com/2020/04/security-guard-licensed-to-carry-a-gun-for-2-weeks-accidentally-shoots-teen-on-red-line.html);
+10. GVA recorded [one officer shot and injured](https://www.gunviolencearchive.org/incident/2798483) in Chicago on 2024-01-09. This officer actually [did not sustain any injuries](https://www.chicagocopa.org/press/copa-provides-update-on-off-duty-officer-involved-shooting-near-7200-s-spaulding-ave/);
+11. GVA recorded [two officers shot and injured](https://www.gunviolencearchive.org/incident/2640515) in Phoenix on 2023-07-01. Neither officer was shot in this case as [the suspect did not hold a gun and only grabbed officers' taser](https://www.phoenix.gov/newsroom/police/2807);
+12. GVA recorded [two officers shot and injured](https://www.gunviolencearchive.org/incident/2256840) in Chicago on 2022-03-18. This is a mistake. The information recorded for this case on GVA website is identical to the case recorded for [Chicago on 2022-03-18](https://www.gunviolencearchive.org/incident/2246372) and no news of police shot on 2022-03-18 can be found online;
+13. GVA recorded [one officer shot and injured](https://www.gunviolencearchive.org/incident/1171913) in Washington DC on 2018-07-25. This is a mistake. The police [was injured but not shot](https://www.wusa9.com/article/news/local/dc/suspect-injured-in-police-involved-shooting-in-dc/65-577500936). 
 
 It is possible these mistakes could be corrected from GVA's end. So anyone trying to reproduce the result should examine whether these mistakes still persist before running this part of code.
 
@@ -119,14 +121,14 @@ After making these changes accordingly, I created the set for transport mode inf
 | State                | City.Or.County       | Injury.And.Death |
 |:---------------------|:---------------------|:----------------:|
 | Alabama              | Birmingham           |        13        |
-| Arizona              | Phoenix              |        34        |
+| Arizona              | Phoenix              |        32        |
 | Arizona              | Tucson               |        12        |
 | California           | Los Angeles          |        20        |
 | Colorado             | Denver               |        13        |
-| District of Columbia | Washington           |        21        |
+| District of Columbia | Washington           |        20        |
 | Florida              | Miami                |        11        |
 | Georgia              | Atlanta              |        13        |
-| Illinois             | Chicago              |        62        |
+| Illinois             | Chicago              |        57        |
 | Indiana              | Indianapolis         |        12        |
 | Kentucky             | Louisville           |        15        |
 | Louisiana            | New Orleans          |        12        |
@@ -147,7 +149,7 @@ After making these changes accordingly, I created the set for transport mode inf
 | Tennessee            | Memphis              |        20        |
 | Texas                | Dallas               |        14        |
 | Texas                | Houston              |        46        |
-| Texas                | San Antonio          |        16        |
+| Texas                | San Antonio          |        17        |
 | Wisconsin            | Milwaukee            |        17        |
 
 Here, only State-City.Or.County pairs that had more than 10 police injured or killed were kept for two concerns: 1) when a city had very little police shot in five years, we are not so sure whether the number is truly showing a pattern or just a random number. We arbitrarily used 10 as the threshold for this; 2) More importantly, it consumes a lot of time to do the media search and there were in total around 2000 police shot through these five years. This project has only one analyst and it is simply not realistic to collect transport mode information for all cases. The only exception is Staten Island as it is one of the five boroughs of NYC and should be considered along with the rest four.

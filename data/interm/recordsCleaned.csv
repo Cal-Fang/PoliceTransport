@@ -151,7 +151,6 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2024-01-11,Pennsylvania,Scranton,500 block of Hyde Pk,male,Officer Kyle Gilmartin,Injured
 2024-01-11,Illinois,Quincy,Third St and Elm St,male,Officer Matt Hermsmeier,Injured
 2024-01-11,Michigan,Detroit,12900 block of Burt Rd,male,Officer,Injured
-2024-01-09,Illinois,Chicago,7200 block of S Spaulding Ave,male,N/A,Injured
 2024-01-08,Illinois,Chicago,30 E Oak St,male,Officer,Injured
 2024-01-05,Arizona,Peoria,8425 W Bell Rd,male,Detective,Injured
 2024-01-03,Pennsylvania,Monroeville,Monroeville Blvd and Stonecliffe Dr,male,Police Officer,Injured
@@ -383,8 +382,6 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2023-07-06,Kentucky,Bowling Green,1930 Russellville Rd,male,Officer Matt Davis,Injured
 2023-07-06,Ohio,Columbus,I-70 and Mound St,male,Officer,Injured
 2023-07-03,North Carolina,Asheville,I-26 and Brevard Rd,male,Trooper Jeffrey Dunlap,Injured
-2023-07-01,Arizona,Phoenix,3200 E Washington St,N/A,N/A,Injured
-2023-07-01,Arizona,Phoenix,3200 E Washington St,N/A,N/A,Injured
 2023-07-01,Tennessee,Gallatin,300 block of College St,male,Officer,Injured
 2023-07-01,New Mexico,Taos,203 Siler Rd,N/A,N/A,Injured
 2023-06-30,Oregon,Portland,SE Johnson Creek Blvd and SE Bell Ave,N/A,Deputy,Injured
@@ -901,8 +898,6 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2022-03-28,Illinois,Chicago,S Sacramento Blvd and W Polk St,N/A,Officer,Injured
 2022-03-27,Missouri,Moberly,600 block of Adams Ave,male,Deputy Z. Baker,Injured
 2022-03-26,Illinois,Mount Sterling,Illinois 107 and 410 North Ave,male,Chief Steven Helmich,Injured
-2022-03-18,Illinois,Chicago,600 block of S Independence Blvd,N/A,Officer,Injured
-2022-03-18,Illinois,Chicago,600 block of S Independence Blvd,N/A,Officer,Injured
 2022-03-18,Alaska,Anchorage,E 10th Ave,male,Officer,Injured
 2022-03-17,Missouri,Bonne Terre,1017 Hwy K,male,Corporal Garrett Worley,Injured
 2022-03-17,Florida,Lehigh Acres,FL-82 and Gunnery Rd S,male,Detective Rafael Jaquez,Injured
@@ -1758,7 +1753,6 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2020-04-14,Louisiana,New Orleans,Strathmore Dr and Briarheath Dr,N/A,Officer,Injured
 2020-04-14,Louisiana,New Orleans,Strathmore Dr and Briarheath Dr,male,Officer,Injured
 2020-04-10,Oregon,Klamath Falls,1700 block of Fargo St,male,Trooper Kameron Gordon,Injured
-2020-04-09,Illinois,Chicago,945 W Belmont Ave,male,Eric Camp,Injured
 2020-04-09,Texas,Comfort,I-10,male,Deputy,Injured
 2020-04-06,Louisiana,Shreveport,3257 W Bert Kouns Industrial Loop,male,Corporal Robert Brice,Injured
 2020-04-04,Georgia,Atlanta (Hapeville),Toffie Terrace and N Outer Loop Rd,male,Sgt. Charles Landrum,Injured
@@ -2287,7 +2281,6 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2018-07-25,Arizona,Avondale,Papago Fwy and N Avondale Blvd,,,Killed
 2018-07-25,Arizona,Avondale,Papago Fwy and N Avondale Blvd,,,Injured
 2018-07-25,Wisconsin,Milwaukee,N 28th and W Wright st,,,Killed
-2018-07-25,District of Columbia,Washington,200 block of Sheridan St NE,,,Injured
 2018-07-22,North Carolina,High Point,2628 S Main St,,,Injured
 2018-07-21,Florida,Fort Myers,3915 Dr Martin Luther King Jr Blvd,,,Killed
 2018-07-21,New York,Bronx,Sedgwick Avenue and West 183rd St,,,Injured
@@ -2423,9 +2416,6 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2018-05-07,Arkansas,Hackett,1100 block of Sunny Hill Pl,male,Cpl Ron Decker,Injured
 2018-05-04,Indiana,Terre Haute,65 S 18th St,male,Officer Rob Pitts,Killed
 2021-08-19,New Mexico,Albuquerque,1105 Juan Tabo Blvd NE,male,Officer Harry Gunderson,Injured
-2021-03-15,Illinois,Chicago,8900 block of S Stony Island Avenue,male,Officer,Injured
-2021-12-16,New York,Corona (Queens),56-15 Northern Blvd,male,Lieutenant,Injured
 2019-01-28,Texas,Houston,7815 Harding St,N/A,Officer,Injured
 2019-01-28,Texas,Houston,7815 Harding St,male,Officer Gerald Goines,Injured
 2019-01-28,Texas,Houston,7815 Harding St,male,Officer Steven Bryant,Injured
-2022-10-13,Louisiana,New Orleans,300 block of N Rendon St,male,Officer Louis Blackmon III,Injured

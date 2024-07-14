@@ -46,6 +46,8 @@ require(lubridate)      # For date handling
 # Read in the data
 load("data/recordsRaw.Rdata")
 
+
+# ----------------------------------------------- STEP 2 ----------------------------------------------- 
 ## Write a function to
 ##  1) Change the date column format for each data.table;
 ##  2) Drop the Operation column
@@ -76,14 +78,14 @@ I2019 <- format_homeboy(I2019, "Injured")
 A2018 <- mutate(A2018, Incident.Date = mdy(Incident.Date))
 
 
-# ----------------------------------------------- STEP 2 ----------------------------------------------- 
+# ----------------------------------------------- STEP 3 ----------------------------------------------- 
 # Time-wise clean for the 2024 and 2018 files
 K2024 <- filter(K2024, Incident.Date <= "2024-04-30")
 I2024 <- filter(I2024, Incident.Date <= "2024-04-30")
 A2018 <- filter(A2018, Incident.Date >= "2018-04-30")
 
 
-# ----------------------------------------------- STEP 3 ----------------------------------------------- 
+# ----------------------------------------------- STEP 4 ----------------------------------------------- 
 # Case-wise clean for the 2018 file
 # Filter out rows of records with more than one individual killed or injured
 A2018_nKnI <- A2018 %>% 
@@ -123,7 +125,7 @@ A2018 <- A2018_1K1I %>%
   as.data.table()
 
 
-# ----------------------------------------------- STEP 4 ----------------------------------------------- 
+# ----------------------------------------------- STEP 5 ----------------------------------------------- 
 # Combine all data.table to obtain a large data.table for online searching
 A2018_2024 <- rbindlist(list(K2024, I2024,
                              K2023, I2023,
@@ -134,14 +136,14 @@ A2018_2024 <- rbindlist(list(K2024, I2024,
                              A2018), use.names=TRUE)
 
 
-# ----------------------------------------------- STEP 5 ----------------------------------------------- 
+# ----------------------------------------------- STEP 6 ----------------------------------------------- 
 # Extra cleaning
-# Alter the info for the New Orleans case 
+# Alter the info for the 2022-06-27 1400 block of Iberville St New Orleans, LA case 
 A2018_2024$State[which(A2018_2024$Incident.Date == "2022-06-27" & A2018_2024$Address == "1400 block of Iberville St")] <- "Tennessee"
 A2018_2024$City.Or.County[which(A2018_2024$Incident.Date == "2022-06-27" & A2018_2024$Address == "1400 block of Iberville St")] <- "Erin"
 A2018_2024$Address[which(A2018_2024$Incident.Date == "2022-06-27" & A2018_2024$Address == "1400 block of Iberville St")] <- "300 block of Highway 149"
 
-# Add Officer Harry Gunderson to the 2021-08-19 Albuquerque case
+# Add Officer Harry Gunderson to the 2021-08-19 1105 Juan Tabo Blvd NE Albuquerque, NM case
 if (!"Officer Harry Gunderson" %in% A2018_2024$Participant.Name & !"Harry Gunderson" %in% A2018_2024$Participant.Name) {
   A2018_2024$Incident.Date <- as.Date(A2018_2024$Incident.Date)
   harry <- list(as.Date("2021-08-19"), "New Mexico", "Albuquerque", "1105 Juan Tabo Blvd NE", "male", "Officer Harry Gunderson", "Injured")
@@ -150,29 +152,13 @@ if (!"Officer Harry Gunderson" %in% A2018_2024$Participant.Name & !"Harry Gunder
   print("Have a look on the data.")
 }
 
-# Alter the 2021-11-19 Cameron Glen Dr NW case
+# Alter the 2021-11-19 Cameron Glen Dr NW Atlanta, GA case
 A2018_2024$City.Or.County[which(A2018_2024$Incident.Date == "2021-11-19" & A2018_2024$Address == "Cameron Glen Dr NW")] <- "Sandy Springs"
 
-# Drop one row for the 2020-12-04 4085 Ely Ave Bronx case
+# Drop one row for the 2020-12-04 4085 Ely Ave Bronx, NY case
 A2018_2024 <- A2018_2024[-which(A2018_2024$Incident.Date == "2020-12-04" & A2018_2024$Address == "4085 Ely Ave")[3], ]
 
-# Add the 2021-03-15 Chicago case
-if (!"2021-03-15" %in% A2018_2024$Incident.Date[which(A2018_2024$City.Or.County == "Chicago")]) {
-  chicago_20210315 <- list(as.Date("2021-03-15"), "Illinois", "Chicago", "8900 block of S Stony Island Avenue", "male", "Officer", "Injured")
-  A2018_2024 <- rbindlist(list(A2018_2024, chicago_20210315), fill=TRUE)
-} else {
-  print("Have a look on the data.")
-}
-
-# Add the 2021-12-16 NYC Corona (Queens) case
-if (!"2021-12-16" %in% A2018_2024$Incident.Date[which(A2018_2024$City.Or.County == "Corona (Queens)")]) {
-  queens_20211216 <- list(as.Date("2021-12-16"), "New York", "Corona (Queens)", "56-15 Northern Blvd", "male", "Lieutenant", "Injured")
-  A2018_2024 <- rbindlist(list(A2018_2024, queens_20211216), fill=TRUE)
-} else {
-  print("Have a look on the data.")
-}
-
-# Add three more rows for the 2019-01-28 Huston case
+# Add three more rows for the 2019-01-28 7815 Harding St Huston, TX case
 if (length(which(A2018_2024$City.Or.County == "Houston" & A2018_2024$Incident.Date == "2019-01-28")) == 2) {
   houston_20211216 <- data.table(Incident.Date = rep(as.Date("2019-01-28"), 3),
                                  State = rep("Texas", 3),	
@@ -186,25 +172,33 @@ if (length(which(A2018_2024$City.Or.County == "Houston" & A2018_2024$Incident.Da
   print("Have a look on the data.")
 }
 
-# Alter the 2020-07-02 Independence Ave and Hardesty Ave Kansas City case
+# Alter the 2020-07-02 Independence Ave and Hardesty Ave Kansas City, MO case
 A2018_2024 <- A2018_2024[-which(A2018_2024$Incident.Date == "2020-07-02" & A2018_2024$Address == "Independence Ave and Hardesty Ave" & A2018_2024$Participant.Gender == "female"), ]
 A2018_2024$Participant.Gender[which(A2018_2024$Incident.Date == "2020-07-02" & A2018_2024$Address == "Independence Ave and Hardesty Ave")] <- "male"
 
-# Add the 2022-10-13 New Orleans case
-if (length(which(A2018_2024$City.Or.County == "New Orleans" & A2018_2024$Incident.Date == "2022-10-13")) == 0) {
-  neworleans_20221013 <- list(as.Date("2022-10-13"), "Louisiana", "New Orleans", "300 block of N Rendon St", "male", "Officer Louis Blackmon III", "Injured")
-  A2018_2024 <- rbindlist(list(A2018_2024, neworleans_20221013), fill=TRUE)
-} else {
-  print("Have a look on the data.")
-}
-
-# Drop one row for the 2021-07-29 239 Gilkeson Rd Pittsburgh case
+# Drop one row for the 2021-07-29 239 Gilkeson Rd Pittsburgh, PA case
 A2018_2024 <- A2018_2024[-which(A2018_2024$Incident.Date == "2021-07-29" & A2018_2024$Address == "239 Gilkeson Rd")[2], ]
 
-# Drop the 2023-07-25	778 Parkrose Rd Memphis	case as the injured person is not a police officer
+# Drop the 2023-07-25	778 Parkrose Rd Memphis, TN	case as the injured person is not a police officer
 A2018_2024 <- A2018_2024[-which(A2018_2024$Incident.Date == "2023-07-25" & A2018_2024$Address == "778 Parkrose Rd"), ]
 
-# ----------------------------------------------- STEP 6 ----------------------------------------------- 
+# Drop the 2020-04-09 945 W Belmont Ave Chicago, IL	case as the injured person is not a police officer
+A2018_2024 <- A2018_2024[-which(A2018_2024$Incident.Date == "2020-04-09" & A2018_2024$Address == "945 W Belmont Ave"), ]
+
+# Drop the 2024-01-09 7200 block of S Spaulding Ave Chicago, IL case as the officer actually did not sustain any injury
+A2018_2024 <- A2018_2024[-which(A2018_2024$Incident.Date == "2024-01-09" & A2018_2024$Address == "7200 block of S Spaulding Ave"), ]
+
+# Drop the 2023-07-01 3200 E Washington St Phoenix, AZ case as neither officer was shot
+A2018_2024 <- A2018_2024[-which(A2018_2024$Incident.Date == "2023-07-01" & A2018_2024$Address == "3200 E Washington St"), ]
+
+# Drop the 2022-03-18 600 block of S Independence Blvd Chicago, IL case as this is an mistake
+A2018_2024 <- A2018_2024[-which(A2018_2024$Incident.Date == "2022-03-18" & A2018_2024$Address == "600 block of S Independence Blvd"), ]
+
+# Drop the 2018-07-25 200 block of Sheridan St NE Washington DC case as this police was not shot
+A2018_2024 <- A2018_2024[-which(A2018_2024$Incident.Date == "2018-07-25" & A2018_2024$Address == "200 block of Sheridan St NE"), ]
+
+
+# ----------------------------------------------- STEP 7 ----------------------------------------------- 
 # Save the final result
 fwrite(A2018_2024, "data/interm/recordsCleaned.csv")
 
