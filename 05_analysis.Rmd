@@ -142,30 +142,45 @@ prop <- final70 %>%
   mutate(Prop = round(Count / sum(Count) * 100, 2)) %>% 
   select(-Count) %>% 
   pivot_wider(names_from = Response.Type,
-              values_from = Prop) %>% 
-  select(City, `Police Self-transfer`, Ambulance, Others, Unknown)
+              values_from = Prop)
 
 # Merge the total number and transport mode proportion
 tab1 <- prop %>% 
   merge(total) %>% 
-  arrange(desc(Total))
+  arrange(desc(Total)) %>% 
+  select(City, Total, `Police Self-transfer`, Ambulance, Others, Unknown)
+
+tab1End <- final70 %>% 
+  group_by(Response.Type) %>% 
+  summarise(Count = n()) %>% 
+  mutate(Prop = round(Count / sum(Count) * 100, 2)) %>% 
+  select(-Count) %>% 
+  pivot_wider(names_from="Response.Type",
+              values_from="Prop") %>% 
+  mutate(City = "Total", 
+         Total = nrow(final70)) %>% 
+  select(City, Total, `Police Self-transfer`, Ambulance, Others, Unknown)
+
+tab1 <- rbindlist(list(tab1, tab1End), fill=TRUE)
 
 # Replace NA with 0
 tab1[is.na(tab1)] <- 0.00
 
 # Prepare the footnote symbols
-names(tab1) <- c("City", "Police", "Ambulance", "Other", "Could not be determined", "Total police shot")
+names(tab1) <- c("City", "Total police shot", "Police", "Ambulance", "Other", "Could not be determined")
 names(tab1)[1] <- paste0(names(tab1)[1], 
                          footnote_marker_alphabet(1))
-names(tab1)[4] <- paste0(names(tab1)[4], 
+names(tab1)[2] <- paste0(names(tab1)[2], 
                          footnote_marker_alphabet(2))
+names(tab1)[5] <- paste0(names(tab1)[5], 
+                         footnote_marker_alphabet(5))
 ```
 
 ```{r tab1, message=FALSE, echo=FALSE}
 tab1  %>% 
   kbl(align="lccccc", booktabs=TRUE, escape=FALSE) %>% 
   kable_styling(latex_options = c("hold_position")) %>%
-  add_header_above(header=c("", "Transport mode (%)"=4, "")) %>% 
+  add_header_above(header=c("", "", "Transport mode (%)"=4)) %>% 
   footnote(alphabet = c("We utilized GVA data to identify 31 cities where more than 10 police officers were shot between April 20th, 2018 and April 20th, 2024. Subsequently, one analyst conducted extensive media research—reviewing news reports, police press releases, and videos—to ascertain how these officers were transported to medical facilities. All cases initially marked as `police', `ambulance', or `other' were cross-checked by an additional analyst. Cases marked as `could not be determined' in cities that we can find the information of how officers were transported for 30% or above persons were also cross-checked. Any discrepancies were resolved through discussion or referred to a third analyst for adjudication.",
                         "`Other' includes instances where officers were transported by air ambulance, deemed not requiring hospital transport, or involved in incidents like suicide.",
                         "Suicide cases, where officers were often found deceased with no transport needed, were excluded. We kept all cities that we can find the information of how officers were transported for 30% or above persons."),

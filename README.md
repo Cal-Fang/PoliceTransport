@@ -1,5 +1,7 @@
 # Homeboy Drop Off
 
+[`Read`](#Retrieve-needed-data-from-GVA) [`Clean`](#Clean-and-combine-raw-data-files) [`Sort`](#Sort-and-identify-the-analysis-subject-cities) [`Collect`](#Collect-the-transport-mode-information) [`Validate`](#Validate) [`Analyze`](#Analyze)
+
 ## STEP 0 Retrieve needed data from GVA
 We would need to download historical records from the [Gun Violence Archive](https://www.gunviolencearchive.org/). For our analysis, we downloaded the following files:
 - 2024
@@ -102,10 +104,10 @@ There are several changes needed to be made in specific cases. Although in my ac
 7. GVA recorded [two officers shot and injured](https://www.gunviolencearchive.org/incident/2077587) in Pittsburgh on 2021-07-29. One of them suffered from a minor injury [not related to gunfire](https://www.pennlive.com/news/2021/07/pa-man-killed-parents-shot-at-police-died-in-crash-reports.html);
 8. GVA recorded [one officer shot and injured](https://www.gunviolencearchive.org/incident/2663163) in Memphis on 2023-07-25. This injured person is [not a police officer](https://www.actionnews5.com/2023/07/25/school-security-guard-injured-westwood-shooting/);
 9. GVA recorded [one officer shot and injured](https://www.gunviolencearchive.org/incident/1655454) in Chicago on 2020-04-09. This injured person is [not a police officer](https://cwbchicago.com/2020/04/security-guard-licensed-to-carry-a-gun-for-2-weeks-accidentally-shoots-teen-on-red-line.html);
-10. GVA recorded [one officer shot and injured](https://www.gunviolencearchive.org/incident/2798483) in Chicago on 2024-01-09. This officer actually [did not sustain any injuries](https://www.chicagocopa.org/press/copa-provides-update-on-off-duty-officer-involved-shooting-near-7200-s-spaulding-ave/);
-11. GVA recorded [two officers shot and injured](https://www.gunviolencearchive.org/incident/2640515) in Phoenix on 2023-07-01. Neither officer was shot in this case as [the suspect did not hold a gun and only grabbed officers' taser](https://www.phoenix.gov/newsroom/police/2807);
-12. GVA recorded [two officers shot and injured](https://www.gunviolencearchive.org/incident/2256840) in Chicago on 2022-03-18. This is a mistake. The information recorded for this case on GVA website is identical to the case recorded for [Chicago on 2022-03-18](https://www.gunviolencearchive.org/incident/2246372) and no news of police shot on 2022-03-18 can be found online;
-13. GVA recorded [one officer shot and injured](https://www.gunviolencearchive.org/incident/1171913) in Washington DC on 2018-07-25. This is a mistake. The police [was injured but not shot](https://www.wusa9.com/article/news/local/dc/suspect-injured-in-police-involved-shooting-in-dc/65-577500936). 
+10. GVA recorded [two officers shot and injured](https://www.gunviolencearchive.org/incident/2640515) in Phoenix on 2023-07-01. Neither officer was shot in this case as [the suspect did not hold a gun and only grabbed officers' taser](https://www.phoenix.gov/newsroom/police/2807);
+11. GVA recorded [two officers shot and injured](https://www.gunviolencearchive.org/incident/2256840) in Chicago on 2022-03-18. This is a mistake. The information recorded for this case on GVA website is identical to the case recorded for [Chicago on 2022-03-18](https://www.gunviolencearchive.org/incident/2246372) and no news of police shot on 2022-03-18 can be found online;
+12. GVA recorded [one officer shot and injured](https://www.gunviolencearchive.org/incident/1171913) in Washington DC on 2018-07-25. This police [was injured but not shot](https://www.wusa9.com/article/news/local/dc/suspect-injured-in-police-involved-shooting-in-dc/65-577500936);
+13. GVA recorded [one officer injured](https://www.gunviolencearchive.org/incident/2281841) in Baltimore MD on 2022-04-16. This police [was injured but not shot](https://www.baltimoresun.com/2022/04/17/baltimore-police-officer-injured-saturday-night-outside-power-plant-live-after-trying-to-break-up-fight/).
 
 It is possible these mistakes could be corrected from GVA's end. So anyone trying to reproduce the result should examine whether these mistakes still persist before running this part of code.
 
@@ -128,11 +130,11 @@ After making these changes accordingly, I created the set for transport mode inf
 | District of Columbia | Washington           |        20        |
 | Florida              | Miami                |        11        |
 | Georgia              | Atlanta              |        13        |
-| Illinois             | Chicago              |        57        |
+| Illinois             | Chicago              |        58        |
 | Indiana              | Indianapolis         |        12        |
 | Kentucky             | Louisville           |        15        |
-| Louisiana            | New Orleans          |        12        |
-| Maryland             | Baltimore            |        17        |
+| Louisiana            | New Orleans          |        11        |
+| Maryland             | Baltimore            |        16        |
 | Michigan             | Detroit              |        13        |
 | Missouri             | Kansas City          |        15        |
 | Missouri             | Saint Louis          |        23        |
@@ -140,7 +142,7 @@ After making these changes accordingly, I created the set for transport mode inf
 | New Mexico           | Albuquerque          |        12        |
 | New York             | Bronx                |        17        |
 | New York             | Brooklyn             |        15        |
-| New York             | Corona (Queens)      |        17        |
+| New York             | Corona (Queens)      |        16        |
 | New York             | New York (Manhattan) |        10        |
 | New York             | Staten Island        |        6         |
 | North Carolina       | Charlotte            |        13        |
@@ -157,7 +159,7 @@ Here, only State-City.Or.County pairs that had more than 10 police injured or ki
 The script used for this step is named **02_sort.R**. The result is saved as *recordsFiltered.csv*.
 
 ## STEP 3 Collect the transport mode information
-Since GVA does not record what transport mode was used to carry each police to ER/hospitals, I copy-pasted the *recordsFiltered.csv* into [this Google Sheets document](https://docs.google.com/spreadsheets/d/1w_BaFUAuatmUQBt3qtRBzhm9tTDV4B9lRjTGTq79bAg/edit?usp=sharing), and then used following resources to manually record such information. 
+Since GVA does not record what transport mode was used to carry each police to ER/hospitals, I copy-pasted the *recordsFiltered.csv* into [this Google Sheets document](https://docs.google.com/spreadsheets/d/1fCjbfK5wkWyoP2V0U5rAVWbhzJjAER9SPFYSm_38IKA/edit?usp=sharing), and then used following resources to manually record such information. 
 - GVA collected some news links for each case on their website which is a good starting point;
 - If the news collected by GVA did not disclose the transport mode, I would google the keyword to look for others (especially later reports);
 - For each police-engaged case, the police department usually would have a media brief. The videos are usually uploaded online for transparency. Sometimes Chiefs would disclose how injured/killed officers were transported.
@@ -166,15 +168,21 @@ All transport mode information was stored in the new Response.Type column. Two e
 - For all cases where the transport mode used was identified, I documented the source in the "News.Source" column. 
 - I also marked all suicide cases in the "Detail" column since these cases are fundamentally different in terms of the response mechanism and should be excluded from our analysis.
 
+## STEP 4 Validate
+Two other analysts from Dr. Sanghavi's Lab, Jessy Nguyen and Nadia Ghazali, then helped validate the transport mode labeled. Using the [Google Sheets document](https://docs.google.com/spreadsheets/d/1fCjbfK5wkWyoP2V0U5rAVWbhzJjAER9SPFYSm_38IKA/edit?usp=sharing), they examined the "News.Source" and determined whether the label assigned is appropriate. The column "Rechecked.By" showed who did this crosscheck. 
 
-# STEP 4 Analysis
+If they don't agree with the transport mode information I assigned, they would mark it and make a suggestion. I would revisit the column and determine whether it should be changed to what they suggested. If agreement cannot be reached, Dr. Prachi Sanghavi would reviewed the columns and make the final call.
+
+## STEP 5 Analyze
 After adding transport information, I did three more things:
-1. Replaced five NYC boroughs with NYC since we would want to analyze them as a whole;
-2. Dropped suicide case since these cases' emergency response differs from occupation gunshot scenarios;
-3. Dropped cities where there are more than 30% cases for which we cannot identify the transport mode information.
+1. Replaced five NYC boroughs with NYC since we would want to analyze them as a whole, which left us 27 cities;
+2. Dropped suicide case since these cases' emergency response differs from occupation gunshot scenarios, which left us 544 police shot;
+3. Dropped cities where there are more than 30% cases for which we cannot identify the transport mode information, which left us 18 cities and 403 police shot.
 
-This left us with 382 cases. Using these cases, I made some pivot tables trying to answer two descriptive questions:
-1. How were police transported in these cities?
-2. Is there any trend through time?
+Using the 18 cities and 403 police sample, I made one pivot table for our perspective article to demonstrate how police were transported in these cities.
 
-The script used for this step is named **04_analysis.Rmd**. It would knit out a .pdf file named [*pivottables.pdf*](https://github.com/Cal-Fang/homeboydropoff/blob/main/pivottables.pdf).
+I also used the 544 police sample to make two extra table for supporting information used in our perspective article or fun:
+1. What is the outcome of such transport mode?
+2. Is there any time trend?
+
+The script used for this step is named **05_analysis.Rmd**. It would knit out a .pdf file named [*pivottables.pdf*](https://github.com/Cal-Fang/HomeboyDropOff/blob/main/results/analysisResults.pdf).
