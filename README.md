@@ -33,7 +33,7 @@ This script used the download link generated from the GVA website to download th
 ## STEP 1 Clean and combine raw data files
 I first dropped the "Operations" and "Participant.Age.Group" columns from records of 2019-2024. And then I did some time-wise cleaning and case-wise cleaning.
 ### Time-wise cleaning  
-Since we have decided the time window should be from 2018-04-30 to 2024-04-30 for this project, we would need to drop all records prior to this period for the 2018 file and all records post to this period for the 2023 files.
+Since we have decided the time window should be from 2018-04-30 to 2024-04-30 for this project, we would need to drop all records prior to this period for the 2018 file and all records post to this period for the 2024 files.
 
 ### Reformatting 
 GVA data is stored in another format for all records prior to 2019-01-01. So for our analysis, we would need to do some extra cleaning and proofreading for ***2018 records***. The 2018 file have following features:
