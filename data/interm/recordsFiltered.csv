@@ -35,6 +35,7 @@ Incident.Date,State,City.Or.County,Address,Outcome,Participant.Name,Participant.
 2024-01-16,New York,Brooklyn,1969 Bergen St,Injured,Officer,male
 2024-01-13,Texas,San Antonio,8200 block of Marbach Rd,Injured,Officer Domonic Muro,male
 2024-01-11,Michigan,Detroit,12900 block of Burt Rd,Injured,Officer,male
+2024-01-09,Illinois,Chicago,7200 block of S Spaulding Ave,Injured,N/A,male
 2024-01-08,Illinois,Chicago,30 E Oak St,Injured,Officer,male
 2024-01-02,Wisconsin,Milwaukee,1818 W Fairmount Ave,Injured,Officer Dan Morrell,male
 2023-12-31,Nevada,Las Vegas,3000 block of Solento Ln,Killed,Officer Jake Freeman,male
@@ -192,7 +193,6 @@ Incident.Date,State,City.Or.County,Address,Outcome,Participant.Name,Participant.
 2022-05-10,New York,Bronx,Claremont Pkwy and Bathgate Ave,Injured,Ofc. Dennis Vargas,male
 2022-05-05,Georgia,Atlanta,969 Marietta St NW,Injured,N/A,male
 2022-05-04,Texas,Houston,14300 Gulf Fwy,Injured,Officer J Sallee,male
-2022-04-16,Maryland,Baltimore,34 Market Pl,Injured,Police Officer,male
 2022-04-14,Arizona,Phoenix,E Beardsley Rd and N Cave Creek Rd,Injured,Officer Denise Bruce-Jones,female
 2022-04-06,Pennsylvania,Philadelphia,Griscom St and Arrott St,Injured,Officer Ervis Onuzi,male
 2022-04-05,Texas,San Antonio,200 block of Demya Dr,Injured,Deputy Miguel Gonzalez,male

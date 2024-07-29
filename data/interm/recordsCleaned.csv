@@ -151,6 +151,7 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2024-01-11,Pennsylvania,Scranton,500 block of Hyde Pk,male,Officer Kyle Gilmartin,Injured
 2024-01-11,Illinois,Quincy,Third St and Elm St,male,Officer Matt Hermsmeier,Injured
 2024-01-11,Michigan,Detroit,12900 block of Burt Rd,male,Officer,Injured
+2024-01-09,Illinois,Chicago,7200 block of S Spaulding Ave,male,N/A,Injured
 2024-01-08,Illinois,Chicago,30 E Oak St,male,Officer,Injured
 2024-01-05,Arizona,Peoria,8425 W Bell Rd,male,Detective,Injured
 2024-01-03,Pennsylvania,Monroeville,Monroeville Blvd and Stonecliffe Dr,male,Police Officer,Injured
@@ -866,7 +867,6 @@ Incident.Date,State,City.Or.County,Address,Participant.Gender,Participant.Name,O
 2022-04-20,Maryland,Laurel,100 block of Bryan Ct,male,Police Officer,Injured
 2022-04-20,New York,Yonkers,115 Elm St,male,Det Brian Menton,Injured
 2022-04-19,Florida,Clearwater,4900 Ulmerton Rd,male,Officer Jacob Derr,Injured
-2022-04-16,Maryland,Baltimore,34 Market Pl,male,Police Officer,Injured
 2022-04-15,Kansas,Walnut,US-77 and 122nd Rd,male,Deputy,Injured
 2022-04-15,Kansas,Walnut,US-77 and 122nd Rd,N/A,Deputy,Injured
 2022-04-15,Kansas,Walnut,US-77 and 122nd Rd,N/A,Deputy,Injured

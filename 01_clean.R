@@ -185,9 +185,6 @@ A2018_2024 <- A2018_2024[-which(A2018_2024$Incident.Date == "2023-07-25" & A2018
 # Drop the 2020-04-09 945 W Belmont Ave Chicago, IL	case as the injured person is not a police officer
 A2018_2024 <- A2018_2024[-which(A2018_2024$Incident.Date == "2020-04-09" & A2018_2024$Address == "945 W Belmont Ave"), ]
 
-# Drop the 2024-01-09 7200 block of S Spaulding Ave Chicago, IL case as the officer actually did not sustain any injury
-A2018_2024 <- A2018_2024[-which(A2018_2024$Incident.Date == "2024-01-09" & A2018_2024$Address == "7200 block of S Spaulding Ave"), ]
-
 # Drop the 2023-07-01 3200 E Washington St Phoenix, AZ case as neither officer was shot
 A2018_2024 <- A2018_2024[-which(A2018_2024$Incident.Date == "2023-07-01" & A2018_2024$Address == "3200 E Washington St"), ]
 
@@ -196,6 +193,9 @@ A2018_2024 <- A2018_2024[-which(A2018_2024$Incident.Date == "2022-03-18" & A2018
 
 # Drop the 2018-07-25 200 block of Sheridan St NE Washington DC case as this police was not shot
 A2018_2024 <- A2018_2024[-which(A2018_2024$Incident.Date == "2018-07-25" & A2018_2024$Address == "200 block of Sheridan St NE"), ]
+
+# Drop the 2022-04-16 34 Market Pl Baltimore MD case as this police was not shot
+A2018_2024 <- A2018_2024[-which(A2018_2024$Incident.Date == "2022-04-16" & A2018_2024$Address == "34 Market Pl"), ]
 
 
 # ----------------------------------------------- STEP 7 ----------------------------------------------- 

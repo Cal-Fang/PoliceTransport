@@ -1,7 +1,7 @@
 ---
 title: "Tables for the police drop off perspective article"
 author: "Cal Chengqi Fang"
-date: "2023-06-29"
+date: "2024-07-29"
 output: pdf_document
 header-includes:
   - \setlength{\parindent}{2.5em}
@@ -11,7 +11,7 @@ knit: >
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo=FALSE)
 rm(list = ls())
 
 require(tidyverse)
@@ -46,35 +46,87 @@ final$City.Or.County[final$City.Or.County=="Staten Island"] <- "NYC"
 final$GEO <- str_c(final$City.Or.County, ", ", append(state.abb, "DC")[match(final$State, append(state.name, "District of Columbia"))])
 
 # Drop suicide case
-final <- final %>% 
+finalNoSuicide <- final %>% 
   filter(!grepl("Suicide", Detail, ignore.case=TRUE))
 
 # Drop cities with higher than 30% Unknown
-unknownSummary <- final %>% 
+unknownSummary <- finalNoSuicide %>% 
   group_by(GEO, Response.Type) %>% 
   summarise(Count = n()) %>%
   pivot_wider(names_from = Response.Type, values_from = Count) %>% 
   mutate(Total = sum(c(Unknown, `Police Self-transfer`, Others, Ambulance), na.rm=TRUE)) %>% 
   filter(Unknown <= 0.30*Total | is.na(Unknown))
 
-final <- final %>% 
+final70 <- finalNoSuicide %>% 
   filter(GEO %in% unknownSummary$GEO) %>% 
   mutate(Year = format(Incident.Date, "%Y")) %>% 
   mutate(across(all_of(c("GEO","Response.Type")), as.factor)) %>% 
   rename(City = GEO)
 ```
 
-After cleaning operations detailed in the [GitHub Page](https://github.com/Cal-Fang/homeboydropoff) of this project, STEP 1 and STEP 2, ***we were left with 584 police shot*** in 27 cities with more than 10 police shot from April 20th, 2018 to April 20th, 2024. 
+```{r}
+# Number of cases identified from GVA after cleaning
+numFinal <- nrow(final)
+# Number of cities with more than 10 cases
+numCity <- length(unique(final$City.Or.County))
+# Number of cities kept for table 1
+numCity2 <- length(unique(final70$City.Or.County))
 
-We then obtained the information of how these police were transported to medical facilities through media research using the news, police press articles, and/or videos. After that, as in suicide cases, the EMS team usually were dispatched at the same time and oftentimes the officer were found dead so there is no need to transport the officer, we also dropped all suicide cases. ***This left us with 555 police shot.***        
+# Number of people with confirmed transport mode info
+numConfirmed <- nrow(filter(final, Response.Type != "Unknown"))
+# Number of people with confirmed transport mode info and shot by other people
+numNoSuicide <- nrow(finalNoSuicide)
+# Number of people kept for table 1
+numTab1 <- nrow(final70)
 
-We then filtered out all cities that have more than 30% cases that we can not find the information of how officers were transported. ***This left us with 452 police shot.*** 
+# Summarize after dropping the suicide cases
+summary <- finalNoSuicide %>% 
+  group_by(Response.Type) %>% 
+  summarize(Prop = round(n() / nrow(finalNoSuicide) * 100, 2)) %>% 
+  pivot_wider(names_from="Response.Type",
+              values_from="Prop") %>% 
+  rename(Police = `Police Self-transfer`)
+
+# Take out the two example cities
+philly <- finalNoSuicide %>% 
+  filter(GEO == "Philadelphia, PA") %>% 
+  group_by(Response.Type) %>% 
+  summarize(Num = n()) %>% 
+  pivot_wider(names_from="Response.Type",
+              values_from="Num") %>% 
+  rename(Police = `Police Self-transfer`)
+
+if (!("Ambulance" %in% colnames(philly))) {
+  philly$Ambulance <- 0
+}
+
+huston <- finalNoSuicide %>% 
+  filter(GEO == "Houston, TX") %>% 
+  group_by(Response.Type) %>% 
+  summarize(Num = n()) %>% 
+  pivot_wider(names_from="Response.Type",
+              values_from="Num") %>% 
+  rename(Police = `Police Self-transfer`)
+
+# Summarize the cities that mainly using one mode
+cities <- unknownSummary
+cities[is.na(cities)] <- 0.00
+cityPolice <- sum(cities$`Police Self-transfer` > cities$Ambulance)
+cityAmbulance <- sum(cities$Ambulance > cities$`Police Self-transfer`)
+```
+After cleaning operations detailed in the [GitHub Page](https://github.com/Cal-Fang/homeboydropoff) of this project, STEP 1 and STEP 2, we were left with ***`r numFinal`*** police shot in *`r numCity`* cities with more than 10 police shot from April 20th, 2018 to April 20th, 2024. We were able to ascertain the transport mode through media reports for ***`r numConfirmed`*** persons. 
+
+After that, as in suicide cases, the EMS team usually were dispatched at the same time and oftentimes the officer were found dead so there is no need to transport the officer, we also dropped all suicide cases. ***This left us with `r numNoSuicide` police shot.***       
+
+The transport mode was almost evenly split between police vehicles (`r summary$Police`%) and ambulances (`r summary$Ambulance`%) (`r summary$Others`% used other means). The variation across cities was striking. Consistent with the opening example, Philadelphia transported `r philly$Police` persons by police vehicle and `r philly$Ambulance` by ambulance; Houston transported `r huston$Police` person by police vehicle and `r huston$Ambulance` persons by ambulance. Among **`r numCity2`** cities where we were able to determine the transport mode for 70% or above persons, **`r cityPolice`** cities transported their injured officers mostly by police vehicle and **`r cityAmbulance`** cities transported their injured officers mostly by ambulance (**`r numCity2 - cityAmbulance - cityPolice`** city have the same percentage for police vehicle and ambulance transport).
+
+We then filtered out all cities that have more than 30% cases that we can not find the information of how officers were transported. ***This left us with `r numTab1` police shot.*** 
 
 \newpage
 # Table 1. The proportion of different transportation method used for police shot and the total number of police shot by city: April 20, 2018-April 20, 2024
 ```{r prep tab1, message=FALSE, echo=FALSE}
 # Summarize the total number of police shot by city
-total <- final %>% 
+total <- final70 %>% 
   group_by(City, Response.Type) %>% 
   summarise(Count = n()) %>% 
   pivot_wider(names_from = Response.Type,
@@ -84,7 +136,7 @@ total <- final %>%
   select(City, Total)
 
 # Summarize the transport mode proportion by city
-prop <- final %>% 
+prop <- final70 %>% 
   group_by(City, Response.Type) %>% 
   summarise(Count = n()) %>% 
   mutate(Prop = round(Count / sum(Count) * 100, 2)) %>% 
@@ -114,39 +166,38 @@ tab1  %>%
   kbl(align="lccccc", booktabs=TRUE, escape=FALSE) %>% 
   kable_styling(latex_options = c("hold_position")) %>%
   add_header_above(header=c("", "Transport mode (%)"=4, "")) %>% 
-  footnote(alphabet = c("Using GVA data, we identified 27 cities that had more than 10 police shot from April 20th, 2018 to April 20th, 2024. We then obtained the information of how these police were transported to medical facilities through media research using the news, police press articles, and/or videos. As in suicide cases, the EMS team usually were dispatched at the same time and oftentimes the officer were found dead so there is no need to transport the officer, we dropped all suicide cases. We then filtered out all cities that have more than 30% cases that we can not find the information of how officers were transported.",
-                        "Other modes include cases where police were transported by air ambulance, drove themselves to hospital, did not require to be transported to hospital, or were shot in a hospital."),
+  footnote(alphabet = c("We utilized GVA data to identify 31 cities where more than 10 police officers were shot between April 20th, 2018 and April 20th, 2024. Subsequently, one analyst conducted extensive media research—reviewing news reports, police press releases, and videos—to ascertain how these officers were transported to medical facilities. All cases initially marked as `police', `ambulance', or `other' were cross-checked by an additional analyst. Cases marked as `could not be determined' in cities that we can find the information of how officers were transported for 30% or above persons were also cross-checked. Any discrepancies were resolved through discussion or referred to a third analyst for adjudication.",
+                        "`Other' includes instances where officers were transported by air ambulance, deemed not requiring hospital transport, or involved in incidents like suicide.",
+                        "Suicide cases, where officers were often found deceased with no transport needed, were excluded. We kept all cities that we can find the information of how officers were transported for 30% or above persons."),
            threeparttable=TRUE)
 ```
 
 \newpage
 # Other tables - left out
 ```{r tab leftout1, message=FALSE, echo=FALSE}
-final %>% 
-  group_by(City, Year) %>% 
-  summarise(Count = n()) %>%
-  pivot_wider(names_from = Year, values_from = Count) %>% 
-  mutate(Total = sum(c(`2018`, `2019`, `2020`, `2021`, `2022`, `2023`, `2023`), na.rm=TRUE)) %>% 
-  knitr::kable()
+# Summarize the outcome by transport mode
+tabTemp <- finalNoSuicide %>% 
+  group_by(Response.Type, Outcome) %>% 
+  summarize(num = n()) %>% 
+  pivot_wider(names_from="Outcome", values_from="num") %>% 
+  mutate(total = Injured + Killed, 
+         propInjured = round(Injured / total * 100, 2),
+         propKilled = round(Killed / total * 100, 2)) %>% 
+  select(Response.Type, propInjured, propKilled, total)
+
+kable(tabTemp, label="drop", col.names=c("Transport mode", "Injured (%)", "Killed (%)", "Total shot"))
 ```
 
 ```{r tab leftout2, message=FALSE, echo=FALSE}
-final %>% 
-  group_by(Year, Response.Type) %>% 
-  summarise(Count = n()) %>% 
-  pivot_wider(names_from = Response.Type,
-              values_from = Count) %>% 
-  ungroup() %>% 
-  mutate(Total = rowSums(select_if(., is.numeric), na.rm=TRUE)) %>% 
-  knitr::kable()
+# Summarize the transport mode used by year
+tabTemp <- finalNoSuicide %>% 
+  mutate(Year = lubridate::year(Incident.Date)) %>% 
+  group_by(Response.Type, Year) %>% 
+  summarize(num = n()) %>% 
+  pivot_wider(names_from="Year", values_from="num") %>% 
+  rename(`Transport mode` = Response.Type)
 
-final %>% 
-  group_by(Year, Response.Type) %>% 
-  summarise(Count = n()) %>% 
-  mutate(Prop = round(Count / sum(Count), 2)) %>% 
-  select(-Count) %>% 
-  pivot_wider(names_from = Response.Type,
-              values_from = Prop) %>% 
-  knitr::kable()
+kable(tabTemp, label="drop2")
 ```
+
 
