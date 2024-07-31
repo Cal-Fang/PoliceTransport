@@ -3,7 +3,7 @@
 [`Read`](#Retrieve-needed-data-from-GVA) [`Clean`](#Clean-and-combine-raw-data-files) [`Sort`](#Sort-and-identify-the-analysis-subject-cities) [`Collect`](#Collect-the-transport-mode-information) [`Validate`](#Validate) [`Analyze`](#Analyze)
 
 ## STEP 0 Retrieve needed data from GVA
-We would need to download historical records from the [Gun Violence Archive](https://www.gunviolencearchive.org/). For our analysis, we downloaded the following files:
+For our analysis, we downloaded the following files from the [Gun Violence Archive](https://www.gunviolencearchive.org/):
 - 2024
   - [OFFICER INVOLVED OFFICER KILLED IN 2024](https://www.gunviolencearchive.org/reports/officer-killed?year=2024)
   - [OFFICER INVOLVED OFFICER INJURED IN 2024](https://www.gunviolencearchive.org/reports/officer-shot?year=2024)
@@ -27,16 +27,16 @@ We would need to download historical records from the [Gun Violence Archive](htt
 
 The script used for this step is named **00_read.R**. 
 
-This script used the download link generated from the GVA website to download the data sets mentioned above and stored them as the *recordsRaw.Rdata* file. This script works smoothly as of July 10th, 2024. However, since download links can change, become unavailable, or require different methods of access in the future, if researchers trying to reproduce this research are experiencing difficulties running it, I recommend using the links above and manually downloading and reading the files. As long as the files are named in the same fashion as detailed in **00_read.R**, doing so should not affect the following steps.
+This script used the download link generated from the GVA website to download the data sets mentioned above and stored them as the *recordsRaw.Rdata* file. This script worked smoothly as of July 10th, 2024. However, since download links can change, become unavailable, or require different methods of access in the future, if researchers trying to reproduce this research are experiencing difficulties running it, we recommend using the links above and manually downloading and reading the files. As long as the files are named in the same fashion as detailed in **00_read.R**, doing so should not affect the following steps.
 
 
 ## STEP 1 Clean and combine raw data files
-I first dropped the "Operations" and "Participant.Age.Group" columns from records of 2019-2024. And then I did some time-wise cleaning and case-wise cleaning.
+I first dropped the "Operations" and "Participant.Age.Group" columns from records of 2019-2024. And then we did some time-wise cleaning and case-wise cleaning.
 ### Time-wise cleaning  
-Since we have decided the time window should be from 2018-04-30 to 2024-04-30 for this project, we would need to drop all records prior to this period for the 2018 file and all records post to this period for the 2024 files.
+Since we decided the time window should be from 2018-04-30 to 2024-04-30 for this project, we needed to drop all records prior to this period for the 2018 file and all records post to this period for the 2024 files.
 
 ### Reformatting 
-GVA data is stored in another format for all records prior to 2019-01-01. So for our analysis, we would need to do some extra cleaning and proofreading for ***2018 records***. The 2018 file has the following features:
+GVA data is stored in another format for all records prior to 2019-01-01. So for our analysis, we needed to do some extra cleaning and proofreading for ***2018 records***. The 2018 file has the following features:
 1. Each case is summarized into one row;
 2. Every case recorded in this document had at least one police killed or injured;
 3. Victims.Killed and Victims.Injured also count non-police subject (citizen) killed or injured in the corresponding case.
@@ -77,7 +77,7 @@ The table below gives some examples:
   </tr>
 </table>
 
-Based on this storing logic, I cleaned the 2018 file into the same format as the other years' records in the following steps:
+Based on this storing logic, we cleaned the 2018 file into the same format as the other years' records in the following steps:
 1. Among rows where either Victims.Killed or Victims.Injured is larger than 1,
    1. Export these rows as a new file with a new column of the address of the incident report webpage;
    2. Open this new file outside R and break each row into multiple rows so that each row would represent one police injured or one police killed with reference to the webpage incident report;
@@ -94,7 +94,7 @@ Based on this storing logic, I cleaned the 2018 file into the same format as the
 After cleaning the 2018 files, all years' records were row-bound together to create the general file. 
 
 ### Case-specific cleaning
-There are several changes needed to be made in specific cases. Although in my actual analysis, these were found in a later step, to ensure the accuracy of sorting and filtering, it makes more sense for anyone trying to reproduce the result to change these first;:
+There are several changes needed to be made in specific cases. Although in the actual analysis, these were found in a later step, to ensure the accuracy of sorting and filtering, it makes more sense for anyone trying to reproduce the result to change these first:
 1. GVA recorded [a police shot and injured](https://www.gunviolencearchive.org/incident/2342312) in New Orleans, LA because the suspect was arrested in New Orleans. However, the injured police was shot in Erin, TN, and is a part of the Erin police department;
 2. GVA recorded [three police shot and injured](https://www.gunviolencearchive.org/incident/2094830) for the 2021-08-19 Albuquerque, NM case. However, there were actually four police shot and injured. One extra row for Officer Harry Gunderson needs to be added;
 3. GVA recorded [one police shot and injured](https://www.gunviolencearchive.org/incident/2170769) in Atlanta, GA on 2021-11-19. This police was actually shot and injured at Sandy Springs. He also works for the Sandy Springs Police Department. This case should be altered;
@@ -115,10 +115,10 @@ The script used for this step is named **01_clean.R**. The result is saved as *r
 
 
 ## STEP 2 Sort and identify the analysis subject cities
-After making these changes accordingly, I created the set for transport mode information collection in the following steps:
+After making these changes accordingly, we created the set for transport mode information collection in the following steps:
 1. Group the data by State and City.Or.County and summarize the total case number for each State-City.Or.County pair;
 2. Filter the *recordsCleaned.csv* and only keep the State-City.Or.County pairs that had more than 10 police injured or killed during this period of time;
-3. One of the five boroughs of NYC, Staten Island, was dropped. But it does not make sense to exclude it so I manually added it back.
+3. One of the five boroughs of NYC, Staten Island, was dropped. But it does not make sense to exclude it so we manually added it back.
 
 | State                | City.Or.County       | Injury.And.Death |
 |:---------------------|:---------------------|:----------------:|
@@ -154,34 +154,36 @@ After making these changes accordingly, I created the set for transport mode inf
 | Texas                | San Antonio          |        17        |
 | Wisconsin            | Milwaukee            |        17        |
 
-Here, only State-City.Or.County pairs that had more than 10 police injured or killed were kept for two concerns: 1) when a city had very few police shot in five years, we are not so sure whether the number is truly showing a pattern or just a random number. We arbitrarily used 10 as the threshold for this; 2) More importantly, it consumes a lot of time to do the media search and there were in total around 2000 police shot through these five years. This project has only one analyst and it is simply not realistic to collect transport mode information for all cases. The only exception is Staten Island as it is one of the five boroughs of NYC and should be considered along with the rest four.
+Here, only State-City.Or.County pairs that had more than 10 police injured or killed were kept. This was because when a city had very few police shot in five years, we were not sure whether the number truly reflected a pattern or just a random number. We arbitrarily chose 10 as the threshold for this. All five boroughs of NYC were kept.
 
 The script used for this step is named **02_sort.R**. The result is saved as *recordsFiltered.csv*.
 
 ## STEP 3 Collect the transport mode information
-Since GVA does not record what transport mode was used to carry each police to ER/hospitals, I copy-pasted the *recordsFiltered.csv* into [this Google Sheets document](https://docs.google.com/spreadsheets/d/1fCjbfK5wkWyoP2V0U5rAVWbhzJjAER9SPFYSm_38IKA/edit?usp=sharing), and then used following resources to manually record such information. 
+Since GVA does not record what transport mode was used to carry each police to ER/hospitals, we copy-pasted the *recordsFiltered.csv* into [this Google Sheets document](https://docs.google.com/spreadsheets/d/1fCjbfK5wkWyoP2V0U5rAVWbhzJjAER9SPFYSm_38IKA/edit?usp=sharing), and then used the following resources to manually record such information. 
 - GVA collected some news links for each case on their website which is a good starting point;
-- If the news collected by GVA did not disclose the transport mode, I would google the keyword to look for others (especially later reports);
-- For each police-engaged case, the police department usually would have a media brief. The videos are usually uploaded online for transparency. Sometimes Chiefs would disclose how injured/killed officers were transported.
+- If the news collected by GVA did not disclose the transport mode, we would google the keyword to look for others (especially later reports);
+- For each police-engaged case, the police department usually has a media brief. The videos are usually uploaded online for transparency. Sometimes these disclose how injured/killed officers were transported.
 
 All transport mode information was stored in the new Response.Type column. Two extra columns, "Detail" and "News.Source", were also created. 
-- For all cases where the transport mode used was identified, I documented the source in the "News.Source" column. 
-- I also marked all suicide cases in the "Detail" column since these cases are fundamentally different in terms of the response mechanism and should be excluded from our analysis.
+- For all cases where the transport mode used was identified, we documented the source in the "News.Source" column. 
+- We also marked all suicide cases in the "Detail" column since these cases are fundamentally different in terms of the response mechanism and were excluded from our analysis.
+
+The "Detail" column is available upon request.
 
 ## STEP 4 Validate
-Two other analysts from Dr. Sanghavi's Lab, Jessy Nguyen and Nadia Ghazali, then helped validate the transport mode labeled. Using the [Google Sheets document](https://docs.google.com/spreadsheets/d/1fCjbfK5wkWyoP2V0U5rAVWbhzJjAER9SPFYSm_38IKA/edit?usp=sharing), they examined the "News.Source" and determined whether the label assigned is appropriate. The column "Rechecked.By" showed who did this crosscheck. 
+Two other analysts from Dr. Sanghavi's Lab, Jessy Nguyen and Nadia Ghazali, then helped validate the transport mode labeled. Using the [Google Sheets document](https://docs.google.com/spreadsheets/d/1fCjbfK5wkWyoP2V0U5rAVWbhzJjAER9SPFYSm_38IKA/edit?usp=sharing), they examined the "News.Source" and determined whether the label assigned was appropriate. 
 
-If they don't agree with the transport mode information I assigned, they would mark it and make a suggestion. I would revisit the column and determine whether it should be changed to what they suggested. If an agreement cannot be reached, Dr. Prachi Sanghavi will review the columns and make the final call.
+If they didn't agree with the transport mode information assigned, they would mark it. And then we discussed to reach a consensus. If an agreement could not be reached, Dr. Prachi Sanghavi reviewed the case and made the final call.
 
 ## STEP 5 Analyze
-After adding transport information, I did three more things:
+After adding transport information, we did three more things:
 1. Replaced five NYC boroughs with NYC since we would want to analyze them as a whole, which left us 27 cities;
 2. Dropped suicide case since these cases' emergency response differs from occupation gunshot scenarios, which left us 544 police shot;
 3. Dropped cities where there are more than 30% cases for which we cannot identify the transport mode information, which left us 18 cities and 403 police shot.
 
-Using the 18 cities and 403 police sample, I made one pivot table for our perspective article to demonstrate how police were transported in these cities.
+Using the 18 cities and 403 police sample, we made one pivot table for our perspective article to demonstrate how police were transported in these cities.
 
-I also used the 544 police sample to make two extra tables for supporting information used in our perspective article or fun:
+We also used the 544 police sample to make two extra tables for supporting information used in our perspective article or fun:
 1. What is the outcome of such transport mode?
 2. Is there any time trend?
 
