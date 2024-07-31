@@ -1,4 +1,4 @@
-# Homeboy Drop Off
+# Police Transport
 
 [`Read`](#Retrieve-needed-data-from-GVA) [`Clean`](#Clean-and-combine-raw-data-files) [`Sort`](#Sort-and-identify-the-analysis-subject-cities) [`Collect`](#Collect-the-transport-mode-information) [`Validate`](#Validate) [`Analyze`](#Analyze)
 
@@ -36,7 +36,7 @@ I first dropped the "Operations" and "Participant.Age.Group" columns from record
 Since we have decided the time window should be from 2018-04-30 to 2024-04-30 for this project, we would need to drop all records prior to this period for the 2018 file and all records post to this period for the 2024 files.
 
 ### Reformatting 
-GVA data is stored in another format for all records prior to 2019-01-01. So for our analysis, we would need to do some extra cleaning and proofreading for ***2018 records***. The 2018 file have following features:
+GVA data is stored in another format for all records prior to 2019-01-01. So for our analysis, we would need to do some extra cleaning and proofreading for ***2018 records***. The 2018 file has the following features:
 1. Each case is summarized into one row;
 2. Every case recorded in this document had at least one police killed or injured;
 3. Victims.Killed and Victims.Injured also count non-police subject (citizen) killed or injured in the corresponding case.
@@ -154,7 +154,7 @@ After making these changes accordingly, I created the set for transport mode inf
 | Texas                | San Antonio          |        17        |
 | Wisconsin            | Milwaukee            |        17        |
 
-Here, only State-City.Or.County pairs that had more than 10 police injured or killed were kept for two concerns: 1) when a city had very little police shot in five years, we are not so sure whether the number is truly showing a pattern or just a random number. We arbitrarily used 10 as the threshold for this; 2) More importantly, it consumes a lot of time to do the media search and there were in total around 2000 police shot through these five years. This project has only one analyst and it is simply not realistic to collect transport mode information for all cases. The only exception is Staten Island as it is one of the five boroughs of NYC and should be considered along with the rest four.
+Here, only State-City.Or.County pairs that had more than 10 police injured or killed were kept for two concerns: 1) when a city had very few police shot in five years, we are not so sure whether the number is truly showing a pattern or just a random number. We arbitrarily used 10 as the threshold for this; 2) More importantly, it consumes a lot of time to do the media search and there were in total around 2000 police shot through these five years. This project has only one analyst and it is simply not realistic to collect transport mode information for all cases. The only exception is Staten Island as it is one of the five boroughs of NYC and should be considered along with the rest four.
 
 The script used for this step is named **02_sort.R**. The result is saved as *recordsFiltered.csv*.
 
@@ -171,7 +171,7 @@ All transport mode information was stored in the new Response.Type column. Two e
 ## STEP 4 Validate
 Two other analysts from Dr. Sanghavi's Lab, Jessy Nguyen and Nadia Ghazali, then helped validate the transport mode labeled. Using the [Google Sheets document](https://docs.google.com/spreadsheets/d/1fCjbfK5wkWyoP2V0U5rAVWbhzJjAER9SPFYSm_38IKA/edit?usp=sharing), they examined the "News.Source" and determined whether the label assigned is appropriate. The column "Rechecked.By" showed who did this crosscheck. 
 
-If they don't agree with the transport mode information I assigned, they would mark it and make a suggestion. I would revisit the column and determine whether it should be changed to what they suggested. If agreement cannot be reached, Dr. Prachi Sanghavi would reviewed the columns and make the final call.
+If they don't agree with the transport mode information I assigned, they would mark it and make a suggestion. I would revisit the column and determine whether it should be changed to what they suggested. If an agreement cannot be reached, Dr. Prachi Sanghavi will review the columns and make the final call.
 
 ## STEP 5 Analyze
 After adding transport information, I did three more things:
@@ -181,7 +181,7 @@ After adding transport information, I did three more things:
 
 Using the 18 cities and 403 police sample, I made one pivot table for our perspective article to demonstrate how police were transported in these cities.
 
-I also used the 544 police sample to make two extra table for supporting information used in our perspective article or fun:
+I also used the 544 police sample to make two extra tables for supporting information used in our perspective article or fun:
 1. What is the outcome of such transport mode?
 2. Is there any time trend?
 
