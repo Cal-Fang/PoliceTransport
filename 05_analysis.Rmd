@@ -82,7 +82,7 @@ numTab1 <- nrow(final70)
 # Summarize after dropping the suicide cases
 summary <- finalNoSuicide %>% 
   group_by(Response.Type) %>% 
-  summarize(Prop = round(n() / nrow(finalNoSuicide) * 100, 2)) %>% 
+  summarize(Prop = round(n() / nrow(finalNoSuicide) * 100, 1)) %>% 
   pivot_wider(names_from="Response.Type",
               values_from="Prop") %>% 
   rename(Police = `Police Self-transfer`)
@@ -139,7 +139,7 @@ total <- final70 %>%
 prop <- final70 %>% 
   group_by(City, Response.Type) %>% 
   summarise(Count = n()) %>% 
-  mutate(Prop = round(Count / sum(Count) * 100, 2)) %>% 
+  mutate(Prop = round(Count / sum(Count) * 100, 1)) %>% 
   select(-Count) %>% 
   pivot_wider(names_from = Response.Type,
               values_from = Prop)
@@ -153,7 +153,7 @@ tab1 <- prop %>%
 tab1End <- final70 %>% 
   group_by(Response.Type) %>% 
   summarise(Count = n()) %>% 
-  mutate(Prop = round(Count / sum(Count) * 100, 2)) %>% 
+  mutate(Prop = round(Count / sum(Count) * 100, 1)) %>% 
   select(-Count) %>% 
   pivot_wider(names_from="Response.Type",
               values_from="Prop") %>% 
@@ -196,8 +196,8 @@ tabTemp <- finalNoSuicide %>%
   summarize(num = n()) %>% 
   pivot_wider(names_from="Outcome", values_from="num") %>% 
   mutate(total = Injured + Killed, 
-         propInjured = round(Injured / total * 100, 2),
-         propKilled = round(Killed / total * 100, 2)) %>% 
+         propInjured = round(Injured / total * 100, 1),
+         propKilled = round(Killed / total * 100, 1)) %>% 
   select(Response.Type, propInjured, propKilled, total)
 
 kable(tabTemp, label="drop", col.names=c("Transport mode", "Injured (%)", "Killed (%)", "Total shot"))
