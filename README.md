@@ -31,9 +31,9 @@ This script used the download link generated from the GVA website to download th
 
 
 ## STEP 1 Clean and combine raw data files
-Wefirst dropped the "Operations" and "Participant.Age.Group" columns from records of 2019-2024. And then we did some time-wise cleaning and case-wise cleaning.
+We first dropped the Operations and Participant.Age.Group columns from records of 2019-2024. And then we did some time-wise cleaning and case-wise cleaning.
 ### Time-wise cleaning  
-Since we decided the time window should be from 2018-04-30 to 2024-04-30 for this project, we needed to drop all records prior to this period for the 2018 file and all records post to this period for the 2024 files.
+Since we decided the time window should be from 2018-04-30 to 2024-04-30 for this project, we needed to drop all records prior to this period for the 2018 file and all records after this period for the 2024 files.
 
 ### Reformatting 
 GVA data is stored in another format for all records prior to 2019-01-01. So for our analysis, we needed to do some extra cleaning and proofreading for ***2018 records***. The 2018 file has the following features:
@@ -81,13 +81,13 @@ Based on this storing logic, we cleaned the 2018 file into the same format as th
 1. Among rows where either Victims.Killed or Victims.Injured is larger than 1,
    1. Export these rows as a new file with a new column of the address of the incident report webpage;
    2. Open this new file outside R and break each row into multiple rows so that each row would represent one police injured or one police killed with reference to the webpage incident report;
-   3. Add more information from the webpage incident report so the result file has 7 columns including "Incident.Date", "State", "City.Or.County", "Address", "Participant.Name", "Outcome", and "Participant.Gender".
+   3. Add more information from the webpage incident report so the result file has 7 columns including Incident.Date, State, City.Or.County, Address, Participant.Name, Outcome, and Participant.Gender.
 2. Among the rest rows where either Victims.Killed or Victims.Injured is 1, 
    1. Keep the 148 rows where only one of these two columns is 1, as each of these rows marked exactly one police injured or killed;
    2. Keep the row of [incident 1172042](https://www.gunviolencearchive.org/incident/1172042) since both injured and killed victims were police;
    3. Assign 0 to Victims.Killed to the row of [incident 1185588](https://www.gunviolencearchive.org/incident/1185588) since the killed victim is not police;
-   4. Transform this file from wide to long and drop unuseful columns so that it would have 5 columns including "Incident.Date", "State", "City.Or.County", "Address", and "Outcome";
-   5. Add two NA columns "Participant.Name" and "Participant.Gender".
+   4. Transform this file from wide to long and drop unuseful columns so that it would have 5 columns including Incident.Date, State, City.Or.County, Address, and Outcome;
+   5. Add two NA columns Participant.Name and Participant.Gender.
 3. Combine the two data.table and obtain a reformated cleaned 2018 record file.
 
 ### Combining 
@@ -164,14 +164,14 @@ Since GVA does not record what transport mode was used to carry each police to E
 - If the news collected by GVA did not disclose the transport mode, we would google the keyword to look for others (especially later reports);
 - For each police-engaged case, the police department usually has a media brief. The videos are usually uploaded online for transparency. Sometimes these disclose how injured/killed officers were transported.
 
-All transport mode information was stored in the new Response.Type column. Two extra columns, "Detail" and "News.Source", were also created. 
-- For all cases where the transport mode used was identified, we documented the source in the "News.Source" column. 
-- We also marked all suicide cases in the "Detail" column since these cases are fundamentally different in terms of the response mechanism and were excluded from our analysis.
+All transport mode information was stored in the new Response.Type column. Two extra columns, Detail and News.Source, were also created. 
+- For all cases where the transport mode used was identified, we documented the source in the News.Source column. 
+- We also marked all suicide cases in the Detail column since these cases are fundamentally different in terms of the response mechanism and were excluded from our analysis.
 
-The "Detail" column is available upon request.
+The Detail column is available upon request.
 
 ## STEP 4 Validate
-Two other analysts from Dr. Sanghavi's Lab, Jessy Nguyen and Nadia Ghazali, then helped validate the transport mode labeled. Using the [Google Sheets document](https://docs.google.com/spreadsheets/d/1fCjbfK5wkWyoP2V0U5rAVWbhzJjAER9SPFYSm_38IKA/edit?usp=sharing), they examined the "News.Source" and determined whether the label assigned was appropriate. 
+Two other analysts from Dr. Sanghavi's Lab, Jessy Nguyen and Nadia Ghazali, then helped validate the transport mode labeled. Using the [Google Sheets document](https://docs.google.com/spreadsheets/d/1fCjbfK5wkWyoP2V0U5rAVWbhzJjAER9SPFYSm_38IKA/edit?usp=sharing), they examined the News.Source and determined whether the label assigned was appropriate. 
 
 If they didn't agree with the transport mode information assigned, they would mark it. And then we discussed to reach a consensus. If an agreement could not be reached, Dr. Prachi Sanghavi reviewed the case and made the final call.
 
