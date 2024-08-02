@@ -1,8 +1,9 @@
 ---
-title: "Tables for the police drop off perspective article"
+title: "Tables for the police transport perspective article"
 author: "Cal Chengqi Fang"
 date: "2024-07-29"
 output: pdf_document
+classoption: landscape
 header-includes:
   - \setlength{\parindent}{2.5em}
   - \setlength{\parskip}{0em}
@@ -55,7 +56,7 @@ unknownSummary <- finalNoSuicide %>%
   summarise(Count = n()) %>%
   pivot_wider(names_from = Response.Type, values_from = Count) %>% 
   mutate(Total = sum(c(Unknown, `Police Self-transfer`, Others, Ambulance), na.rm=TRUE)) %>% 
-  filter(Unknown <= 0.30*Total | is.na(Unknown))
+  filter(Unknown < 0.30*Total | is.na(Unknown))
 
 final70 <- finalNoSuicide %>% 
   filter(GEO %in% unknownSummary$GEO) %>% 
@@ -114,16 +115,9 @@ cities[is.na(cities)] <- 0.00
 cityPolice <- sum(cities$`Police Self-transfer` > cities$Ambulance)
 cityAmbulance <- sum(cities$Ambulance > cities$`Police Self-transfer`)
 ```
-After cleaning operations detailed in the [GitHub Page](https://github.com/Cal-Fang/homeboydropoff) of this project, STEP 1 and STEP 2, we were left with ***`r numFinal`*** police shot in *`r numCity`* cities with more than 10 police shot from April 20th, 2018 to April 20th, 2024. We were able to ascertain the transport mode through media reports for ***`r numConfirmed`*** persons. 
-
-After that, as in suicide cases, the EMS team usually were dispatched at the same time and oftentimes the officer were found dead so there is no need to transport the officer, we also dropped all suicide cases. ***This left us with `r numNoSuicide` police shot.***       
-
-The transport mode was almost evenly split between police vehicles (`r summary$Police`%) and ambulances (`r summary$Ambulance`%) (`r summary$Others`% used other means). The variation across cities was striking. Consistent with the opening example, Philadelphia transported `r philly$Police` persons by police vehicle and `r philly$Ambulance` by ambulance; Houston transported `r huston$Police` person by police vehicle and `r huston$Ambulance` persons by ambulance. Among **`r numCity2`** cities where we were able to determine the transport mode for 70% or above persons, **`r cityPolice`** cities transported their injured officers mostly by police vehicle and **`r cityAmbulance`** cities transported their injured officers mostly by ambulance (**`r numCity2 - cityAmbulance - cityPolice`** city have the same percentage for police vehicle and ambulance transport).
-
-We then filtered out all cities that have more than 30% cases that we can not find the information of how officers were transported. ***This left us with `r numTab1` police shot.*** 
 
 \newpage
-# Table 1. The proportion of different transportation method used for police shot and the total number of police shot by city: April 20, 2018-April 20, 2024
+# Table. Transport mode of police after sustaining firearm injuries by city between April 30, 2018-April 30, 2024
 ```{r prep tab1, message=FALSE, echo=FALSE}
 # Summarize the total number of police shot by city
 total <- final70 %>% 
@@ -139,10 +133,11 @@ total <- final70 %>%
 prop <- final70 %>% 
   group_by(City, Response.Type) %>% 
   summarise(Count = n()) %>% 
-  mutate(Prop = round(Count / sum(Count) * 100, 1)) %>% 
-  select(-Count) %>% 
+  mutate(Prop = round(Count / sum(Count) * 100, 1),
+         Report = paste0(Count, " (", Prop, ")")) %>% 
+  select(-Count, -Prop) %>% 
   pivot_wider(names_from = Response.Type,
-              values_from = Prop)
+              values_from = Report)
 
 # Merge the total number and transport mode proportion
 tab1 <- prop %>% 
@@ -153,10 +148,11 @@ tab1 <- prop %>%
 tab1End <- final70 %>% 
   group_by(Response.Type) %>% 
   summarise(Count = n()) %>% 
-  mutate(Prop = round(Count / sum(Count) * 100, 1)) %>% 
-  select(-Count) %>% 
-  pivot_wider(names_from="Response.Type",
-              values_from="Prop") %>% 
+  mutate(Prop = round(Count / sum(Count) * 100, 1),
+         Report = paste0(Count, " (", Prop, ")")) %>% 
+  select(-Count, -Prop) %>% 
+  pivot_wider(names_from = Response.Type,
+              values_from = Report) %>% 
   mutate(City = "Total", 
          Total = nrow(final70)) %>% 
   select(City, Total, `Police Self-transfer`, Ambulance, Others, Unknown)
@@ -164,26 +160,26 @@ tab1End <- final70 %>%
 tab1 <- rbindlist(list(tab1, tab1End), fill=TRUE)
 
 # Replace NA with 0
-tab1[is.na(tab1)] <- 0.00
+tab1[is.na(tab1)] <- "0 (0.0)"
 
 # Prepare the footnote symbols
-names(tab1) <- c("City", "Total police shot", "Police", "Ambulance", "Other", "Could not be determined")
+names(tab1) <- c("City", "Total police with firearm injuries", "Police vehicle", "Ambulance", "Other", "Unknown")
 names(tab1)[1] <- paste0(names(tab1)[1], 
                          footnote_marker_alphabet(1))
 names(tab1)[2] <- paste0(names(tab1)[2], 
                          footnote_marker_alphabet(2))
-names(tab1)[5] <- paste0(names(tab1)[5], 
-                         footnote_marker_alphabet(5))
+names(tab1)[5] <- paste0(names(tab1)[3], 
+                         footnote_marker_alphabet(3))
 ```
 
 ```{r tab1, message=FALSE, echo=FALSE}
 tab1  %>% 
   kbl(align="lccccc", booktabs=TRUE, escape=FALSE) %>% 
   kable_styling(latex_options = c("hold_position")) %>%
-  add_header_above(header=c("", "", "Transport mode (%)"=4)) %>% 
-  footnote(alphabet = c("We utilized GVA data to identify 31 cities where more than 10 police officers were shot between April 20th, 2018 and April 20th, 2024. Subsequently, one analyst conducted extensive media research—reviewing news reports, police press releases, and videos—to ascertain how these officers were transported to medical facilities. All cases initially marked as `police', `ambulance', or `other' were cross-checked by an additional analyst. Cases marked as `could not be determined' in cities that we can find the information of how officers were transported for 30% or above persons were also cross-checked. Any discrepancies were resolved through discussion or referred to a third analyst for adjudication.",
-                        "`Other' includes instances where officers were transported by air ambulance, deemed not requiring hospital transport, or involved in incidents like suicide.",
-                        "Suicide cases, where officers were often found deceased with no transport needed, were excluded. We kept all cities that we can find the information of how officers were transported for 30% or above persons."),
+  add_header_above(header=c("", "", "Transport mode (No. (%))"=4)) %>% 
+  footnote(alphabet = c("We utilized the Gun Violence Archive to identify 27 cities where more than 10 police were shot between April 30th, 2018 and April 30th, 2024. We then conducted extensive media research—reviewing news reports, police press releases, and videos—to determine how these individuals were transported to a hospital. Our process required review by two researchers and any discrepancies were resolved through discussion or referred to a third analyst for adjudication. We kept only cities for which we could ascertain the mode of transport for at least 70% of police, which left us with 18 cities.",
+                        "Suicide cases, where officers were often found already deceased, were excluded. ",
+                        "`Other’ includes instances where police were transported by air ambulance or deemed not requiring hospital transport."),
            threeparttable=TRUE)
 ```
 
@@ -191,7 +187,8 @@ tab1  %>%
 # Other tables - left out
 ```{r tab leftout1, message=FALSE, echo=FALSE}
 # Summarize the outcome by transport mode
-tabTemp <- finalNoSuicide %>% 
+tabTemp <- final70 %>% 
+  filter(Response.Type %in% c("Police Self-transfer", "Ambulance")) %>% 
   group_by(Response.Type, Outcome) %>% 
   summarize(num = n()) %>% 
   pivot_wider(names_from="Outcome", values_from="num") %>% 
