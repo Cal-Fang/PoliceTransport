@@ -12,7 +12,8 @@ knit: >
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo=FALSE)
+knitr::opts_chunk$set(echo=FALSE,
+                      warning=FALSE)
 rm(list = ls())
 
 require(tidyverse)
@@ -185,6 +186,8 @@ tab1  %>%
 
 \newpage
 # Other tables - left out
+
+## Simple outcome comparsion across different transport mode
 ```{r tab leftout1, message=FALSE, echo=FALSE}
 # Summarize the outcome by transport mode
 tabTemp <- final70 %>% 
@@ -200,7 +203,25 @@ tabTemp <- final70 %>%
 kable(tabTemp, label="drop", col.names=c("Transport mode", "Injured (%)", "Killed (%)", "Total shot"))
 ```
 
+## Simple outcome comparsion across different transport mode (without Philadelphia)
 ```{r tab leftout2, message=FALSE, echo=FALSE}
+# Summarize the outcome by transport mode
+tabTemp <- final70 %>% 
+  filter(City.Or.County != "Philadelphia") %>% 
+  filter(Response.Type %in% c("Police Self-transfer", "Ambulance")) %>% 
+  group_by(Response.Type, Outcome) %>% 
+  summarize(num = n()) %>% 
+  pivot_wider(names_from="Outcome", values_from="num") %>% 
+  mutate(total = Injured + Killed, 
+         propInjured = round(Injured / total * 100, 1),
+         propKilled = round(Killed / total * 100, 1)) %>% 
+  select(Response.Type, propInjured, propKilled, total)
+
+kable(tabTemp, label="drop", col.names=c("Transport mode", "Injured (%)", "Killed (%)", "Total shot"))
+```
+
+## Temporal and geographic variations
+```{r tab leftout3, message=FALSE, echo=FALSE}
 # Summarize the transport mode used by year
 tabTemp <- finalNoSuicide %>% 
   mutate(Year = lubridate::year(Incident.Date)) %>% 
